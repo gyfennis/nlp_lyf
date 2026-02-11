@@ -1,0 +1,2000 @@
+{"instruction": "满300减30怎么没扣减？", "input": "", "output": "查询优惠券使用"}
+{"instruction": "我要搬家了，换个地址寄", "input": "", "output": "修改收货地址"}
+{"instruction": "那个，我要申请换货，不退款", "input": "", "output": "申请换货"}
+{"instruction": "尺码不合适，我想换 个大一号的", "input": "", "output": "申请换货"}
+{"instruction": "Hi，我想把黑色的换成白色的，订单ORD20259212", "input": "", "output": "修改订单信息"}
+{"instruction": "亲，满300减30怎么没扣减？", "input": "", "output": "查询优惠券使用"}
+{"instruction": "麻烦问下，我要申请换货，不退款", "input": "", "output": "申请换货"}
+{"instruction": "我想用信用卡支付，哪里选", "input": "", "output": "咨询支付方式"}
+{"instruction": "在吗，在哪里点退款？我找不到按钮", "input": "", "output": "退款申请"}
+{"instruction": "尺码不合适，我想换个大一号的", "input": "", "output": "申请换货"}
+{"instruction": "质量太差了，线头特别多", "input": "", "output": "投诉商品质量"}
+{"instruction": "亲，满300减30怎么没扣减", "input": "", "output": "查询优惠券使用"}
+{"instruction": "我的快递到哪了？ORD20252025", "input": "", "output": "查询物流信息"}
+{"instruction": "那个，下错单了，不用发了， 取消吧", "input": "", "output": "取消订单"}
+{"instruction": "下错单了，不用发了，取消吧", "input": "", "output": "取消订单"}
+{"instruction": "请问，这个东西保修期是多久？", "input": "", "output": "申请售后保修"}
+{"instruction": "在吗，收 到的电动牙刷是坏的！", "input": "", "output": "投诉商品质量"}
+{"instruction": "坏了能修吗？用了半年了", "input": "", "output": "申请售后保修"}
+{"instruction": "客服，我要搬家了，换个 地址寄", "input": "", "output": "修改收货地址"}
+{"instruction": "你好，我想用信 用卡支付，哪里选？", "input": "", "output": "咨询支付方式"}
+{"instruction": "这个东西保修期是多久", "input": "", "output": "申请售后保修"}
+{"instruction": "在吗，为什么这个折扣码用不了？", "input": "", "output": "查询优惠券使用"}
+{"instruction": "亲，我要申请退款，ORD20245295", "input": "", "output": "退款申请"}
+{"instruction": "拍错码数了，帮我改成L码", "input": "", "output": "修改订单信息"}
+{"instruction": "那个，为什么这个优惠券用不了？", "input": "", "output": "查询优惠券使用"}
+{"instruction": "那个，忘记用户名了，怎么找回？", "input": "", "output": "账号登录问题"}
+{"instruction": "在吗，快 递是不是丢了？三天没动了", "input": "", "output": "查询物流信息"}
+{"instruction": "你好，衣服的面料是纯棉 的吗？", "input": "", "output": "咨询产品规格"}
+{"instruction": "寄到老家去，不是默认地址，帮我改", "input": "", "output": "修改收货地址"}
+{"instruction": "在吗，满300减30怎么 没扣减？", "input": "", "output": "查询优惠券使用"}
+{"instruction": "客服，我想用信用卡支付，哪里选？", "input": "", "output": "咨询支付方式"}
+{"instruction": "鞋子小了，换个42码的", "input": "", "output": "申请换货"}
+{"instruction": "那个，它是220V电压还是1 10V？", "input": "", "output": "咨询产品规格"}
+{"instruction": "能不能 分期付款？", "input": "", "output": "咨询支付方式"}
+{"instruction": "你好，帮我查查包裹走到哪 个城市了", "input": "", "output": "查询物流信息"}
+{"instruction": "这个东西保修期是多久？", "input": "", "output": "申请售后保修"}
+{"instruction": "忘了备注礼盒包装，帮我加一下", "input": "", "output": "修改订单信息"}
+{"instruction": "请问，订单ORD2024 0621现在是什么状态？", "input": "", "output": "查询订单状态"}
+{"instruction": "发货后几天能到北京？", "input": "", "output": "咨询配送时间"}
+{"instruction": "帮我改一下订单备注", "input": "", "output": "修改订单信息"}
+{"instruction": "客服，订单ORD20254195的发票哪里下载？", "input": "", "output": "查询发票信息"}
+{"instruction": "查一下订单状态，单号ORD20240644", "input": "", "output": "查询订单状态"}
+{"instruction": "麻烦问下，衣服的面料是纯 棉的吗？", "input": "", "output": "咨询产品规格"}
+{"instruction": "Hi，我的猫粮不工作了，还在保修期内", "input": "", "output": "申请售后保修"}
+{"instruction": "能不能把两个订单合并一起发？", "input": "", "output": "修改订单信息"}
+{"instruction": "请问，优惠券在哪里输入？", "input": "", "output": "查询优惠券使用"}
+{"instruction": "能不能把两个订单合并一起发", "input": "", "output": "修改订单信息"}
+{"instruction": "我想用信用卡支付，哪里选？", "input": "", "output": "咨询支付方式"}
+{"instruction": "Hi，我要申请换货，不退款", "input": "", "output": "申请换货"}
+{"instruction": "请问，查物流，ORD20250749", "input": "", "output": "查询物流信息"}
+{"instruction": "请问，能发个物流轨迹给我看吗？", "input": "", "output": "查询物流信息"}
+{"instruction": "春节期间正常发货配送吗？", "input": "", "output": "咨询配送时间"}
+{"instruction": "在吗，下单后多久能送到？", "input": "", "output": "咨询配送时间"}
+{"instruction": "Hi，帮我把收货地址改成公司", "input": "", "output": "修改收货地址"}
+{"instruction": "补开发票怎么操作？", "input": "", "output": "查询发票信息"}
+{"instruction": "查物流，ORD20255342", "input": "", "output": "查询物流信息"}
+{"instruction": "Hi，支持货到付款吗？", "input": "", "output": "咨询支付方式"}
+{"instruction": "麻烦问下，我不买了，请把订单取消掉", "input": "", "output": "取消订单"}
+{"instruction": "衣服的面料是纯棉的吗", "input": "", "output": "咨询产品规格"}
+{"instruction": "我的快递到哪了？ORD20258519", "input": "", "output": "查询物流信息"}
+{"instruction": "Hi，帮我改一下订单备注", "input": "", "output": "修改订单信息"}
+{"instruction": "麻烦问下，补开发票怎么操作", "input": "", "output": "查询发票信息"}
+{"instruction": "在吗，详细参 数发我看一下", "input": "", "output": "咨询产品规格"}
+{"instruction": "客服，电话留错了，帮我改一下联系方式", "input": "", "output": "修改收货地址"}
+{"instruction": "那个，账号显示异常，登不上", "input": "", "output": "账号登录问题"}
+{"instruction": "忘记用户名了，怎么找回？", "input": "", "output": "账号登录问题"}
+{"instruction": "亲，取消交易，快点", "input": "", "output": "取消订单"}
+{"instruction": "怎么支付失败了？我用的微信", "input": "", "output": "咨询支付方式"}
+{"instruction": "最快什么时候到？急用", "input": "", "output": "咨询配送时间"}
+{"instruction": "优惠券在哪里输入？", "input": "", "output": "查询优惠券使用"}
+{"instruction": "客服，我的快递到哪了？ORD20246265", "input": "", "output": "查询物流信息"}
+{"instruction": "亲，质量太差了，线头特别多", "input": "", "output": "投诉商品质量"}
+{"instruction": "那个，查一下订单状态，单号ORD20249123", "input": "", "output": "查询订单状态"}
+{"instruction": "大概什么时候能收到？投影仪", "input": "", "output": "咨询配送时间"}
+{"instruction": "请问，刚才拍错了，直接退款吧", "input": "", "output": "退款申请"}
+{"instruction": "衣服有点紧，能换货 吗？", "input": "", "output": "申请换货"}
+{"instruction": "我收不到验证码，怎么办", "input": "", "output": "账号登录问题"}
+{"instruction": "你好，换货流程是怎么样的？", "input": "", "output": "申请换货"}
+{"instruction": "亲，用了一次就坏了，什么垃圾质量", "input": "", "output": "投诉商品质量"}
+{"instruction": "那个，帮我查查包裹走到哪个城市了", "input": "", "output": "查询物流信息"}
+{"instruction": "我想把黑色的换成白色的，订单ORD20256580", "input": "", "output": "修改订单信息"}
+{"instruction": "请问，还没发货吧？帮我拦截取消", "input": "", "output": "取消订单"}
+{"instruction": "Hi，怎么支付失败了？我用的微信", "input": "", "output": "咨询支付方式"}
+{"instruction": "我想用信用卡支付 ，哪里选？", "input": "", "output": "咨询支付方式"}
+{"instruction": "客服，鞋子 小了，换个42码的", "input": "", "output": "申请换货"}
+{"instruction": "你好，坏了能修吗？用了半年了", "input": "", "output": "申请售后保修"}
+{"instruction": "客服，查一下订单状态，单号ORD20259373", "input": "", "output": "查询订单状态"}
+{"instruction": "我想把黑色的换成白色的，订单ORD20257768", "input": "", "output": "修改订单信息"}
+{"instruction": "帮我 改一下订单备注", "input": "", "output": "修改订单信息"}
+{"instruction": "Hi，换货流 程是怎么样的？", "input": "", "output": "申请换货"}
+{"instruction": "物流一直不更新是怎么回事？", "input": "", "output": "查询物流信息"}
+{"instruction": "东西有磨损，是不是二手的？", "input": "", "output": "投诉商品质量"}
+{"instruction": "详细参数发我看一下", "input": "", "output": "咨询产品规格"}
+{"instruction": "亲，东西不要了，把钱退给我", "input": "", "output": "退款申请"}
+{"instruction": "请问，帮我把收货地址改成公司", "input": "", "output": "修改收货地址"}
+{"instruction": "这是假货吧？味道好难闻", "input": "", "output": "投诉商品质量"}
+{"instruction": "收到的洗面奶是坏的！", "input": "", "output": "投诉商品质量"}
+{"instruction": "亲，忘记用户名了，怎么找回？", "input": "", "output": "账号登录问题"}
+{"instruction": "亲，物流一直不更新 是怎么回事？", "input": "", "output": "查询物流信息"}
+{"instruction": "新用户有没有优惠券", "input": "", "output": "查询优惠券使用"}
+{"instruction": "在吗，发错颜色了，我要换成我要的那个", "input": "", "output": "申请换货"}
+{"instruction": "客服，质量太差了，线头特别多", "input": "", "output": "投诉商品质量"}
+{"instruction": "那个，能发个物流轨迹 给我看吗", "input": "", "output": "查询物流信息"}
+{"instruction": "麻烦问下，订单ORD20259464的发票哪里下载", "input": "", "output": "查询发票信息"}
+{"instruction": "支持货到付款吗？", "input": "", "output": "咨询支付方式"}
+{"instruction": "发票什么时候寄出来", "input": "", "output": "查询发票信息"}
+{"instruction": "能开税号吗？", "input": "", "output": "查询发票信息"}
+{"instruction": "我的快递到哪了？ORD20254744", "input": "", "output": "查询物流信息"}
+{"instruction": "补开发票 怎么操作？", "input": "", "output": "查询发票信息"}
+{"instruction": "下单 后多久能送到？", "input": "", "output": "咨询配送时间"}
+{"instruction": "我想把黑色的换成白色的，订单ORD20246425", "input": "", "output": "修改订单信息"}
+{"instruction": "你好，账号显示异常，登不上", "input": "", "output": "账号登录问题"}
+{"instruction": "请问，我的快递到哪了？ORD20242844", "input": "", "output": "查询物流信息"}
+{"instruction": "客服，支持开公司抬头 吗？", "input": "", "output": "查询发票信息"}
+{"instruction": "帮我取消订单ORD20240676", "input": "", "output": "取消订单"}
+{"instruction": "手机号换了 ，收不到验证码", "input": "", "output": "账号登录问题"}
+{"instruction": "我的快递到哪了？ORD20245872", "input": "", "output": "查询物流信息"}
+{"instruction": "支持开公司抬 头吗？", "input": "", "output": "查询发票信息"}
+{"instruction": "衣服有点紧，能换货吗", "input": "", "output": "申请换货"}
+{"instruction": "申请质保，机器故障", "input": "", "output": "申请售后保修"}
+{"instruction": "衣服的面料是纯棉的吗？", "input": "", "output": "咨询产品规格"}
+{"instruction": "我收不到验证码，怎么办？", "input": "", "output": "账号登录问题"}
+{"instruction": "请问，鞋子小了，换个42码的", "input": "", "output": "申请换货"}
+{"instruction": "客服，寄到老家去，不是默认地址，帮我改", "input": "", "output": "修改收货地址"}
+{"instruction": "在吗，衣服的面料是纯棉的吗", "input": "", "output": "咨询产品规格"}
+{"instruction": "发错颜色了，我要换成我要的那个", "input": "", "output": "申请换货"}
+{"instruction": "能开普票吗？", "input": "", "output": "查询发票信息"}
+{"instruction": "麻烦问下，用 了一次就坏了，什么垃圾质量", "input": "", "output": "投诉商品质量"}
+{"instruction": "那个，在哪里申请售后维修？", "input": "", "output": "申请售后保修"}
+{"instruction": "在哪里申请售后维修？", "input": "", "output": "申请售后保修"}
+{"instruction": "在吗，我要申请退款，ORD20251207", "input": "", "output": "退款申请"}
+{"instruction": "亲，我想把黑色的换成白色的，订单ORD20258566", "input": "", "output": "修改订单信息"}
+{"instruction": "手机号换了，收不到验证码", "input": "", "output": "账号登录问题"}
+{"instruction": "我想把黑色的换成白色的，订单ORD20249663", "input": "", "output": "修改订单信息"}
+{"instruction": "Hi，地址填错了，能不能改？订单ORD20245401", "input": "", "output": "修改收货地址"}
+{"instruction": "支持开公司抬头吗？", "input": "", "output": "查询发票信息"}
+{"instruction": "帮我备注一下：今天不要送货", "input": "", "output": "修改订单信息"}
+{"instruction": "我不买了，请把订单取消掉", "input": "", "output": "取消订单"}
+{"instruction": "怎么支付失败了 ？我用的微信", "input": "", "output": "咨询支付方式"}
+{"instruction": "亲，下单后 多久能送到", "input": "", "output": "咨询配送时间"}
+{"instruction": "能不能分期付款？", "input": "", "output": "咨询支付方式"}
+{"instruction": "客服，查物流，ORD20246040", "input": "", "output": "查询物流信息"}
+{"instruction": "电话留错了，帮我改一下联系方式", "input": "", "output": "修改收货地址"}
+{"instruction": "你好，新用户有没有优惠券？", "input": "", "output": "查询优惠券使用"}
+{"instruction": "刚才拍错了，直接退款吧", "input": "", "output": "退款申请"}
+{"instruction": "订单ORD20241596的发票哪里下载？", "input": "", "output": "查询发票信息"}
+{"instruction": "取消交易 ，快点", "input": "", "output": "取消订单"}
+{"instruction": "在吗，怎么支付失败了？我用的微信", "input": "", "output": "咨询支付方式"}
+{"instruction": "两个红包能叠加使用吗？", "input": "", "output": "查询优惠券使用"}
+{"instruction": "快递是不是丢了？三天没动了", "input": "", "output": "查询物流信息"}
+{"instruction": "麻烦问下，快递是不是丢了？三天没动了", "input": "", "output": "查询物流信息"}
+{"instruction": "能发个物流轨迹给我看吗？", "input": "", "output": "查询物流信息"}
+{"instruction": "还没发货吧？帮我拦截取消", "input": "", "output": "取消订单"}
+{"instruction": "为什么这个折扣码用不了", "input": "", "output": "查询优惠券使用"}
+{"instruction": "查物流，ORD20248973", "input": "", "output": "查询物流信息"}
+{"instruction": "你好，帮我把收货地址改成公司", "input": "", "output": "修改收货地址"}
+{"instruction": "地址 填错了，能不能改？订单ORD20243514", "input": "", "output": "修改收货地址"}
+{"instruction": "Hi，申请质保，机器 故障", "input": "", "output": "申请售后保修"}
+{"instruction": "空气炸锅发货了吗？还是待发货？", "input": "", "output": "查询订单状态"}
+{"instruction": "你好，这是假货吧？味道好难闻", "input": "", "output": "投诉商品质量"}
+{"instruction": "在吗，两个红包能叠加使用吗？", "input": "", "output": "查询优惠券使用"}
+{"instruction": "亲，详细参数发我看一下", "input": "", "output": "咨询产品规格"}
+{"instruction": "查一下订单状态，单号ORD20242640", "input": "", "output": "查询订单状态"}
+{"instruction": "那个，能发个物 流轨迹给我看吗", "input": "", "output": "查询物流信息"}
+{"instruction": "亲，空气炸锅发货了吗？还是待发货？", "input": "", "output": "查询订单状态"}
+{"instruction": "在吗，新用户有没有 优惠券？", "input": "", "output": "查询优惠券使用"}
+{"instruction": "订单ORD2025493 5的发票哪里下载", "input": "", "output": "查询发票信息"}
+{"instruction": "麻烦问下，账号显示异常，登不上", "input": "", "output": "账号登录问题"}
+{"instruction": "我要申请换货，不退款", "input": "", "output": "申请换货"}
+{"instruction": "帮我查查包裹走到哪个城市了", "input": "", "output": "查询物流信息"}
+{"instruction": "我要投诉商品质量问题，订单ORD20253477", "input": "", "output": "投诉商品质量"}
+{"instruction": "麻烦问下，鞋子小了，换个42码的", "input": "", "output": "申请换货"}
+{"instruction": "麻烦问下，麻烦把刚才那一单作废", "input": "", "output": "取消订单"}
+{"instruction": "查物流，ORD20243760", "input": "", "output": "查询物流信息"}
+{"instruction": "客服，我要申请退款，ORD20252795", "input": "", "output": "退款申请"}
+{"instruction": "这个东 西保修期是多久？", "input": "", "output": "申请售后保修"}
+{"instruction": "周末送货吗", "input": "", "output": "咨询配送时间"}
+{"instruction": "提供上门维修服务吗？", "input": "", "output": "申请售后保修"}
+{"instruction": "那个，怎么支付失败了？我用的微信", "input": "", "output": "咨询支付方式"}
+{"instruction": "客服，订单ORD20253451的发票哪里下载？", "input": "", "output": "查询发票信息"}
+{"instruction": "在吗，手机号换了，收不到验证码", "input": "", "output": "账号登录问题"}
+{"instruction": "亲，忘了备注礼盒包装，帮我加一下", "input": "", "output": "修改订单信息"}
+{"instruction": "取消交易，快点", "input": "", "output": "取消订单"}
+{"instruction": "在吗，能 不能把两个订单合并一起发？", "input": "", "output": "修改订单信息"}
+{"instruction": "用了一次就坏了，什么垃圾 质量", "input": "", "output": "投诉商品质量"}
+{"instruction": "尺码不合 适，我想换个大一号的", "input": "", "output": "申请换货"}
+{"instruction": "亲，忘记用户 名了，怎么找回？", "input": "", "output": "账号登录问题"}
+{"instruction": "发货前帮我改个地址：北京市xxx", "input": "", "output": "修改收货地址"}
+{"instruction": "在吗，衣服有点紧，能换货吗？", "input": "", "output": "申请换货"}
+{"instruction": "客服，快递是不是丢了？三天没动了", "input": "", "output": "查询物流信息"}
+{"instruction": "那个，这个多重啊？我想算运费", "input": "", "output": "咨询产品规格"}
+{"instruction": "那个，大概什么时候能收到？那个衣服", "input": "", "output": "咨询配送时间"}
+{"instruction": "周末送货吗？", "input": "", "output": "咨询配送时间"}
+{"instruction": "可 以用花呗吗", "input": "", "output": "咨询支付方式"}
+{"instruction": "我想把黑色的换成白色的，订单ORD20258598", "input": "", "output": "修改订单信息"}
+{"instruction": "为什么订单显示已完成但我没收到？", "input": "", "output": "查询订单状态"}
+{"instruction": "发错颜色了 ，我要换成我要的那个", "input": "", "output": "申请换货"}
+{"instruction": "你好，下错单了，不用发了，取消吧", "input": "", "output": "取消订单"}
+{"instruction": "亲，物流一直不更新是怎么回事", "input": "", "output": "查询物流信息"}
+{"instruction": "查一下订单状态，单号ORD20245343", "input": "", "output": "查询订单状态"}
+{"instruction": "在哪里点退款？我找不到按钮", "input": "", "output": "退款申请"}
+{"instruction": "Hi，刚才拍错了，直接退款吧", "input": "", "output": "退款申请"}
+{"instruction": "亲，能不能分期付款", "input": "", "output": "咨询支付方式"}
+{"instruction": "在吗，能发个物流轨迹给我看吗", "input": "", "output": "查询物流信息"}
+{"instruction": "Hi，拍错码数了，帮我改成L码", "input": "", "output": "修改订单信息"}
+{"instruction": "周 末送货吗？", "input": "", "output": "咨询配送时间"}
+{"instruction": "客服，这是假货吧？味道好难闻", "input": "", "output": "投诉商品质量"}
+{"instruction": "请问，退款怎么还没到账？", "input": "", "output": "退款申请"}
+{"instruction": "你好，支持货到付款吗", "input": "", "output": "咨询支付方式"}
+{"instruction": "账号显示异常，登不上", "input": "", "output": "账号登录问题"}
+{"instruction": "在吗，帮我查一下发票开好了没", "input": "", "output": "查询发票信息"}
+{"instruction": "帮我 备注一下：刚才不要送货", "input": "", "output": "修改订单信息"}
+{"instruction": "请问，快递是不是丢了？三天没动了", "input": "", "output": "查询物流信息"}
+{"instruction": "帮我取消 订单ORD20253805", "input": "", "output": "取消订单"}
+{"instruction": "请问，下错单了，不用发了，取消吧", "input": "", "output": "取消订单"}
+{"instruction": "客服，取 消交易，快点", "input": "", "output": "取消订单"}
+{"instruction": "我的运动鞋不工作了，还在保修期内", "input": "", "output": "申请售后保修"}
+{"instruction": "请问，取消交易，快点", "input": "", "output": "取消订单"}
+{"instruction": "为什么这个运费券用不了？", "input": "", "output": "查询优惠券使用"}
+{"instruction": "Hi，我想把黑色的换成白色的，订单ORD20255856", "input": "", "output": "修改订单信息"}
+{"instruction": "地址 填错了，能不能改？订单ORD20250521", "input": "", "output": "修改收货地址"}
+{"instruction": "那个，能不能 分期付款？", "input": "", "output": "咨询支付方式"}
+{"instruction": "发错 颜色了，我要换成我要的那个", "input": "", "output": "申请换货"}
+{"instruction": "请问，坏了能修吗？用了半年了", "input": "", "output": "申请售后保修"}
+{"instruction": "亲，坏了能修吗？用了半年了", "input": "", "output": "申请售后保修"}
+{"instruction": "怎么修改登录密码？", "input": "", "output": "账号登录问题"}
+{"instruction": "麻烦问下，满300减30怎么没扣减？", "input": "", "output": "查询优惠券使用"}
+{"instruction": "手机号 换了，收不到验证码", "input": "", "output": "账号登录问题"}
+{"instruction": "我的订单怎么一直卡在正在出库", "input": "", "output": "查询订单状态"}
+{"instruction": "亲，退款怎么还没到账", "input": "", "output": "退款申请"}
+{"instruction": "衣服有点 紧，能换货吗", "input": "", "output": "申请换货"}
+{"instruction": "我要搬 家了，换个地址寄", "input": "", "output": "修改收货地址"}
+{"instruction": "那个，我要投诉商品质量问题，订单ORD20245571", "input": "", "output": "投诉商品质量"}
+{"instruction": "客服，这个多重啊？我想算运费", "input": "", "output": "咨询产品规格"}
+{"instruction": "收到的那个衣服是坏的！", "input": "", "output": "投诉商品质量"}
+{"instruction": "客服，能不能分期付款？", "input": "", "output": "咨询支付方式"}
+{"instruction": "亲，麻烦把刚才那一单作废", "input": "", "output": "取消订单"}
+{"instruction": "你好，帮我取消订单ORD20249149", "input": "", "output": "取消订单"}
+{"instruction": "帮我看看我的单子确认了吗？", "input": "", "output": "查询订单状态"}
+{"instruction": "帮我操作一下全额退款", "input": "", "output": "退款申请"}
+{"instruction": "麻烦问下，忘了备注礼盒包装，帮我加一下", "input": "", "output": "修改订单信息"}
+{"instruction": "我的快递到哪了？ORD20241021", "input": "", "output": "查询物流信息"}
+{"instruction": "请问，寄到老家去，不是默认地址，帮我改", "input": "", "output": "修改收货地址"}
+{"instruction": "两个 红包能叠加使用吗？", "input": "", "output": "查询优惠券使用"}
+{"instruction": "详细参数发我 看一下", "input": "", "output": "咨询产品规格"}
+{"instruction": "你好，鞋子小了，换个42码的", "input": "", "output": "申请换货"}
+{"instruction": "发票什么时候寄出来？", "input": "", "output": "查询发票信息"}
+{"instruction": "我账号被锁了，怎么办？", "input": "", "output": "账号登录问题"}
+{"instruction": "东西不要了，把钱退给我", "input": "", "output": "退款申请"}
+{"instruction": "亲，查物流，ORD20246133", "input": "", "output": "查询物流信息"}
+{"instruction": "麻烦问下，支持货 到付款吗", "input": "", "output": "咨询支付方式"}
+{"instruction": "亲，详细参数 发我看一下", "input": "", "output": "咨询产品规格"}
+{"instruction": "你好，物流一直不更新是怎么回事？", "input": "", "output": "查询物流信息"}
+{"instruction": "春节期间正常发货配送吗", "input": "", "output": "咨询配送时间"}
+{"instruction": "那个，两个红包能叠加使用吗？", "input": "", "output": "查询优惠券使用"}
+{"instruction": "麻烦问下，能不能分期付款", "input": "", "output": "咨询支付方式"}
+{"instruction": "帮我查一下发票开好了没", "input": "", "output": "查询发票信息"}
+{"instruction": "我想用信用卡支付，哪 里选？", "input": "", "output": "咨询支付方式"}
+{"instruction": "亲，周 末送货吗？", "input": "", "output": "咨询配送时间"}
+{"instruction": "麻烦问下，提供上门维修服务吗？", "input": "", "output": "申请售后保修"}
+{"instruction": "亲，为什么这个优惠券用不了？", "input": "", "output": "查询优惠券使用"}
+{"instruction": "请问，我想用信用卡支付，哪里选", "input": "", "output": "咨询支付方式"}
+{"instruction": "那个，麻烦把刚才那一单作废", "input": "", "output": "取消订单"}
+{"instruction": "请问，两个红包能叠加使用吗？", "input": "", "output": "查询优惠券使用"}
+{"instruction": "亲，怎么修改登录密码？", "input": "", "output": "账号登录问题"}
+{"instruction": "这个券过期了吗？", "input": "", "output": "查询优惠券使用"}
+{"instruction": "帮我备注一下：大半夜不要送货", "input": "", "output": "修改订单信息"}
+{"instruction": "Hi，帮我操作一下全额退款", "input": "", "output": "退款申请"}
+{"instruction": "能不能分期付款", "input": "", "output": "咨询支付方式"}
+{"instruction": "收到的扫地机是坏的！", "input": "", "output": "投诉商品质量"}
+{"instruction": "客服，支持开公司抬头吗？", "input": "", "output": "查询发票信息"}
+{"instruction": "请问，帮我备注一下：前天不要送货", "input": "", "output": "修改订单信息"}
+{"instruction": "电话留错了，帮 我改一下联系方式", "input": "", "output": "修改收货地址"}
+{"instruction": "我一直提示错误，怎么办？", "input": "", "output": "账号登录问题"}
+{"instruction": "这个尺寸放得进登机箱吗？", "input": "", "output": "咨询产品规格"}
+{"instruction": "在吗，帮我改一下订单备注", "input": "", "output": "修改订单信息"}
+{"instruction": "在吗，我不买了，请把订单取消掉", "input": "", "output": "取消订单"}
+{"instruction": "亲，能发个物流轨迹给我看吗？", "input": "", "output": "查询物流信息"}
+{"instruction": "那个，拍错码 数了，帮我改成L码", "input": "", "output": "修改订单信息"}
+{"instruction": "质量太差了，线头 特别多", "input": "", "output": "投诉商品质量"}
+{"instruction": "拍错码数了，帮 我改成L码", "input": "", "output": "修改订单信息"}
+{"instruction": "那个，满300减30怎么没扣减？", "input": "", "output": "查询优惠券使用"}
+{"instruction": "Hi，我的订单怎么一直卡在 正在出库", "input": "", "output": "查询订单状态"}
+{"instruction": "亲，还没发货吧？帮我拦截取消", "input": "", "output": "取消订单"}
+{"instruction": "你好，怎么修改登录密码？", "input": "", "output": "账号登录问题"}
+{"instruction": "你好，忘记用户名了，怎么找回", "input": "", "output": "账号登录问题"}
+{"instruction": "你好，我不买了，请把订单取消掉", "input": "", "output": "取消订单"}
+{"instruction": "亲，帮我取消订 单ORD20246094", "input": "", "output": "取消订单"}
+{"instruction": "可以用 花呗吗？", "input": "", "output": "咨询支付方式"}
+{"instruction": "客服，帮我看看我的单子确认了吗", "input": "", "output": "查询订单状态"}
+{"instruction": "你好，新用户有没有优惠券", "input": "", "output": "查询优惠券使用"}
+{"instruction": "在吗，刚才拍错了，直接退款吧", "input": "", "output": "退款申请"}
+{"instruction": "在吗，补开发票怎么操作？", "input": "", "output": "查询发票信息"}
+{"instruction": "亲，可 以用花呗吗？", "input": "", "output": "咨询支付方式"}
+{"instruction": "物流一直不更新是怎么回事", "input": "", "output": "查询物流信息"}
+{"instruction": "你好，帮我改一下订单备注", "input": "", "output": "修改订单信息"}
+{"instruction": "在吗，详细参数发我看 一下", "input": "", "output": "咨询产品规格"}
+{"instruction": "客服，支持白条吗？", "input": "", "output": "咨询支付方式"}
+{"instruction": "麻烦问下，扫地机发货了吗？还是待发货？", "input": "", "output": "查询订单状态"}
+{"instruction": "这个尺寸放得进登机箱吗", "input": "", "output": "咨询产品规格"}
+{"instruction": "麻烦问下，大概什么时候能收到？那 个衣服", "input": "", "output": "咨询配送时间"}
+{"instruction": "可以用花呗吗", "input": "", "output": "咨询支付方式"}
+{"instruction": "你好，补开发票怎么操作？", "input": "", "output": "查询发票信息"}
+{"instruction": "亲，能不能分期付款？", "input": "", "output": "咨询支付方式"}
+{"instruction": "你好，能不能把两个订单合并一起发", "input": "", "output": "修改订单信息"}
+{"instruction": "麻烦问下，忘记用 户名了，怎么找回", "input": "", "output": "账号登录问题"}
+{"instruction": "请问，在哪里点退款？我找不到按钮", "input": "", "output": "退款申请"}
+{"instruction": "两个红包能叠加使用吗", "input": "", "output": "查询优惠券使用"}
+{"instruction": "那个，支持货到付款吗？", "input": "", "output": "咨询支付方式"}
+{"instruction": "你好，这个尺寸放得进登机箱吗？", "input": "", "output": "咨询产品规格"}
+{"instruction": "亲，订单O RD20258729现在是什么状态？", "input": "", "output": "查询订单状态"}
+{"instruction": "客服，支持货到付款吗？", "input": "", "output": "咨询支付方式"}
+{"instruction": "你好，质量太差了，线头特别多", "input": "", "output": "投诉商品质量"}
+{"instruction": "发错颜色了，我要换成我要 的那个", "input": "", "output": "申请换货"}
+{"instruction": "你好，下单后多久能送到", "input": "", "output": "咨询配送时间"}
+{"instruction": "那个，刚才拍错了，直接退款吧", "input": "", "output": "退款申请"}
+{"instruction": "亲，发货后几天能到北京？", "input": "", "output": "咨询配送时间"}
+{"instruction": "亲，忘记用户名了，怎 么找回", "input": "", "output": "账号登录问题"}
+{"instruction": "帮我备注一下 ：大半夜不要送货", "input": "", "output": "修改订单信息"}
+{"instruction": "怎么注销账号", "input": "", "output": "账号登录问题"}
+{"instruction": "你好，手机号换了，收不到验证码", "input": "", "output": "账号登录问题"}
+{"instruction": "你好，帮我取消订单ORD2 0256952", "input": "", "output": "取消订单"}
+{"instruction": "麻烦问下，能开普票吗", "input": "", "output": "查询发票信息"}
+{"instruction": "能不能把两个订单合并一 起发？", "input": "", "output": "修改订单信息"}
+{"instruction": "可以用花呗吗？", "input": "", "output": "咨询支付方式"}
+{"instruction": "查物流，ORD20244054", "input": "", "output": "查询物流信息"}
+{"instruction": "查 物流，ORD20258847", "input": "", "output": "查询物流信息"}
+{"instruction": "请问，电话留错了，帮我改一下联系方式", "input": "", "output": "修改收货地址"}
+{"instruction": "麻烦问下，这个尺寸放得进登机箱吗", "input": "", "output": "咨询产品规格"}
+{"instruction": "下错单了， 不用发了，取消吧", "input": "", "output": "取消订单"}
+{"instruction": "退款怎么还没到 账？", "input": "", "output": "退款申请"}
+{"instruction": "快递是 不是丢了？三天没动了", "input": "", "output": "查询物流信息"}
+{"instruction": "这个多重啊？我想算运费", "input": "", "output": "咨询产品规格"}
+{"instruction": "客服，我要搬家了，换个地址寄", "input": "", "output": "修改收货地址"}
+{"instruction": "这个尺寸放得进 登机箱吗", "input": "", "output": "咨询产品规格"}
+{"instruction": "那个，拍错码数了，帮我改成L码", "input": "", "output": "修改订单信息"}
+{"instruction": "支持 微信支付吗？", "input": "", "output": "咨询支付方式"}
+{"instruction": "麻烦问下，能发个物流轨迹给我看吗？", "input": "", "output": "查询物流信息"}
+{"instruction": "那个，帮我看看我的单子确 认了吗", "input": "", "output": "查询订单状态"}
+{"instruction": "Hi，它是220 V电压还是110V？", "input": "", "output": "咨询产品规格"}
+{"instruction": "请问，详细参数发我看一下", "input": "", "output": "咨询产品规格"}
+{"instruction": "用了一次就坏了，什么垃圾质量", "input": "", "output": "投诉商品质量"}
+{"instruction": "那个，手机 号换了，收不到验证码", "input": "", "output": "账号登录问题"}
+{"instruction": "那个，帮我查查包裹走到哪个城 市了", "input": "", "output": "查询物流信息"}
+{"instruction": "请问，帮我查一下 发票开好了没", "input": "", "output": "查询发票信息"}
+{"instruction": "在吗，退款怎么还没到账", "input": "", "output": "退款申请"}
+{"instruction": "那个，大概什么时候能收到？羽绒服", "input": "", "output": "咨询配送时间"}
+{"instruction": "新用户有没有优惠券？", "input": "", "output": "查询优惠券使用"}
+{"instruction": "电动牙刷发货了吗？还是待发货", "input": "", "output": "查询订单状态"}
+{"instruction": "它是220V电压还是110V？", "input": "", "output": "咨询产品规格"}
+{"instruction": "我的乐高积木不工作了，还在保修期内", "input": "", "output": "申请售后保修"}
+{"instruction": "在吗，帮我看看 我的单子确认了吗？", "input": "", "output": "查询订单状态"}
+{"instruction": "优惠券 在哪里输入？", "input": "", "output": "查询优惠券使用"}
+{"instruction": "在吗，订单ORD20259852的发票哪里下载", "input": "", "output": "查询发票信息"}
+{"instruction": "那个，我忘记密码 了，怎么办？", "input": "", "output": "账号登录问题"}
+{"instruction": "下单后多久能送到？", "input": "", "output": "咨询配送时间"}
+{"instruction": "刚才拍错了，直 接退款吧", "input": "", "output": "退款申请"}
+{"instruction": "那个，这个尺寸放得进登机箱吗？", "input": "", "output": "咨询产品规格"}
+{"instruction": "大概什么时候能收到？防晒霜", "input": "", "output": "咨询配送时间"}
+{"instruction": "麻烦问下，刚才拍错了，直接退款吧", "input": "", "output": "退款申请"}
+{"instruction": "亲，我的订单怎么一直卡在正在出库？", "input": "", "output": "查询订单状态"}
+{"instruction": "客服，这是假货吧 ？味道好难闻", "input": "", "output": "投诉商品质量"}
+{"instruction": "那个，东西不要了，把钱退给我", "input": "", "output": "退款申请"}
+{"instruction": "请问，下单后多久能送到？", "input": "", "output": "咨询配送时间"}
+{"instruction": "请问，质量太差了，线头特 别多", "input": "", "output": "投诉商品质量"}
+{"instruction": "补开发票 怎么操作", "input": "", "output": "查询发票信息"}
+{"instruction": "支持微信支付吗？", "input": "", "output": "咨询支付方式"}
+{"instruction": "帮我备注一下：昨天 不要送货", "input": "", "output": "修改订单信息"}
+{"instruction": "请问，帮我备注一下：刚 才不要送货", "input": "", "output": "修改订单信息"}
+{"instruction": "在吗，我的switch不工作了，还在保修期内", "input": "", "output": "申请售后保修"}
+{"instruction": "麻烦问下，收到的洗面奶是坏的！", "input": "", "output": "投诉商品质量"}
+{"instruction": "麻烦问下，我一直提示错误，怎么办", "input": "", "output": "账号登录问题"}
+{"instruction": "请问，这个券过期了吗？", "input": "", "output": "查询优惠券使用"}
+{"instruction": "发错颜 色了，我要换成我要的那个", "input": "", "output": "申请换货"}
+{"instruction": "退款怎么还没到账？", "input": "", "output": "退款申请"}
+{"instruction": "麻烦问下，发货后几天能到北京？", "input": "", "output": "咨询配送时间"}
+{"instruction": "我要申请退款，ORD20252845", "input": "", "output": "退款申请"}
+{"instruction": "订单ORD20241349现在是什么状态", "input": "", "output": "查询订单状态"}
+{"instruction": "我账号被锁了，怎么办", "input": "", "output": "账号登录问题"}
+{"instruction": "它是220V电压还是 110V？", "input": "", "output": "咨询产品规格"}
+{"instruction": "在吗，在哪里申请售后维修", "input": "", "output": "申请售后保修"}
+{"instruction": "为什么这个抵扣券用不了？", "input": "", "output": "查询优惠券使用"}
+{"instruction": "麻烦问下，坏了能修吗？用了半 年了", "input": "", "output": "申请售后保修"}
+{"instruction": "你好，忘了备注礼盒包装，帮我加一下", "input": "", "output": "修改订单信息"}
+{"instruction": "亲，我想用信用卡支付，哪里选？", "input": "", "output": "咨询支付方式"}
+{"instruction": "物 流一直不更新是怎么回事？", "input": "", "output": "查询物流信息"}
+{"instruction": "那个，下错单了，不用发了，取消吧", "input": "", "output": "取消订单"}
+{"instruction": "客服，帮我改一下订单备注", "input": "", "output": "修改订单信息"}
+{"instruction": "请问，我的防晒霜不工作了，还在保修期内", "input": "", "output": "申请售后保修"}
+{"instruction": "Hi，我收不到验证码，怎 么办？", "input": "", "output": "账号登录问题"}
+{"instruction": "大概什么时候能收到？运 动鞋", "input": "", "output": "咨询配送时间"}
+{"instruction": "Hi，满300减30 怎么没扣减？", "input": "", "output": "查询优惠券使用"}
+{"instruction": "请问，我一直提示错误，怎么办？", "input": "", "output": "账号登录问题"}
+{"instruction": "东西有磨损，是不是 二手的？", "input": "", "output": "投诉商品质量"}
+{"instruction": "请问，能发个物流轨迹给我看吗", "input": "", "output": "查询物流信息"}
+{"instruction": "请问，我想用信用卡支付，哪里选？", "input": "", "output": "咨询支付方式"}
+{"instruction": "麻烦问下，地址填错了，能不能改？订单ORD20242659", "input": "", "output": "修改收货地址"}
+{"instruction": "你好，支持开公 司抬头吗？", "input": "", "output": "查询发票信息"}
+{"instruction": "你好，怎么注销账号？", "input": "", "output": "账号登录问题"}
+{"instruction": "亲，我想把黑色的 换成白色的，订单ORD20241699", "input": "", "output": "修改订单信息"}
+{"instruction": "你好，羽绒服发货了吗？还是待发货？", "input": "", "output": "查询订单状态"}
+{"instruction": "在吗，这个多重啊？我想算运费", "input": "", "output": "咨询产品规格"}
+{"instruction": "客服，详细参数 发我看一下", "input": "", "output": "咨询产品规格"}
+{"instruction": "能发个物流轨迹给我看吗", "input": "", "output": "查询物流信息"}
+{"instruction": "地址填错了，能不能改？订单ORD20259574", "input": "", "output": "修改收货地址"}
+{"instruction": "麻烦问下，发票什么时候寄出来？", "input": "", "output": "查询发票信息"}
+{"instruction": "换货流程是怎么样的？", "input": "", "output": "申请换货"}
+{"instruction": "在吗，东西有磨损，是不是二手的？", "input": "", "output": "投诉商品质量"}
+{"instruction": "客服，坏了能修吗？用了半年了", "input": "", "output": "申请售后保修"}
+{"instruction": "你好，iPhone 15发货了吗？还是待发货？", "input": "", "output": "查询订单状态"}
+{"instruction": "客服，详细参数发我看一下", "input": "", "output": "咨询产品规格"}
+{"instruction": "衣服有点紧，能换货吗？", "input": "", "output": "申请换货"}
+{"instruction": "麻烦问下，我的那个衣服不工作了，还在保修期内", "input": "", "output": "申请售后保修"}
+{"instruction": "请问，账号显 示异常，登不上", "input": "", "output": "账号登录问题"}
+{"instruction": "Hi，查物流，ORD20248318", "input": "", "output": "查询物流信息"}
+{"instruction": "查一下订单状态，单 号ORD20255389", "input": "", "output": "查询订单状态"}
+{"instruction": "下 单后多久能送到", "input": "", "output": "咨询配送时间"}
+{"instruction": "客服，东西有磨损，是不是 二手的？", "input": "", "output": "投诉商品质量"}
+{"instruction": "麻烦问下，大概什么时候能收到？扫地机", "input": "", "output": "咨询配送时间"}
+{"instruction": "你好，电话留错了，帮我改一下联系方式", "input": "", "output": "修改收货地址"}
+{"instruction": "我要申请退款，ORD202 48964", "input": "", "output": "退款申请"}
+{"instruction": "麻烦问下，这个多重啊？我想算运费", "input": "", "output": "咨询产品规格"}
+{"instruction": "Hi，查一下订单状态，单号ORD20258367", "input": "", "output": "查询订单状态"}
+{"instruction": "客服，这款iPhone 15的 具体材质是多少？", "input": "", "output": "咨询产品规格"}
+{"instruction": "支持支付宝吗", "input": "", "output": "咨询支付方式"}
+{"instruction": "这款猫粮的具体成分是多少？", "input": "", "output": "咨询产品规格"}
+{"instruction": "满30 0减30怎么没扣减？", "input": "", "output": "查询优惠券使用"}
+{"instruction": "客服，提供上门维修服 务吗？", "input": "", "output": "申请售后保修"}
+{"instruction": "Hi，刚才拍错了，直接 退款吧", "input": "", "output": "退款申请"}
+{"instruction": "麻烦问下，这是假货吧？味道 好难闻", "input": "", "output": "投诉商品质量"}
+{"instruction": "最快什么时候 到？急用", "input": "", "output": "咨询配送时间"}
+{"instruction": "能 开抬头吗？", "input": "", "output": "查询发票信息"}
+{"instruction": "你好，寄到老家去，不是默认地址，帮我改", "input": "", "output": "修改收货地址"}
+{"instruction": "麻烦问下，拍错码数了，帮我改成 L码", "input": "", "output": "修改订单信息"}
+{"instruction": "客服，我不买了，请把订单取消掉", "input": "", "output": "取消订单"}
+{"instruction": "Hi，这是假货吧？味道好难闻", "input": "", "output": "投诉商品质量"}
+{"instruction": "我要投诉商品质量问题，订 单ORD20255769", "input": "", "output": "投诉商品质量"}
+{"instruction": "麻烦问下，帮我查查包裹走到哪个城市了", "input": "", "output": "查询物流信息"}
+{"instruction": "客服，在哪里点退款？我找不到按钮", "input": "", "output": "退款申请"}
+{"instruction": "我的洗面奶不工作了，还在保修期内", "input": "", "output": "申请售后保修"}
+{"instruction": "请问，春节期间正 常发货配送吗？", "input": "", "output": "咨询配送时间"}
+{"instruction": "那个，新用户有没有优惠券？", "input": "", "output": "查询优惠券使用"}
+{"instruction": "你好，发货后几天能到北京？", "input": "", "output": "咨询配送时间"}
+{"instruction": "Hi，下单后多久能送到", "input": "", "output": "咨询配送时间"}
+{"instruction": "这个东西保 修期是多久", "input": "", "output": "申请售后保修"}
+{"instruction": "请问，我忘记密码了，怎么办？", "input": "", "output": "账号登录问题"}
+{"instruction": "亲，我要申请退款，ORD20259161", "input": "", "output": "退款申请"}
+{"instruction": "下单后多久能 送到？", "input": "", "output": "咨询配送时间"}
+{"instruction": "亲，支持开公司抬头吗？", "input": "", "output": "查询发票信息"}
+{"instruction": "订单ORD20242761的发 票哪里下载", "input": "", "output": "查询发票信息"}
+{"instruction": "在吗，这是假货吧？味道好难闻", "input": "", "output": "投诉商品质量"}
+{"instruction": "亲，怎么注销账号？", "input": "", "output": "账号登录问题"}
+{"instruction": "Hi，发货前帮我改个地址：北京市xxx", "input": "", "output": "修改收货地址"}
+{"instruction": "请问，发货前帮我改个地址：北京市xxx", "input": "", "output": "修改收货地址"}
+{"instruction": "亲，这是假货吧？味道好难闻", "input": "", "output": "投诉商品质量"}
+{"instruction": "退款怎么还没到账", "input": "", "output": "退款申请"}
+{"instruction": "帮我 把收货地址改成公司", "input": "", "output": "修改收货地址"}
+{"instruction": "麻烦把刚才那一单作废", "input": "", "output": "取消订单"}
+{"instruction": "可 以用花呗吗？", "input": "", "output": "咨询支付方式"}
+{"instruction": "帮我看看我的单子确认了吗", "input": "", "output": "查询订单状态"}
+{"instruction": "麻烦问下，周末送货吗", "input": "", "output": "咨询配送时间"}
+{"instruction": "怎么注销账号？", "input": "", "output": "账号登录问题"}
+{"instruction": "订单ORD20250884的发票哪里下载？", "input": "", "output": "查询发票信息"}
+{"instruction": "客服，用了一次就坏了，什么垃圾质量", "input": "", "output": "投诉商品质量"}
+{"instruction": "满300减30怎么没扣减", "input": "", "output": "查询优惠券使用"}
+{"instruction": "Hi，尺码不合适，我想换个大一号的", "input": "", "output": "申请换货"}
+{"instruction": "那个，补开发票怎么操作？", "input": "", "output": "查询发票信息"}
+{"instruction": "地址填错了，能不能改？订单ORD20243212", "input": "", "output": "修改收货地址"}
+{"instruction": "怎么修改登录密码", "input": "", "output": "账号登录问题"}
+{"instruction": "忘记用户名了 ，怎么找回？", "input": "", "output": "账号登录问题"}
+{"instruction": "请问，账号显示异常，登不上", "input": "", "output": "账号登录问题"}
+{"instruction": "请问，春节期间正常发货配送吗", "input": "", "output": "咨询配送时间"}
+{"instruction": "那个，我要 申请换货，不退款", "input": "", "output": "申请换货"}
+{"instruction": "客服，手机号换了，收不到验证码", "input": "", "output": "账号登录问题"}
+{"instruction": "客服，它是220V电压还是110V", "input": "", "output": "咨询产品规格"}
+{"instruction": "优惠 券在哪里输入？", "input": "", "output": "查询优惠券使用"}
+{"instruction": "麻烦问下，为什么这个优惠券用不了？", "input": "", "output": "查询优惠券使用"}
+{"instruction": "请问，物流一直不更新是怎么回事", "input": "", "output": "查询物流信息"}
+{"instruction": "我不买了，请把 订单取消掉", "input": "", "output": "取消订单"}
+{"instruction": "麻烦问下，为什么这个新人红包用不了？", "input": "", "output": "查询优惠券使用"}
+{"instruction": "我的订单怎么一直卡在正在出库？", "input": "", "output": "查询订单状态"}
+{"instruction": "支持支付宝吗？", "input": "", "output": "咨询支付方式"}
+{"instruction": "亲，我收不到验证码，怎么办", "input": "", "output": "账号登录问题"}
+{"instruction": "那个，帮我备注一下：今天不要送货", "input": "", "output": "修改订单信息"}
+{"instruction": "你好，能开纸质发票吗？", "input": "", "output": "查询发票信息"}
+{"instruction": "Hi，下单后多久能送到？", "input": "", "output": "咨询配送时间"}
+{"instruction": "麻烦问下，寄到老家去，不是默认地址，帮我改", "input": "", "output": "修改收货地址"}
+{"instruction": "衣服 有点紧，能换货吗", "input": "", "output": "申请换货"}
+{"instruction": "亲，支持分期吗", "input": "", "output": "咨询支付方式"}
+{"instruction": "这款洗面奶的具体保质期是多少？", "input": "", "output": "咨询产品规格"}
+{"instruction": "帮我取消订单ORD20240047", "input": "", "output": "取消订单"}
+{"instruction": "请问，东西有磨损，是不是二手的？", "input": "", "output": "投诉商品质量"}
+{"instruction": "我要投诉商品质量问题，订单ORD20257042", "input": "", "output": "投诉商品质量"}
+{"instruction": "你好，我想把黑色的换成白色的，订单ORD20248393", "input": "", "output": "修改订单信息"}
+{"instruction": "支持货到付款吗", "input": "", "output": "咨询支付方式"}
+{"instruction": "我想把黑色的换成白色的，订单ORD20255033", "input": "", "output": "修改订单信息"}
+{"instruction": "在吗，我的快递到哪了？ORD20244649", "input": "", "output": "查询物流信息"}
+{"instruction": "Hi，我的switch不工作了，还在保修期内", "input": "", "output": "申请售后保修"}
+{"instruction": "麻烦问下，满300减30怎么没扣 减？", "input": "", "output": "查询优惠券使用"}
+{"instruction": "那个，衣服有点紧，能换货吗？", "input": "", "output": "申请换货"}
+{"instruction": "亲，质 量太差了，线头特别多", "input": "", "output": "投诉商品质量"}
+{"instruction": "亲，快递是不是丢了？三天没 动了", "input": "", "output": "查询物流信息"}
+{"instruction": "麻烦问下，我的快递到哪了？OR D20257052", "input": "", "output": "查询物流信息"}
+{"instruction": "那个，详细参数发我看一下", "input": "", "output": "咨询产品规格"}
+{"instruction": "东西 不要了，把钱退给我", "input": "", "output": "退款申请"}
+{"instruction": "Hi，下错单了，不用发了，取消吧", "input": "", "output": "取消订单"}
+{"instruction": "那个，提供上门维修服务吗", "input": "", "output": "申请售后保修"}
+{"instruction": "请问，帮我查一下发票开好了没", "input": "", "output": "查询发票信息"}
+{"instruction": "亲，查一下订单状态，单号ORD20257128", "input": "", "output": "查询订单状态"}
+{"instruction": "怎么注 销账号？", "input": "", "output": "账号登录问题"}
+{"instruction": "亲，发票什么时候寄出来？", "input": "", "output": "查询发票信息"}
+{"instruction": "Hi，换货流程是怎么样的？", "input": "", "output": "申请换货"}
+{"instruction": "亲，可以用花呗吗", "input": "", "output": "咨询支付方式"}
+{"instruction": "还没发货 吧？帮我拦截取消", "input": "", "output": "取消订单"}
+{"instruction": "客服，在哪里 申请售后维修？", "input": "", "output": "申请售后保修"}
+{"instruction": "发错颜色了，我 要换成我要的那个", "input": "", "output": "申请换货"}
+{"instruction": "收到的switch是坏的", "input": "", "output": "投诉商品质量"}
+{"instruction": "麻烦问下，这是假货吧？味道好难闻", "input": "", "output": "投诉商品质量"}
+{"instruction": "收到的洗面奶是坏的", "input": "", "output": "投诉商品质量"}
+{"instruction": "你好，详细参数发我看一下", "input": "", "output": "咨询产品规格"}
+{"instruction": "Hi，衣服有点紧，能换货吗", "input": "", "output": "申请换货"}
+{"instruction": "你好，东西有 磨损，是不是二手的？", "input": "", "output": "投诉商品质量"}
+{"instruction": "能开纸质发票吗", "input": "", "output": "查询发票信息"}
+{"instruction": "Hi，提供上门维修服务吗？", "input": "", "output": "申请售后保修"}
+{"instruction": "请问，我要申请退款，ORD20247474", "input": "", "output": "退款申请"}
+{"instruction": "客服，帮我操作一下全额退款", "input": "", "output": "退款申请"}
+{"instruction": "那个，手机号换了，收不到验证码", "input": "", "output": "账号登录问题"}
+{"instruction": "客服，我要申请换货，不退款", "input": "", "output": "申请换货"}
+{"instruction": "那个，电话留错了，帮我改一下联系方式", "input": "", "output": "修改收货地址"}
+{"instruction": "请问，用了一次就坏了，什么垃圾质量", "input": "", "output": "投诉商品质量"}
+{"instruction": "Hi，我要申请退款，ORD202 44475", "input": "", "output": "退款申请"}
+{"instruction": "请问，这个尺寸放得 进登机箱吗？", "input": "", "output": "咨询产品规格"}
+{"instruction": "能开纸质发票吗？", "input": "", "output": "查询发票信息"}
+{"instruction": "在吗，地址填错了，能不能改？订单ORD20250822", "input": "", "output": "修改收货地址"}
+{"instruction": "亲，我账号被锁了，怎么办？", "input": "", "output": "账号登录问题"}
+{"instruction": "补开发票怎么操 作？", "input": "", "output": "查询发票信息"}
+{"instruction": "请问，发货前帮我改个地址：北京 市xxx", "input": "", "output": "修改收货地址"}
+{"instruction": "客服，帮我查一下发票开好了没", "input": "", "output": "查询发票信息"}
+{"instruction": "亲，能开普票 吗？", "input": "", "output": "查询发票信息"}
+{"instruction": "提供上门维修服务吗", "input": "", "output": "申请售后保修"}
+{"instruction": "Hi，查物流，ORD20 242789", "input": "", "output": "查询物流信息"}
+{"instruction": "Hi，衣服的面料是纯棉的吗", "input": "", "output": "咨询产品规格"}
+{"instruction": "我的 订单怎么一直卡在正在出库", "input": "", "output": "查询订单状态"}
+{"instruction": "客服，坏 了能修吗？用了半年了", "input": "", "output": "申请售后保修"}
+{"instruction": "订单ORD20245179的发票哪里下载？", "input": "", "output": "查询发票信息"}
+{"instruction": "请问，查一下订单状态，单号ORD20258606", "input": "", "output": "查询订单状态"}
+{"instruction": "麻烦问下，申请质保，机器故障", "input": "", "output": "申请售后保修"}
+{"instruction": "订单ORD202 45900的发票哪里下载？", "input": "", "output": "查询发票信息"}
+{"instruction": "客服，尺码不合适，我想换个大一号的", "input": "", "output": "申请换货"}
+{"instruction": "收到的iPhone 15是坏的！", "input": "", "output": "投诉商品质量"}
+{"instruction": "大概什么时候能收到？洗 面奶", "input": "", "output": "咨询配送时间"}
+{"instruction": "我要投诉商品质量问题，订单ORD20249209", "input": "", "output": "投诉商品质量"}
+{"instruction": "Hi，我不买了，请把订单取消掉", "input": "", "output": "取消订单"}
+{"instruction": "你好，我要申请换货，不退款", "input": "", "output": "申请换货"}
+{"instruction": "这款iPhone 15的具体衣长是多少？", "input": "", "output": "咨询产品规格"}
+{"instruction": "大概什么 时候能收到？空气炸锅", "input": "", "output": "咨询配送时间"}
+{"instruction": "那个，质量太差了，线头特别多", "input": "", "output": "投诉商品质量"}
+{"instruction": "发货后几天能到北京", "input": "", "output": "咨询配送时间"}
+{"instruction": "支持开 公司抬头吗？", "input": "", "output": "查询发票信息"}
+{"instruction": "请问，春节期间正常发货配送吗？", "input": "", "output": "咨询配送时间"}
+{"instruction": "Hi，补 开发票怎么操作？", "input": "", "output": "查询发票信息"}
+{"instruction": "那个，提供上门维修服务吗？", "input": "", "output": "申请售后保修"}
+{"instruction": "Hi，地址填错了，能不能改？订单ORD20257627", "input": "", "output": "修改收货地址"}
+{"instruction": "那个，收到的空气炸锅是坏的", "input": "", "output": "投诉商品质量"}
+{"instruction": "在吗，还没发货吧？帮我拦截取消", "input": "", "output": "取消订单"}
+{"instruction": "退款怎么还没 到账", "input": "", "output": "退款申请"}
+{"instruction": "Hi，周末 送货吗？", "input": "", "output": "咨询配送时间"}
+{"instruction": "取消交 易，快点", "input": "", "output": "取消订单"}
+{"instruction": "客服，这个尺寸放得进登机箱吗", "input": "", "output": "咨询产品规格"}
+{"instruction": "我的电动牙刷不工作了，还在保修期内", "input": "", "output": "申请售后保修"}
+{"instruction": "Hi，帮我查一下发票开好了没", "input": "", "output": "查询发票信息"}
+{"instruction": "麻烦问下，质量太差了，线头特别多", "input": "", "output": "投诉商品质量"}
+{"instruction": "支持 货到付款吗？", "input": "", "output": "咨询支付方式"}
+{"instruction": "空气炸锅发货了吗？还是待发货", "input": "", "output": "查询订单状态"}
+{"instruction": "那个，申请质保，机器故障", "input": "", "output": "申请售后保修"}
+{"instruction": "你好，羽绒服发货了吗？还是待发货", "input": "", "output": "查询订单状态"}
+{"instruction": "地址填错了，能不能改？订单ORD20242337", "input": "", "output": "修改收货地址"}
+{"instruction": "在吗，发票什么时候寄出来？", "input": "", "output": "查询发票信息"}
+{"instruction": "那个，东西不 要了，把钱退给我", "input": "", "output": "退款申请"}
+{"instruction": "你好，我想把黑色的换成白色的，订单ORD20246578", "input": "", "output": "修改订单信息"}
+{"instruction": "亲，订单ORD20254827现在是什么状态？", "input": "", "output": "查询订单状态"}
+{"instruction": "客服，支持开公 司抬头吗？", "input": "", "output": "查询发票信息"}
+{"instruction": "在吗，我的空气炸锅不工作了，还在保修期内", "input": "", "output": "申请售后保修"}
+{"instruction": "帮我备注一下：昨天不要送货", "input": "", "output": "修改订单信息"}
+{"instruction": "我想 把黑色的换成白色的，订单ORD20255234", "input": "", "output": "修改订单信息"}
+{"instruction": "我想把黑色的换成白色的，订单ORD20254680", "input": "", "output": "修改订单信息"}
+{"instruction": "手机 号换了，收不到验证码", "input": "", "output": "账号登录问题"}
+{"instruction": "这款猫粮的具体尺寸是多少？", "input": "", "output": "咨询产品规格"}
+{"instruction": "我要申请换货，不 退款", "input": "", "output": "申请换货"}
+{"instruction": "查一下订单状态，单号ORD20255238", "input": "", "output": "查询订单状态"}
+{"instruction": "那个，支持开公 司抬头吗？", "input": "", "output": "查询发票信息"}
+{"instruction": "客服，我不买 了，请把订单取消掉", "input": "", "output": "取消订单"}
+{"instruction": "那个，订单ORD20242663的发票哪里下载", "input": "", "output": "查询发票信息"}
+{"instruction": "收到的蓝牙耳机是坏的！", "input": "", "output": "投诉商品质量"}
+{"instruction": "地址填错了，能不能改？订单ORD20241606", "input": "", "output": "修改收货地址"}
+{"instruction": "我要投诉商品质量问题，订单ORD20251787", "input": "", "output": "投诉商品质量"}
+{"instruction": "在吗，春节期间正常发货配送吗？", "input": "", "output": "咨询配送时间"}
+{"instruction": "客服，怎么注销账号？", "input": "", "output": "账号登录问题"}
+{"instruction": "麻烦问下，衣服有点紧，能换货吗？", "input": "", "output": "申请换货"}
+{"instruction": "客服，它是220V电压还是110V？", "input": "", "output": "咨询产品规格"}
+{"instruction": "你好，我想把黑色的换成白色的，订单ORD20244810", "input": "", "output": "修改订单信息"}
+{"instruction": "能不 能分期付款", "input": "", "output": "咨询支付方式"}
+{"instruction": "那个，换货流程是怎么样的？", "input": "", "output": "申请换货"}
+{"instruction": "满300 减30怎么没扣减", "input": "", "output": "查询优惠券使用"}
+{"instruction": "在吗，发货后几天能到北京？", "input": "", "output": "咨询配送时间"}
+{"instruction": "物流一 直不更新是怎么回事？", "input": "", "output": "查询物流信息"}
+{"instruction": "Hi，物流一直不更新是怎么回事？", "input": "", "output": "查询物流信息"}
+{"instruction": "麻烦问下，在哪里申请售后维修？", "input": "", "output": "申请售后保修"}
+{"instruction": "客服，帮我取消订单ORD20244199", "input": "", "output": "取消订单"}
+{"instruction": "Hi，帮我查查包裹走到哪个城市了", "input": "", "output": "查询物流信息"}
+{"instruction": "请问，发货后几天能到北京？", "input": "", "output": "咨询配送时间"}
+{"instruction": "那个，快递是不是丢了？三天没动了", "input": "", "output": "查询物流信息"}
+{"instruction": "这款乐高积木的具体尺寸是多少", "input": "", "output": "咨询产品规格"}
+{"instruction": "亲，补开发票 怎么操作？", "input": "", "output": "查询发票信息"}
+{"instruction": "在吗，我要申请退款，OR D20254560", "input": "", "output": "退款申请"}
+{"instruction": "亲，帮我改一下订单备注", "input": "", "output": "修改订单信息"}
+{"instruction": "你好，能开抬头吗？", "input": "", "output": "查询发票信息"}
+{"instruction": "在吗，取消交易，快点", "input": "", "output": "取消订单"}
+{"instruction": "在哪 里申请售后维修？", "input": "", "output": "申请售后保修"}
+{"instruction": "在吗，这款iPhone 15的具体保质期是多少", "input": "", "output": "咨询产品规格"}
+{"instruction": "我忘记密码 了，怎么办？", "input": "", "output": "账号登录问题"}
+{"instruction": "你好，帮我备注一下：大半夜不要送货", "input": "", "output": "修改订单信息"}
+{"instruction": "帮我取消订单ORD20249077", "input": "", "output": "取消订单"}
+{"instruction": "帮我取消订单ORD20252390", "input": "", "output": "取消订单"}
+{"instruction": "这个券过期了吗", "input": "", "output": "查询优惠券使用"}
+{"instruction": "亲，怎么支付失败了？我用的微信", "input": "", "output": "咨询支付方式"}
+{"instruction": "你好，刚才拍错了，直接退款吧", "input": "", "output": "退款申请"}
+{"instruction": "那个，大概什么时候能收到？扫地机", "input": "", "output": "咨询配送时间"}
+{"instruction": "衣服有点 紧，能换货吗？", "input": "", "output": "申请换货"}
+{"instruction": "请问，周末送货吗", "input": "", "output": "咨询配送时间"}
+{"instruction": "那个，我要申请退款，ORD20250533", "input": "", "output": "退款申请"}
+{"instruction": "在吗，这款运动鞋的具 体材质是多少？", "input": "", "output": "咨询产品规格"}
+{"instruction": "这个多 重啊？我想算运费", "input": "", "output": "咨询产品规格"}
+{"instruction": "帮我取消订单ORD20253957", "input": "", "output": "取消订单"}
+{"instruction": "大概什么时候能收到？运动鞋", "input": "", "output": "咨询配送时间"}
+{"instruction": "优惠券在哪里输入", "input": "", "output": "查询优惠券使用"}
+{"instruction": "亲，支持货到付款吗？", "input": "", "output": "咨询支付方式"}
+{"instruction": "亲，大概什么时候能收到？洗面奶", "input": "", "output": "咨询配送时间"}
+{"instruction": "请问，电 动牙刷发货了吗？还是待发货", "input": "", "output": "查询订单状态"}
+{"instruction": "在哪里申请售后维修", "input": "", "output": "申请售后保修"}
+{"instruction": "麻烦问下，我要投诉商品质量问题，订单ORD20256540", "input": "", "output": "投诉商品质量"}
+{"instruction": "麻烦问下，防晒霜发货了吗？还是待发货？", "input": "", "output": "查询订单状态"}
+{"instruction": "空 气炸锅发货了吗？还是待发货", "input": "", "output": "查询订单状态"}
+{"instruction": "两个红包 能叠加使用吗？", "input": "", "output": "查询优惠券使用"}
+{"instruction": "你好，还没发货吧？帮我拦截取消", "input": "", "output": "取消订单"}
+{"instruction": "亲，可以用花呗吗？", "input": "", "output": "咨询支付方式"}
+{"instruction": "你好，尺码不合适，我想换个大一号的", "input": "", "output": "申请换货"}
+{"instruction": "订单ORD20256650的发票哪里下载？", "input": "", "output": "查询发票信息"}
+{"instruction": "客服，查一下订单状态，单号ORD20253597", "input": "", "output": "查询订单状态"}
+{"instruction": "订单ORD20241001的发票哪里下载？", "input": "", "output": "查询发票信息"}
+{"instruction": "Hi，取消交易，快点", "input": "", "output": "取消订单"}
+{"instruction": "你好，能发个物流轨迹给我看吗？", "input": "", "output": "查询物流信息"}
+{"instruction": "亲，新用户有没有优惠券？", "input": "", "output": "查询优惠券使用"}
+{"instruction": "亲，最快什么时候到 ？急用", "input": "", "output": "咨询配送时间"}
+{"instruction": "麻烦问下，支持白条吗", "input": "", "output": "咨询支付方式"}
+{"instruction": "我的switch不工作了，还在保修期内", "input": "", "output": "申请售后保修"}
+{"instruction": "帮我备注一下：上周不要送货", "input": "", "output": "修改订单信息"}
+{"instruction": "你好，忘记用户名了，怎么找回？", "input": "", "output": "账号登录问题"}
+{"instruction": "Hi，退款怎么还没到账？", "input": "", "output": "退款申请"}
+{"instruction": "请问，最快什么时 候到？急用", "input": "", "output": "咨询配送时间"}
+{"instruction": "请问，支持开公 司抬头吗？", "input": "", "output": "查询发票信息"}
+{"instruction": "我要投诉商品质量问题，订单ORD20241320", "input": "", "output": "投诉商品质量"}
+{"instruction": "鞋子小了，换个4 2码的", "input": "", "output": "申请换货"}
+{"instruction": "Hi，我账 号被锁了，怎么办？", "input": "", "output": "账号登录问题"}
+{"instruction": "客服，取消交易，快点", "input": "", "output": "取消订单"}
+{"instruction": "麻烦问下，这个券过期了吗？", "input": "", "output": "查询优惠券使用"}
+{"instruction": "客服，我账号被锁了，怎么办？", "input": "", "output": "账号登录问题"}
+{"instruction": "羽绒服发货了吗？还是待发货？", "input": "", "output": "查询订单状态"}
+{"instruction": "客服，麻烦把刚才那一单作废", "input": "", "output": "取消订单"}
+{"instruction": "支持白条吗？", "input": "", "output": "咨询支付方式"}
+{"instruction": "我要申 请换货，不退款", "input": "", "output": "申请换货"}
+{"instruction": "帮我把收货地址改成公司", "input": "", "output": "修改收货地址"}
+{"instruction": "请问，申 请质保，机器故障", "input": "", "output": "申请售后保修"}
+{"instruction": "亲，支持微信支付吗？", "input": "", "output": "咨询支付方式"}
+{"instruction": "你好，东西有磨损，是不是二手的？", "input": "", "output": "投诉商品质量"}
+{"instruction": "在吗，发货前帮我改个地址：北京市xxx", "input": "", "output": "修改收货地址"}
+{"instruction": "亲，东西有磨损，是不是二手的", "input": "", "output": "投诉商品质量"}
+{"instruction": "那个，大概什么时候 能收到？猫粮", "input": "", "output": "咨询配送时间"}
+{"instruction": "请问，地址填错了，能不能改？订单ORD20248497", "input": "", "output": "修改收货地址"}
+{"instruction": "请问，这是假货吧？味道好难闻", "input": "", "output": "投诉商品质量"}
+{"instruction": "请问，能开纸质发票吗？", "input": "", "output": "查询发票信息"}
+{"instruction": "麻烦问下，这个 券过期了吗？", "input": "", "output": "查询优惠券使用"}
+{"instruction": "客服，最快什么时候到？急用", "input": "", "output": "咨询配送时间"}
+{"instruction": "麻烦问下，周末送 货吗？", "input": "", "output": "咨询配送时间"}
+{"instruction": "那个，发错颜色了，我要换成我要的那个", "input": "", "output": "申请换货"}
+{"instruction": "亲，发货前帮我改个地 址：北京市xxx", "input": "", "output": "修改收货地址"}
+{"instruction": "发票什么时候寄 出来？", "input": "", "output": "查询发票信息"}
+{"instruction": "客服，订单ORD20240507现在是什么状态？", "input": "", "output": "查询订单状态"}
+{"instruction": "帮我取消订单ORD20244785", "input": "", "output": "取消订单"}
+{"instruction": "发票什 么时候寄出来", "input": "", "output": "查询发票信息"}
+{"instruction": "麻烦问下，忘记用户名了，怎么找回", "input": "", "output": "账号登录问题"}
+{"instruction": "订单ORD20252807现在是什么状态", "input": "", "output": "查询订单状态"}
+{"instruction": "Hi，东西有磨损，是不是二手的？", "input": "", "output": "投诉商品质量"}
+{"instruction": "那个，帮我备注一下：昨天不要 送货", "input": "", "output": "修改订单信息"}
+{"instruction": "客服，东西不要了，把钱退给我", "input": "", "output": "退款申请"}
+{"instruction": "我想把黑色 的换成白色的，订单ORD20253081", "input": "", "output": "修改订单信息"}
+{"instruction": "在吗，支持信用卡 吗？", "input": "", "output": "咨询支付方式"}
+{"instruction": "麻烦问下，订单ORD20248301的发票哪里下载？", "input": "", "output": "查询发票信息"}
+{"instruction": "亲，发错颜色了，我要换成我要的那个", "input": "", "output": "申请换货"}
+{"instruction": "麻烦问下，怎么注销账号？", "input": "", "output": "账号登录问题"}
+{"instruction": "亲，坏了能修 吗？用了半年了", "input": "", "output": "申请售后保修"}
+{"instruction": "这个多重啊？我 想算运费", "input": "", "output": "咨询产品规格"}
+{"instruction": "能开抬头吗？", "input": "", "output": "查询发票信息"}
+{"instruction": "亲，周末送货吗？", "input": "", "output": "咨询配送时间"}
+{"instruction": "这个尺寸放得 进登机箱吗", "input": "", "output": "咨询产品规格"}
+{"instruction": "在吗，它是220V电压还是110V", "input": "", "output": "咨询产品规格"}
+{"instruction": "请问，在哪里申请售后维修？", "input": "", "output": "申请售后保修"}
+{"instruction": "你好，发货前帮我改个地址：北京市xxx", "input": "", "output": "修改收货地址"}
+{"instruction": "怎 么注销账号？", "input": "", "output": "账号登录问题"}
+{"instruction": "请问，大概什么时候能收到？投影仪", "input": "", "output": "咨询配送时间"}
+{"instruction": "能不 能分期付款？", "input": "", "output": "咨询支付方式"}
+{"instruction": "Hi，大概什么时 候能收到？羽绒服", "input": "", "output": "咨询配送时间"}
+{"instruction": "我的快递到哪了？ORD20249174", "input": "", "output": "查询物流信息"}
+{"instruction": "亲，收到的电动牙刷是坏的", "input": "", "output": "投诉商品质量"}
+{"instruction": "Hi，鞋子小了，换个42码的", "input": "", "output": "申请换货"}
+{"instruction": "客服，为什么订单显示已完成但我没收到？", "input": "", "output": "查询订单状态"}
+{"instruction": "亲，帮我把收货地址改成公司", "input": "", "output": "修改收货地址"}
+{"instruction": "请问，满300减30怎么没扣减", "input": "", "output": "查询优惠券使用"}
+{"instruction": "收到 的蓝牙耳机是坏的", "input": "", "output": "投诉商品质量"}
+{"instruction": "Hi，麻烦把 刚才那一单作废", "input": "", "output": "取消订单"}
+{"instruction": "你好，这个券过期了吗", "input": "", "output": "查询优惠券使用"}
+{"instruction": "我的快递到哪了？ORD20246 722", "input": "", "output": "查询物流信息"}
+{"instruction": "亲，我一直提示错误，怎么办", "input": "", "output": "账号登录问题"}
+{"instruction": "客服，申请质保，机器故障", "input": "", "output": "申请售后保修"}
+{"instruction": "在吗，能不能把两个订单合并一起发？", "input": "", "output": "修改订单信息"}
+{"instruction": "麻烦问下，最快什么时候到？急用", "input": "", "output": "咨询配送时间"}
+{"instruction": "忘记用户名了，怎么找回", "input": "", "output": "账号登录问题"}
+{"instruction": "在吗，能不能把两个订单合并一 起发", "input": "", "output": "修改订单信息"}
+{"instruction": "麻烦问下，下错单了，不用发了，取消吧", "input": "", "output": "取消订单"}
+{"instruction": "忘记用户名了，怎么 找回？", "input": "", "output": "账号登录问题"}
+{"instruction": "在吗，订单ORD20255198现在是什么状态？", "input": "", "output": "查询订单状态"}
+{"instruction": "Hi，支 持开公司抬头吗", "input": "", "output": "查询发票信息"}
+{"instruction": "亲，这个尺寸放得进登机 箱吗", "input": "", "output": "咨询产品规格"}
+{"instruction": "亲，刚才拍错了，直接退款吧", "input": "", "output": "退款申请"}
+{"instruction": "麻烦问下，补开发票怎么操作？", "input": "", "output": "查询发票信息"}
+{"instruction": "亲，下错单了，不用发了，取消吧", "input": "", "output": "取消订单"}
+{"instruction": "在吗，衣服的面料是纯 棉的吗", "input": "", "output": "咨询产品规格"}
+{"instruction": "Hi，鞋子小了，换个 42码的", "input": "", "output": "申请换货"}
+{"instruction": "客服，支持分 期吗？", "input": "", "output": "咨询支付方式"}
+{"instruction": "Hi，我的快递到哪了？ORD20258481", "input": "", "output": "查询物流信息"}
+{"instruction": "那个，我要投诉商品质量问题，订单ORD20257408", "input": "", "output": "投诉商品质量"}
+{"instruction": "你好，提供上门 维修服务吗？", "input": "", "output": "申请售后保修"}
+{"instruction": "订单ORD202532 46的发票哪里下载？", "input": "", "output": "查询发票信息"}
+{"instruction": "麻烦问下，支持支付宝吗？", "input": "", "output": "咨询支付方式"}
+{"instruction": "那个，坏了能修吗？用了 半年了", "input": "", "output": "申请售后保修"}
+{"instruction": "客服，鞋子小了，换个42 码的", "input": "", "output": "申请换货"}
+{"instruction": "那个，支持白条吗", "input": "", "output": "咨询支付方式"}
+{"instruction": "这是假货吧？味道好 难闻", "input": "", "output": "投诉商品质量"}
+{"instruction": "客服，地址填错了，能不能改？订单ORD20255460", "input": "", "output": "修改收货地址"}
+{"instruction": "麻烦问下，我登不上去了， 怎么办？", "input": "", "output": "账号登录问题"}
+{"instruction": "大概什么时候能收到？电动牙刷", "input": "", "output": "咨询配送时间"}
+{"instruction": "我的快递到哪了？ORD20255194", "input": "", "output": "查询物流信息"}
+{"instruction": "我的快递到哪了？ORD20255239", "input": "", "output": "查询物流信息"}
+{"instruction": "客服，扫地机发货了吗？还是待发货？", "input": "", "output": "查询订单状态"}
+{"instruction": "亲，快递 是不是丢了？三天没动了", "input": "", "output": "查询物流信息"}
+{"instruction": "请问，我要申请退款，ORD20242712", "input": "", "output": "退款申请"}
+{"instruction": "那个，尺码不合适，我想换个大一号的", "input": "", "output": "申请换货"}
+{"instruction": "麻烦问下，我一直提示错误，怎么办？", "input": "", "output": "账号登录问题"}
+{"instruction": "订单ORD20251572现在是什么状态", "input": "", "output": "查询订单状态"}
+{"instruction": "帮我备注一下：前天不要送货", "input": "", "output": "修改订单信息"}
+{"instruction": "大概什么时候能收到？羽绒服", "input": "", "output": "咨询配送时间"}
+{"instruction": "在吗，用了一次就坏了，什么垃圾质量", "input": "", "output": "投诉商品质量"}
+{"instruction": "我要投诉商品质量问题，订单ORD20245749", "input": "", "output": "投诉商品质量"}
+{"instruction": "我要投诉商品质 量问题，订单ORD20242816", "input": "", "output": "投诉商品质量"}
+{"instruction": "订单ORD20257064现在是什么状态", "input": "", "output": "查询订单状态"}
+{"instruction": "客服，帮我取消订单ORD20250358", "input": "", "output": "取消订单"}
+{"instruction": "坏了 能修吗？用了半年了", "input": "", "output": "申请售后保修"}
+{"instruction": "在吗，运动鞋发货了吗？还是待发货？", "input": "", "output": "查询订单状态"}
+{"instruction": "亲，换货流程是 怎么样的？", "input": "", "output": "申请换货"}
+{"instruction": "在吗，发货后几天能到北京", "input": "", "output": "咨询配送时间"}
+{"instruction": "我要 搬家了，换个地址寄", "input": "", "output": "修改收货地址"}
+{"instruction": "在吗，满300减3 0怎么没扣减？", "input": "", "output": "查询优惠券使用"}
+{"instruction": "在哪里申请 售后维修", "input": "", "output": "申请售后保修"}
+{"instruction": "详细参数发 我看一下", "input": "", "output": "咨询产品规格"}
+{"instruction": "大概什么时候能收到？ iPhone 15", "input": "", "output": "咨询配送时间"}
+{"instruction": "能不能把两个订单合 并一起发", "input": "", "output": "修改订单信息"}
+{"instruction": "麻烦问下，在哪里点退款？我找不到按钮", "input": "", "output": "退款申请"}
+{"instruction": "详细参 数发我看一下", "input": "", "output": "咨询产品规格"}
+{"instruction": "请问，查一下订单状态，单号ORD20259624", "input": "", "output": "查询订单状态"}
+{"instruction": "能不 能把两个订单合并一起发？", "input": "", "output": "修改订单信息"}
+{"instruction": "我要申请退款，ORD2025 0668", "input": "", "output": "退款申请"}
+{"instruction": "客服，忘 记用户名了，怎么找回", "input": "", "output": "账号登录问题"}
+{"instruction": "下错单了，不用发了 ，取消吧", "input": "", "output": "取消订单"}
+{"instruction": "在吗，电话留错了，帮我改一下联系方式", "input": "", "output": "修改收货地址"}
+{"instruction": "这款蓝牙耳机的具体电压是多 少？", "input": "", "output": "咨询产品规格"}
+{"instruction": "查一下订单状态，单号ORD20246107", "input": "", "output": "查询订单状态"}
+{"instruction": "刚才拍错了 ，直接退款吧", "input": "", "output": "退款申请"}
+{"instruction": "亲，这个多重啊？我想算运费", "input": "", "output": "咨询产品规格"}
+{"instruction": "为什么订单显示已完成但我没收到", "input": "", "output": "查询订单状态"}
+{"instruction": "麻烦问下，补开发票怎 么操作？", "input": "", "output": "查询发票信息"}
+{"instruction": "帮我取消订单O RD20248396", "input": "", "output": "取消订单"}
+{"instruction": "客服，忘了备注礼盒包装，帮我加一下", "input": "", "output": "修改订单信息"}
+{"instruction": "请问，怎么支付失败了？我用的微信", "input": "", "output": "咨询支付方式"}
+{"instruction": "亲，补开发票怎么操作", "input": "", "output": "查询发票信息"}
+{"instruction": "Hi，帮我查一 下发票开好了没", "input": "", "output": "查询发票信息"}
+{"instruction": "请问，为什么订 单显示已完成但我没收到", "input": "", "output": "查询订单状态"}
+{"instruction": "亲，它是220V电压还是110V", "input": "", "output": "咨询产品规格"}
+{"instruction": "为什 么这个新人红包用不了？", "input": "", "output": "查询优惠券使用"}
+{"instruction": "那个，我的订单怎么一直卡在正在出库？", "input": "", "output": "查询订单状态"}
+{"instruction": "麻烦问下，发货前帮我改个地址：北京市xxx", "input": "", "output": "修改收货地址"}
+{"instruction": "Hi，新用户有没有优惠券？", "input": "", "output": "查询优惠券使用"}
+{"instruction": "你好，我要申请退款，ORD20258949", "input": "", "output": "退款申请"}
+{"instruction": "你好，我要投诉商品质量问题，订单ORD20244217", "input": "", "output": "投诉商品质量"}
+{"instruction": "客服，这个券过期了吗？", "input": "", "output": "查询优惠券使用"}
+{"instruction": "大概什么时候能收到？sw itch", "input": "", "output": "咨询配送时间"}
+{"instruction": "客服，提供上门维修服务吗？", "input": "", "output": "申请售后保修"}
+{"instruction": "你好，退款怎么还没到账", "input": "", "output": "退款申请"}
+{"instruction": "请问，地址填错了，能不能改？订单ORD20256690", "input": "", "output": "修改收货地址"}
+{"instruction": "请问，这个券过期了吗", "input": "", "output": "查询优惠券使用"}
+{"instruction": "Hi，查物流，ORD20241649", "input": "", "output": "查询物流信息"}
+{"instruction": "请问，我要申请退款，ORD20242531", "input": "", "output": "退款申请"}
+{"instruction": "拍错码 数了，帮我改成L码", "input": "", "output": "修改订单信息"}
+{"instruction": "那个，能发个物流轨迹给我看吗", "input": "", "output": "查询物流信息"}
+{"instruction": "Hi，支持货 到付款吗？", "input": "", "output": "咨询支付方式"}
+{"instruction": "麻烦问下，取消交易，快点", "input": "", "output": "取消订单"}
+{"instruction": "那个，两个红包能叠加使用吗", "input": "", "output": "查询优惠券使用"}
+{"instruction": "订单ORD20259869现 在是什么状态？", "input": "", "output": "查询订单状态"}
+{"instruction": "那个，帮我操作一下全额退款", "input": "", "output": "退款申请"}
+{"instruction": "查物流 ，ORD20252962", "input": "", "output": "查询物流信息"}
+{"instruction": "你好，怎么注销账号", "input": "", "output": "账号登录问题"}
+{"instruction": "在吗，我要申请换货，不退款", "input": "", "output": "申请换货"}
+{"instruction": "在吗，拍错码数了，帮我改成L码", "input": "", "output": "修改订单信息"}
+{"instruction": "我的快递到哪了？ORD20245284", "input": "", "output": "查询物流信息"}
+{"instruction": "Hi，我的运动鞋不工作了，还在保修期内", "input": "", "output": "申请售后保修"}
+{"instruction": "客服，下错单了，不用发了，取消吧", "input": "", "output": "取消订单"}
+{"instruction": "麻烦问下，坏了能修吗？用了半年了", "input": "", "output": "申请售后保修"}
+{"instruction": "下单后多久能送到", "input": "", "output": "咨询配送时间"}
+{"instruction": "请问，这个东西保 修期是多久", "input": "", "output": "申请售后保修"}
+{"instruction": "查一下订单状态，单号ORD20247537", "input": "", "output": "查询订单状态"}
+{"instruction": "在吗，能 发个物流轨迹给我看吗", "input": "", "output": "查询物流信息"}
+{"instruction": "最快什 么时候到？急用", "input": "", "output": "咨询配送时间"}
+{"instruction": "刚才拍错 了，直接退款吧", "input": "", "output": "退款申请"}
+{"instruction": "在吗，用了一次就坏了，什么 垃圾质量", "input": "", "output": "投诉商品质量"}
+{"instruction": "地址填错了，能不能改？订单ORD20252708", "input": "", "output": "修改收货地址"}
+{"instruction": "客服，帮我 看看我的单子确认了吗？", "input": "", "output": "查询订单状态"}
+{"instruction": "Hi，详细参数发我看一下", "input": "", "output": "咨询产品规格"}
+{"instruction": "那个，衣服的面料是纯棉的吗", "input": "", "output": "咨询产品规格"}
+{"instruction": "在吗，东西有磨损，是不是二手的", "input": "", "output": "投诉商品质量"}
+{"instruction": "在哪里申请售 后维修？", "input": "", "output": "申请售后保修"}
+{"instruction": "麻烦问下，我想把黑色的换成白色的，订单ORD20248814", "input": "", "output": "修改订单信息"}
+{"instruction": "你好，怎 么修改登录密码", "input": "", "output": "账号登录问题"}
+{"instruction": "那个，退款怎么还没到账？", "input": "", "output": "退款申请"}
+{"instruction": "那个，取消交易，快点", "input": "", "output": "取消订单"}
+{"instruction": "查一下订单状态，单号ORD20255763", "input": "", "output": "查询订单状态"}
+{"instruction": "支持白条吗", "input": "", "output": "咨询支付方式"}
+{"instruction": "请问，手机号换了，收不到验证码", "input": "", "output": "账号登录问题"}
+{"instruction": "那个，这个 多重啊？我想算运费", "input": "", "output": "咨询产品规格"}
+{"instruction": "查一下订单状态，单号ORD20245959", "input": "", "output": "查询订单状态"}
+{"instruction": "我想把黑色的换成白色的，订单ORD20241371", "input": "", "output": "修改订单信息"}
+{"instruction": "我要投诉商品质量问题，订单ORD20255374", "input": "", "output": "投诉商品质量"}
+{"instruction": "你好，刚才拍 错了，直接退款吧", "input": "", "output": "退款申请"}
+{"instruction": "Hi，东西不要了，把钱退给我", "input": "", "output": "退款申请"}
+{"instruction": "在吗，为什么订单显示已完成但我没收到？", "input": "", "output": "查询订单状态"}
+{"instruction": "你好，查物流，ORD20253925", "input": "", "output": "查询物流信息"}
+{"instruction": "亲，电话留错了，帮我改一下联系方式", "input": "", "output": "修改收货地址"}
+{"instruction": "我忘记密码了，怎么办？", "input": "", "output": "账号登录问题"}
+{"instruction": "那个，发错颜色了，我要换成我要的 那个", "input": "", "output": "申请换货"}
+{"instruction": "在吗，退款怎么还没到账？", "input": "", "output": "退款申请"}
+{"instruction": "我要投诉商品质量问题，订单ORD20253386", "input": "", "output": "投诉商品质量"}
+{"instruction": "我 的订单怎么一直卡在正在出库", "input": "", "output": "查询订单状态"}
+{"instruction": "你好，发票什么时候寄出来？", "input": "", "output": "查询发票信息"}
+{"instruction": "地址填错了，能不能改？订单ORD20245377", "input": "", "output": "修改收货地址"}
+{"instruction": "在吗，订单ORD20259340现在是什么状态？", "input": "", "output": "查询订单状态"}
+{"instruction": "亲，怎么注销 账号？", "input": "", "output": "账号登录问题"}
+{"instruction": "我 不买了，请把订单取消掉", "input": "", "output": "取消订单"}
+{"instruction": "那个，发票什么时候寄出来？", "input": "", "output": "查询发票信息"}
+{"instruction": "快 递是不是丢了？三天没动了", "input": "", "output": "查询物流信息"}
+{"instruction": "地址填错了，能不能改？订单ORD20244203", "input": "", "output": "修改收货地址"}
+{"instruction": "订单ORD20254245现在是什么状态？", "input": "", "output": "查询订单状态"}
+{"instruction": "亲，补开发票 怎么操作", "input": "", "output": "查询发票信息"}
+{"instruction": "那个，发票什么 时候寄出来", "input": "", "output": "查询发票信息"}
+{"instruction": "亲，东西有磨损，是不是二手的？", "input": "", "output": "投诉商品质量"}
+{"instruction": "东西有磨损，是不 是二手的？", "input": "", "output": "投诉商品质量"}
+{"instruction": "这 个尺寸放得进登机箱吗？", "input": "", "output": "咨询产品规格"}
+{"instruction": "客服，拍错码数了，帮我改成L码", "input": "", "output": "修改订单信息"}
+{"instruction": "怎么修改登录密 码？", "input": "", "output": "账号登录问题"}
+{"instruction": "订单ORD20247487的发票哪里下载", "input": "", "output": "查询发票信息"}
+{"instruction": "在吗，能不能分期付款？", "input": "", "output": "咨询支付方式"}
+{"instruction": "我的快递到 哪了？ORD20258611", "input": "", "output": "查询物流信息"}
+{"instruction": "客服，发货 后几天能到北京？", "input": "", "output": "咨询配送时间"}
+{"instruction": "麻烦问下，衣服的面料是纯棉的吗？", "input": "", "output": "咨询产品规格"}
+{"instruction": "在吗，帮我查一下发票 开好了没", "input": "", "output": "查询发票信息"}
+{"instruction": "你好，我要投诉商品质量问题，订单ORD20242359", "input": "", "output": "投诉商品质量"}
+{"instruction": "那个，地址填错了，能不能改？订单ORD20248290", "input": "", "output": "修改收货地址"}
+{"instruction": "你好，用了 一次就坏了，什么垃圾质量", "input": "", "output": "投诉商品质量"}
+{"instruction": "亲，我要搬家了，换个地址寄", "input": "", "output": "修改收货地址"}
+{"instruction": "麻烦问下，东西有磨 损，是不是二手的？", "input": "", "output": "投诉商品质量"}
+{"instruction": "Hi，这个尺寸放得进登机箱吗？", "input": "", "output": "咨询产品规格"}
+{"instruction": "这款空气炸锅的具体功率是多少？", "input": "", "output": "咨询产品规格"}
+{"instruction": "我要申请退款，ORD20247463", "input": "", "output": "退款申请"}
+{"instruction": "请问，怎么修改登录密码", "input": "", "output": "账号登录问题"}
+{"instruction": "客服，下单后多久能送到？", "input": "", "output": "咨询配送时间"}
+{"instruction": "我的猫粮不工作了，还在 保修期内", "input": "", "output": "申请售后保修"}
+{"instruction": "我要申请换 货，不退款", "input": "", "output": "申请换货"}
+{"instruction": "那个，地址填错了，能不能改？订单ORD20242351", "input": "", "output": "修改收货地址"}
+{"instruction": "亲，电动牙刷发货了吗？还是待发货", "input": "", "output": "查询订单状态"}
+{"instruction": "寄到 老家去，不是默认地址，帮我改", "input": "", "output": "修改收货地址"}
+{"instruction": "帮我查查包裹走 到哪个城市了", "input": "", "output": "查询物流信息"}
+{"instruction": "Hi，帮我取消订单ORD20254809", "input": "", "output": "取消订单"}
+{"instruction": "Hi，寄到老家去，不是默认地址，帮我改", "input": "", "output": "修改收货地址"}
+{"instruction": "亲，这款iPhone 15的具体电压是多少？", "input": "", "output": "咨询产品规格"}
+{"instruction": "麻烦问下，东西不要了，把钱退给我", "input": "", "output": "退款申请"}
+{"instruction": "在吗，查物流，ORD20258420", "input": "", "output": "查询物流信息"}
+{"instruction": "那个，收到的空气炸锅是坏的！", "input": "", "output": "投诉商品质量"}
+{"instruction": "能开专票吗", "input": "", "output": "查询发票信息"}
+{"instruction": "客服，我忘记密 码了，怎么办？", "input": "", "output": "账号登录问题"}
+{"instruction": "在吗，尺码不合适，我想换个大一号的", "input": "", "output": "申请换货"}
+{"instruction": "请问，支持微信支付吗？", "input": "", "output": "咨询支付方式"}
+{"instruction": "我的快递到哪了？ORD20241267", "input": "", "output": "查询物流信息"}
+{"instruction": "那个，忘了备注礼盒包装，帮我加一下", "input": "", "output": "修改订单信息"}
+{"instruction": "支持分期吗", "input": "", "output": "咨询支付方式"}
+{"instruction": "你好，最快什么时候 到？急用", "input": "", "output": "咨询配送时间"}
+{"instruction": "查一下订单状态，单号ORD20259940", "input": "", "output": "查询订单状态"}
+{"instruction": "地址填 错了，能不能改？订单ORD20253415", "input": "", "output": "修改收货地址"}
+{"instruction": "那个，帮我查一下发票开好了没", "input": "", "output": "查询发票信息"}
+{"instruction": "亲，它是220V电压还是110V？", "input": "", "output": "咨询产品规格"}
+{"instruction": "Hi，支持开公司抬头吗？", "input": "", "output": "查询发票信息"}
+{"instruction": "请问，switch发货了吗？还是待发货？", "input": "", "output": "查询订单状态"}
+{"instruction": "支持信用卡吗", "input": "", "output": "咨询支付方式"}
+{"instruction": "那个，优惠券在哪里输入？", "input": "", "output": "查询优惠券使用"}
+{"instruction": "新用 户有没有优惠券", "input": "", "output": "查询优惠券使用"}
+{"instruction": "请问，忘了备注礼盒包装，帮我加一下", "input": "", "output": "修改订单信息"}
+{"instruction": "你好，为什么订单显示已完成但我没收到？", "input": "", "output": "查询订单状态"}
+{"instruction": "质量太差了，线头特 别多", "input": "", "output": "投诉商品质量"}
+{"instruction": "在吗，优惠券在哪里输入？", "input": "", "output": "查询优惠券使用"}
+{"instruction": "Hi，周末送货吗", "input": "", "output": "咨询配送时间"}
+{"instruction": "你好，查一下订单状态，单号ORD20259973", "input": "", "output": "查询订单状态"}
+{"instruction": "你好，周末送货吗", "input": "", "output": "咨询配送时间"}
+{"instruction": "客服，可以用花呗 吗？", "input": "", "output": "咨询支付方式"}
+{"instruction": "能开电子发票吗", "input": "", "output": "查询发票信息"}
+{"instruction": "请问，提供上门维修服务吗", "input": "", "output": "申请售后保修"}
+{"instruction": "那个，我想把黑色的换成白色的，订单ORD20241189", "input": "", "output": "修改订单信息"}
+{"instruction": "客服，怎么修改登录密码", "input": "", "output": "账号登录问题"}
+{"instruction": "请问，我要投诉商品质量问题，订单ORD2 0258664", "input": "", "output": "投诉商品质量"}
+{"instruction": "Hi，发票什么时候寄出来？", "input": "", "output": "查询发票信息"}
+{"instruction": "在吗，发错颜 色了，我要换成我要的那个", "input": "", "output": "申请换货"}
+{"instruction": "在吗，为什么订单显示已完成但我没收到", "input": "", "output": "查询订单状态"}
+{"instruction": "客服，帮我取消订单ORD20248405", "input": "", "output": "取消订单"}
+{"instruction": "Hi，查物流，ORD20255191", "input": "", "output": "查询物流信息"}
+{"instruction": "我想把黑色的换成白色的，订单ORD20243237", "input": "", "output": "修改订单信息"}
+{"instruction": "收到的iPhone 15是坏的", "input": "", "output": "投诉商品质量"}
+{"instruction": "那个，为什么订单显示已完成但我没收到", "input": "", "output": "查询订单状态"}
+{"instruction": "满300减30怎么没 扣减", "input": "", "output": "查询优惠券使用"}
+{"instruction": "请问，补开发票怎么操作？", "input": "", "output": "查询发票信息"}
+{"instruction": "在哪里申请售 后维修", "input": "", "output": "申请售后保修"}
+{"instruction": "亲，优惠券在哪里输入", "input": "", "output": "查询优惠券使用"}
+{"instruction": "在吗，这款空气炸锅的具体电压是多少？", "input": "", "output": "咨询产品规格"}
+{"instruction": "订单ORD20253317的发票哪里下载", "input": "", "output": "查询发票信息"}
+{"instruction": "我的快递到哪了？ORD20242743", "input": "", "output": "查询物流信息"}
+{"instruction": "帮我查查包裹走到哪 个城市了", "input": "", "output": "查询物流信息"}
+{"instruction": "麻烦问下，优惠券在哪里输入", "input": "", "output": "查询优惠券使用"}
+{"instruction": "你好，我想用信用卡支付，哪里选", "input": "", "output": "咨询支付方式"}
+{"instruction": "地址填错了，能不能改？订单ORD20259756", "input": "", "output": "修改收货地址"}
+{"instruction": "能开专票吗？", "input": "", "output": "查询发票信息"}
+{"instruction": "我想把黑色的换成白色的，订单ORD20246102", "input": "", "output": "修改订单信息"}
+{"instruction": "退款怎么还没 到账？", "input": "", "output": "退款申请"}
+{"instruction": "帮我取消订单ORD20242869", "input": "", "output": "取消订单"}
+{"instruction": "亲，申请质保，机器故障", "input": "", "output": "申请售后保修"}
+{"instruction": "我一直提示错误，怎么办", "input": "", "output": "账号登录问题"}
+{"instruction": "帮 我备注一下：今天不要送货", "input": "", "output": "修改订单信息"}
+{"instruction": "大概什么时候能收到？猫粮", "input": "", "output": "咨询配送时间"}
+{"instruction": "请问，能不能把两个订单合并一起发", "input": "", "output": "修改订单信息"}
+{"instruction": "衣服的面料是纯棉 的吗？", "input": "", "output": "咨询产品规格"}
+{"instruction": "Hi，东西不要了，把钱退 给我", "input": "", "output": "退款申请"}
+{"instruction": "麻烦问下，物流一直不更新是怎么回事", "input": "", "output": "查询物流信息"}
+{"instruction": "发货前帮我改个 地址：北京市xxx", "input": "", "output": "修改收货地址"}
+{"instruction": "客服，地址填错 了，能不能改？订单ORD20259720", "input": "", "output": "修改收货地址"}
+{"instruction": "在 哪里点退款？我找不到按钮", "input": "", "output": "退款申请"}
+{"instruction": "我的快递到哪了？ORD20252272", "input": "", "output": "查询物流信息"}
+{"instruction": "客服，最快什么时候到 ？急用", "input": "", "output": "咨询配送时间"}
+{"instruction": "麻烦问下，我想把黑色的 换成白色的，订单ORD20248324", "input": "", "output": "修改订单信息"}
+{"instruction": "提 供上门维修服务吗？", "input": "", "output": "申请售后保修"}
+{"instruction": "Hi，在哪里点退款？我找不到按钮", "input": "", "output": "退款申请"}
+{"instruction": "在吗，地址填错了，能不能改？订单ORD20248602", "input": "", "output": "修改收货地址"}
+{"instruction": "为什么订单显示已完 成但我没收到？", "input": "", "output": "查询订单状态"}
+{"instruction": "麻烦问下，下单后多久能送到", "input": "", "output": "咨询配送时间"}
+{"instruction": "Hi，能不能分 期付款？", "input": "", "output": "咨询支付方式"}
+{"instruction": "查一下订单状态，单号ORD20246208", "input": "", "output": "查询订单状态"}
+{"instruction": "那个，我要搬家了，换个地址寄", "input": "", "output": "修改收货地址"}
+{"instruction": "你好，为什么这个抵扣券用不了", "input": "", "output": "查询优惠券使用"}
+{"instruction": "客服，我的那个衣服不 工作了，还在保修期内", "input": "", "output": "申请售后保修"}
+{"instruction": "取 消交易，快点", "input": "", "output": "取消订单"}
+{"instruction": "查一下订单状态，单号ORD20258140", "input": "", "output": "查询订单状态"}
+{"instruction": "那个，新用户有没有优惠券", "input": "", "output": "查询优惠券使用"}
+{"instruction": "Hi，我要申请退款，ORD20258395", "input": "", "output": "退款申请"}
+{"instruction": "我要投诉商品质量问题，订单ORD20243568", "input": "", "output": "投诉商品质量"}
+{"instruction": "你好，我一直提示错误，怎么办？", "input": "", "output": "账号登录问题"}
+{"instruction": "我要申请退款，ORD20244493", "input": "", "output": "退款申请"}
+{"instruction": "客服，我收不到验证码，怎么办？", "input": "", "output": "账号登录问题"}
+{"instruction": "防晒霜发货了吗？还是待发货", "input": "", "output": "查询订单状态"}
+{"instruction": "亲，查一下订单状态，单号ORD20253359", "input": "", "output": "查询订单状态"}
+{"instruction": "我要投诉商品质量问题，订单ORD20252345", "input": "", "output": "投诉商品质量"}
+{"instruction": "麻烦问下，两个红包能叠加使用吗", "input": "", "output": "查询优惠券使用"}
+{"instruction": "Hi，我想用信用卡支付，哪里选？", "input": "", "output": "咨询支付方式"}
+{"instruction": "你好，发错颜色了，我要换成我要的那个", "input": "", "output": "申请换货"}
+{"instruction": "能发个物流轨迹 给我看吗？", "input": "", "output": "查询物流信息"}
+{"instruction": "亲，为什么这个折扣 码用不了？", "input": "", "output": "查询优惠券使用"}
+{"instruction": "你好，下单 后多久能送到", "input": "", "output": "咨询配送时间"}
+{"instruction": "我要申请退款，O RD20247089", "input": "", "output": "退款申请"}
+{"instruction": "我要申请退款，ORD20256783", "input": "", "output": "退款申请"}
+{"instruction": "麻烦问下，这个东西保修期是多久？", "input": "", "output": "申请售后保修"}
+{"instruction": "请问，订单ORD20252683现在是什么状态？", "input": "", "output": "查询订单状态"}
+{"instruction": "Hi，忘了备注礼盒包装，帮我加一下", "input": "", "output": "修改订单信息"}
+{"instruction": "你好，我的快递到哪了？ORD20259286", "input": "", "output": "查询物流信息"}
+{"instruction": "支持货到付款 吗？", "input": "", "output": "咨询支付方式"}
+{"instruction": "请问，我想把黑色的换成白色的，订单ORD20242808", "input": "", "output": "修改订单信息"}
+{"instruction": "麻 烦把刚才那一单作废", "input": "", "output": "取消订单"}
+{"instruction": "支持分期吗？", "input": "", "output": "咨询支付方式"}
+{"instruction": "那个，衣服有点紧，能换货吗", "input": "", "output": "申请换货"}
+{"instruction": "我的快递到哪了？ORD20240942", "input": "", "output": "查询物流信息"}
+{"instruction": "你好，这款羽绒服的具体成分 是多少？", "input": "", "output": "咨询产品规格"}
+{"instruction": "我的快递到哪了？ORD20240583", "input": "", "output": "查询物流信息"}
+{"instruction": "查物流，ORD20252833", "input": "", "output": "查询物流信息"}
+{"instruction": "在吗，账 号显示异常，登不上", "input": "", "output": "账号登录问题"}
+{"instruction": "麻烦问下，能开纸质发票吗？", "input": "", "output": "查询发票信息"}
+{"instruction": "订单ORD20257864现在是什么状态？", "input": "", "output": "查询订单状态"}
+{"instruction": "客服，发货后几天能到北京", "input": "", "output": "咨询配送时间"}
+{"instruction": "为什么这个新人红包用不了？", "input": "", "output": "查询优惠券使用"}
+{"instruction": "请问，最快什么时候到？急用", "input": "", "output": "咨询配送时间"}
+{"instruction": "亲，大概什么时候能收到？扫地机", "input": "", "output": "咨询配送时间"}
+{"instruction": "在吗，订单ORD20252861现在是什么状态？", "input": "", "output": "查询订单状态"}
+{"instruction": "Hi，能不能把两个订单合 并一起发", "input": "", "output": "修改订单信息"}
+{"instruction": "你好，帮我备注一下：昨天不 要送货", "input": "", "output": "修改订单信息"}
+{"instruction": "客服，鞋子小了，换个42码的", "input": "", "output": "申请换货"}
+{"instruction": "麻烦问下，新用户有没有优惠券？", "input": "", "output": "查询优惠券使用"}
+{"instruction": "帮我取消订单ORD20254024", "input": "", "output": "取消订单"}
+{"instruction": "那个，寄到老家去，不是默认地址，帮我改", "input": "", "output": "修改收货地址"}
+{"instruction": "在吗，东西不要了，把钱退给我", "input": "", "output": "退款申请"}
+{"instruction": "在吗，这个券过期了 吗？", "input": "", "output": "查询优惠券使用"}
+{"instruction": "客服，还没发货吧？帮我拦截取消", "input": "", "output": "取消订单"}
+{"instruction": "亲，帮我查查包裹走到哪个城市了", "input": "", "output": "查询物流信息"}
+{"instruction": "大概 什么时候能收到？投影仪", "input": "", "output": "咨询配送时间"}
+{"instruction": "在哪里申 请售后维修？", "input": "", "output": "申请售后保修"}
+{"instruction": "我不买了，请把订单 取消掉", "input": "", "output": "取消订单"}
+{"instruction": "亲，我要申请换货，不退款", "input": "", "output": "申请换货"}
+{"instruction": "亲，手机号换了，收不到验证码", "input": "", "output": "账号登录问题"}
+{"instruction": "地址填错了，能不能改？订单ORD20251203", "input": "", "output": "修改收货地址"}
+{"instruction": "查一下订单状态，单号ORD20251601", "input": "", "output": "查询订单状态"}
+{"instruction": "我要投诉商品质量问题，订单ORD20245500", "input": "", "output": "投诉商品质量"}
+{"instruction": "在吗，能不能把两个订单合并一起发", "input": "", "output": "修改订单信息"}
+{"instruction": "Hi，满300减30怎么没扣减？", "input": "", "output": "查询优惠券使用"}
+{"instruction": "我的快 递到哪了？ORD20240492", "input": "", "output": "查询物流信息"}
+{"instruction": "快递是不是 丢了？三天没动了", "input": "", "output": "查询物流信息"}
+{"instruction": "帮我 备注一下：大半夜不要送货", "input": "", "output": "修改订单信息"}
+{"instruction": "你好，在哪里申请售后维修？", "input": "", "output": "申请售后保修"}
+{"instruction": "新用 户有没有优惠券？", "input": "", "output": "查询优惠券使用"}
+{"instruction": "那个，鞋子小了，换个42码的", "input": "", "output": "申请换货"}
+{"instruction": "麻烦问下，帮我查一下发票开好了没", "input": "", "output": "查询发票信息"}
+{"instruction": "我的蓝牙耳机不工作了，还在保修期内", "input": "", "output": "申请售后保修"}
+{"instruction": "查物 流，ORD20244727", "input": "", "output": "查询物流信息"}
+{"instruction": "请问，物流一直不更新是怎么回事？", "input": "", "output": "查询物流信息"}
+{"instruction": "亲，查物流，ORD20250402", "input": "", "output": "查询物流信息"}
+{"instruction": "客服，我的订单怎么一直卡 在正在出库", "input": "", "output": "查询订单状态"}
+{"instruction": "我登不上去了，怎么办？", "input": "", "output": "账号登录问题"}
+{"instruction": "你好，手机号 换了，收不到验证码", "input": "", "output": "账号登录问题"}
+{"instruction": "那个，查一下订单状态，单号ORD20252131", "input": "", "output": "查询订单状态"}
+{"instruction": "鞋子 小了，换个42码的", "input": "", "output": "申请换货"}
+{"instruction": "在吗，换货流程是怎么样的", "input": "", "output": "申请换货"}
+{"instruction": "你好，能不能分期付款", "input": "", "output": "咨询支付方式"}
+{"instruction": "我的订单怎么一直卡在 正在出库", "input": "", "output": "查询订单状态"}
+{"instruction": "那个，怎么注销账号？", "input": "", "output": "账号登录问题"}
+{"instruction": "订单ORD20253990现在是什么状态？", "input": "", "output": "查询订单状态"}
+{"instruction": "那个，我想用信用卡支付，哪 里选", "input": "", "output": "咨询支付方式"}
+{"instruction": "我要搬家了，换个地 址寄", "input": "", "output": "修改收货地址"}
+{"instruction": "查物流，ORD20246604", "input": "", "output": "查询物流信息"}
+{"instruction": "收到的那个衣服是坏的", "input": "", "output": "投诉商品质量"}
+{"instruction": "那个，我不买了，请把订 单取消掉", "input": "", "output": "取消订单"}
+{"instruction": "请问，东西不要了，把钱退给我", "input": "", "output": "退款申请"}
+{"instruction": "在吗，满300减30怎么没扣减", "input": "", "output": "查询优惠券使用"}
+{"instruction": "下单后多久能送 到？", "input": "", "output": "咨询配送时间"}
+{"instruction": "大概什么时候能收到？空气炸锅", "input": "", "output": "咨询配送时间"}
+{"instruction": "订单ORD20253343的发票哪里下载", "input": "", "output": "查询发票信息"}
+{"instruction": "在吗，提供上门维修服务吗？", "input": "", "output": "申请售后保修"}
+{"instruction": "Hi，能开税号吗？", "input": "", "output": "查询发票信息"}
+{"instruction": "查一下订单状态，单号ORD20254936", "input": "", "output": "查询订单状态"}
+{"instruction": "查一下订单状态，单号ORD20241316", "input": "", "output": "查询订单状态"}
+{"instruction": "物流一 直不更新是怎么回事", "input": "", "output": "查询物流信息"}
+{"instruction": "Hi，我的洗面奶不工作了，还在保修期内", "input": "", "output": "申请售后保修"}
+{"instruction": "我想把黑色的换成白色的，订单ORD20240545", "input": "", "output": "修改订单信息"}
+{"instruction": "亲，衣服有点紧，能换货吗？", "input": "", "output": "申请换货"}
+{"instruction": "麻烦问下，换货流程是怎么样的？", "input": "", "output": "申请换货"}
+{"instruction": "你好，补开发票怎么操作", "input": "", "output": "查询发票信息"}
+{"instruction": "麻烦问下，退款怎么还没到账？", "input": "", "output": "退款申请"}
+{"instruction": "麻烦问下，能 不能分期付款？", "input": "", "output": "咨询支付方式"}
+{"instruction": "Hi，忘 记用户名了，怎么找回", "input": "", "output": "账号登录问题"}
+{"instruction": "亲，这个多重啊？我想算 运费", "input": "", "output": "咨询产品规格"}
+{"instruction": "在吗，空气炸锅发货了吗 ？还是待发货？", "input": "", "output": "查询订单状态"}
+{"instruction": "这是假货吧？味 道好难闻", "input": "", "output": "投诉商品质量"}
+{"instruction": "你好，我不买了，请把订 单取消掉", "input": "", "output": "取消订单"}
+{"instruction": "亲，帮我操作一下全额退款", "input": "", "output": "退款申请"}
+{"instruction": "麻烦问下，帮我把收货地址改成公司", "input": "", "output": "修改收货地址"}
+{"instruction": "麻烦问下，衣服的面料是纯棉的吗", "input": "", "output": "咨询产品规格"}
+{"instruction": "麻烦问下，怎么修改 登录密码？", "input": "", "output": "账号登录问题"}
+{"instruction": "客服，换货流程是怎么样的", "input": "", "output": "申请换货"}
+{"instruction": "尺码 不合适，我想换个大一号的", "input": "", "output": "申请换货"}
+{"instruction": "请问，质量太差了，线头特别多", "input": "", "output": "投诉商品质量"}
+{"instruction": "我不 买了，请把订单取消掉", "input": "", "output": "取消订单"}
+{"instruction": "在吗，可以用花呗 吗？", "input": "", "output": "咨询支付方式"}
+{"instruction": "你好，我想把黑色的换成白色的，订单ORD20241453", "input": "", "output": "修改订单信息"}
+{"instruction": "亲，我的快递到哪了？ORD20254399", "input": "", "output": "查询物流信息"}
+{"instruction": "新用户有没有优 惠券？", "input": "", "output": "查询优惠券使用"}
+{"instruction": "能开税号吗", "input": "", "output": "查询发票信息"}
+{"instruction": "换货流程是怎么样的", "input": "", "output": "申请换货"}
+{"instruction": "亲，收到的防晒霜是坏的！", "input": "", "output": "投诉商品质量"}
+{"instruction": "这款洗面奶的具体衣长是多少", "input": "", "output": "咨询产品规格"}
+{"instruction": "Hi，我的订单怎么一直卡在正在 出库？", "input": "", "output": "查询订单状态"}
+{"instruction": "你好，为什么这个抵扣券用不了？", "input": "", "output": "查询优惠券使用"}
+{"instruction": "在吗，提供上门维修服务吗", "input": "", "output": "申请售后保修"}
+{"instruction": "这款防晒霜的具体尺寸是 多少？", "input": "", "output": "咨询产品规格"}
+{"instruction": "那个，支持分期吗", "input": "", "output": "咨询支付方式"}
+{"instruction": "订单ORD20253306的发票哪里下载？", "input": "", "output": "查询发票信息"}
+{"instruction": "地址填错了，能不能改？订单O RD20250892", "input": "", "output": "修改收货地址"}
+{"instruction": "退款怎么还 没到账？", "input": "", "output": "退款申请"}
+{"instruction": "Hi，在哪里点退 款？我找不到按钮", "input": "", "output": "退款申请"}
+{"instruction": "麻烦问下，满300减30怎么没扣减", "input": "", "output": "查询优惠券使用"}
+{"instruction": "请问，尺码不合适，我想换个大一号的", "input": "", "output": "申请换货"}
+{"instruction": "在吗，详细 参数发我看一下", "input": "", "output": "咨询产品规格"}
+{"instruction": "物流 一直不更新是怎么回事？", "input": "", "output": "查询物流信息"}
+{"instruction": "客服，支持花 呗吗？", "input": "", "output": "咨询支付方式"}
+{"instruction": "switch发货了吗？还是待发货？", "input": "", "output": "查询订单状态"}
+{"instruction": "大概什么时候能收到？iPhone 15", "input": "", "output": "咨询配送时间"}
+{"instruction": "那个，地址填错了，能不能改？订单ORD20255081", "input": "", "output": "修改收货地址"}
+{"instruction": "麻烦问下，帮我看看我的单子确认了吗？", "input": "", "output": "查询订单状态"}
+{"instruction": "客服，查一下订单状态，单号ORD20242672", "input": "", "output": "查询订单状态"}
+{"instruction": "请问，订单ORD20254887的发票哪里下载？", "input": "", "output": "查询发票信息"}
+{"instruction": "麻烦问下，物流一直不更新是怎么回事？", "input": "", "output": "查询物流信息"}
+{"instruction": "请问，支持 货到付款吗？", "input": "", "output": "咨询支付方式"}
+{"instruction": "忘了备注礼盒包装，帮 我加一下", "input": "", "output": "修改订单信息"}
+{"instruction": "补开 发票怎么操作？", "input": "", "output": "查询发票信息"}
+{"instruction": "坏了能修吗 ？用了半年了", "input": "", "output": "申请售后保修"}
+{"instruction": "那个，帮我取消订单ORD20253488", "input": "", "output": "取消订单"}
+{"instruction": "那个，发货后几天能到北京", "input": "", "output": "咨询配送时间"}
+{"instruction": "Hi，这款洗面奶的具体衣长是多少", "input": "", "output": "咨询产品规格"}
+{"instruction": "帮 我操作一下全额退款", "input": "", "output": "退款申请"}
+{"instruction": "麻烦问下，可以用花呗吗", "input": "", "output": "咨询支付方式"}
+{"instruction": "我要申请退款，ORD20241423", "input": "", "output": "退款申请"}
+{"instruction": "麻烦问下，这 款乐高积木的具体尺寸是多少？", "input": "", "output": "咨询产品规格"}
+{"instruction": "拍错码数了，帮我改 成L码", "input": "", "output": "修改订单信息"}
+{"instruction": "新用户有 没有优惠券？", "input": "", "output": "查询优惠券使用"}
+{"instruction": "订单ORD20247815现在是什么状态", "input": "", "output": "查询订单状态"}
+{"instruction": "麻烦问下，查一下订单状态，单号ORD20241872", "input": "", "output": "查询订单状态"}
+{"instruction": "两个红包能叠加 使用吗？", "input": "", "output": "查询优惠券使用"}
+{"instruction": "能不能把两 个订单合并一起发？", "input": "", "output": "修改订单信息"}
+{"instruction": "帮我把收货地 址改成公司", "input": "", "output": "修改收货地址"}
+{"instruction": "在吗，我要投诉商品质量问题，订单ORD20245046", "input": "", "output": "投诉商品质量"}
+{"instruction": "我要申请退款，ORD20250042", "input": "", "output": "退款申请"}
+{"instruction": "帮我取消订单ORD20253391", "input": "", "output": "取消订单"}
+{"instruction": "大概什么时候能收到？switch", "input": "", "output": "咨询配送时间"}
+{"instruction": "你好，为什么订单显示已完成但我没收 到？", "input": "", "output": "查询订单状态"}
+{"instruction": "我的投影仪不工作了，还在保修期内", "input": "", "output": "申请售后保修"}
+{"instruction": "麻烦问下，怎么支付失败 了？我用的微信", "input": "", "output": "咨询支付方式"}
+{"instruction": "客服，订单ORD20249029现在是什么状态？", "input": "", "output": "查询订单状态"}
+{"instruction": "在吗，这个东西保修期是多久？", "input": "", "output": "申请售后保修"}
+{"instruction": "客服，能发个物流轨迹给我看吗？", "input": "", "output": "查询物流信息"}
+{"instruction": "Hi，补开发票怎么操作", "input": "", "output": "查询发票信息"}
+{"instruction": "东西不要了，把 钱退给我", "input": "", "output": "退款申请"}
+{"instruction": "订单ORD20247519现在是什么状态？", "input": "", "output": "查询订单状态"}
+{"instruction": "客服，发货前帮我改个地址：北京市xxx", "input": "", "output": "修改收货地址"}
+{"instruction": "Hi，新用户有 没有优惠券？", "input": "", "output": "查询优惠券使用"}
+{"instruction": "Hi，帮我看看我的单子确 认了吗？", "input": "", "output": "查询订单状态"}
+{"instruction": "亲，发票什么时候寄出来", "input": "", "output": "查询发票信息"}
+{"instruction": "查一下订单状态，单号ORD20244723", "input": "", "output": "查询订单状态"}
+{"instruction": "那个，帮我备注一下：昨天不要送货", "input": "", "output": "修改订单信息"}
+{"instruction": "查物流，ORD20245359", "input": "", "output": "查询物流信息"}
+{"instruction": "请问，防晒霜发货了吗？还是待发货", "input": "", "output": "查询订单状态"}
+{"instruction": "它是220V电压还是110V", "input": "", "output": "咨询产品规格"}
+{"instruction": "客服，帮我把收货地址改成公司", "input": "", "output": "修改收货地址"}
+{"instruction": "麻烦问下，用了一次就坏了，什么垃圾质量", "input": "", "output": "投诉商品质量"}
+{"instruction": "怎么支付失败了？我用的 微信", "input": "", "output": "咨询支付方式"}
+{"instruction": "亲，这款那个衣服的具体材质是多少？", "input": "", "output": "咨询产品规格"}
+{"instruction": "在吗，取消交易， 快点", "input": "", "output": "取消订单"}
+{"instruction": "麻烦问下，我一 直提示错误，怎么办？", "input": "", "output": "账号登录问题"}
+{"instruction": "查物流，ORD20245166", "input": "", "output": "查询物流信息"}
+{"instruction": "客服，这个券过期了吗", "input": "", "output": "查询优惠券使用"}
+{"instruction": "忘了 备注礼盒包装，帮我加一下", "input": "", "output": "修改订单信息"}
+{"instruction": "麻烦问下，订单ORD 20241350的发票哪里下载？", "input": "", "output": "查询发票信息"}
+{"instruction": "订单ORD20245512现在是什么状态？", "input": "", "output": "查询订单状态"}
+{"instruction": "那个，为什么订单显示已完成但我没收到？", "input": "", "output": "查询订单状态"}
+{"instruction": "麻烦问下，switch发货了吗？还是待发 货？", "input": "", "output": "查询订单状态"}
+{"instruction": "发货前帮我改个地址：北京 市xxx", "input": "", "output": "修改收货地址"}
+{"instruction": "麻烦问下，我想把黑色的换成白色的，订单ORD20240381", "input": "", "output": "修改订单信息"}
+{"instruction": "寄到老家去，不是默认地址，帮 我改", "input": "", "output": "修改收货地址"}
+{"instruction": "在吗，我要申请换 货，不退款", "input": "", "output": "申请换货"}
+{"instruction": "请问，提供 上门维修服务吗", "input": "", "output": "申请售后保修"}
+{"instruction": "请问，它是220 V电压还是110V？", "input": "", "output": "咨询产品规格"}
+{"instruction": "麻烦 把刚才那一单作废", "input": "", "output": "取消订单"}
+{"instruction": "Hi，快递是不是丢了？三天没动了", "input": "", "output": "查询物流信息"}
+{"instruction": "查物流，ORD20246847", "input": "", "output": "查询物流信息"}
+{"instruction": "麻烦问下，我的羽绒服不工作了，还在保修期内", "input": "", "output": "申请售后保修"}
+{"instruction": "你好，我要申请退款，OR D20248987", "input": "", "output": "退款申请"}
+{"instruction": "你好，发票什么时候寄出来", "input": "", "output": "查询发票信息"}
+{"instruction": "在吗，麻烦把刚才那一单作废", "input": "", "output": "取消订单"}
+{"instruction": "支 持白条吗？", "input": "", "output": "咨询支付方式"}
+{"instruction": "那个，最快什么时候到？急用", "input": "", "output": "咨询配送时间"}
+{"instruction": "支持花呗吗？", "input": "", "output": "咨询支付方式"}
+{"instruction": "能不能把两个订单 合并一起发", "input": "", "output": "修改订单信息"}
+{"instruction": "查物流，ORD20244658", "input": "", "output": "查询物流信息"}
+{"instruction": "查一下订单状态，单号ORD20250418", "input": "", "output": "查询订单状态"}
+{"instruction": "亲，坏了能修吗 ？用了半年了", "input": "", "output": "申请售后保修"}
+{"instruction": "请问，麻烦把 刚才那一单作废", "input": "", "output": "取消订单"}
+{"instruction": "那个，新用户有没有优 惠券？", "input": "", "output": "查询优惠券使用"}
+{"instruction": "麻烦问下，我要申请退款，O RD20242689", "input": "", "output": "退款申请"}
+{"instruction": "我的订 单怎么一直卡在正在出库？", "input": "", "output": "查询订单状态"}
+{"instruction": "优惠券 在哪里输入", "input": "", "output": "查询优惠券使用"}
+{"instruction": "请问，我的快递到哪了？ORD20243240", "input": "", "output": "查询物流信息"}
+{"instruction": "你好，这个多重啊？我想算运费", "input": "", "output": "咨询产品规格"}
+{"instruction": "客服，优惠券在哪里输入", "input": "", "output": "查询优惠券使用"}
+{"instruction": "麻烦问下，尺码不合 适，我想换个大一号的", "input": "", "output": "申请换货"}
+{"instruction": "帮我取消订单ORD20253371", "input": "", "output": "取消订单"}
+{"instruction": "麻烦问下，春节期间正常发货配送吗？", "input": "", "output": "咨询配送时间"}
+{"instruction": "亲，这个尺寸放得进登机箱吗？", "input": "", "output": "咨询产品规格"}
+{"instruction": "请问，满300减30怎么没扣减？", "input": "", "output": "查询优惠券使用"}
+{"instruction": "Hi，我要搬家了，换个地址寄", "input": "", "output": "修改收货地址"}
+{"instruction": "支持开公司抬头吗", "input": "", "output": "查询发票信息"}
+{"instruction": "请问，我的快递到哪了？ORD20243774", "input": "", "output": "查询物流信息"}
+{"instruction": "亲，新用户有没有优惠券", "input": "", "output": "查询优惠券使用"}
+{"instruction": "质量太差了， 线头特别多", "input": "", "output": "投诉商品质量"}
+{"instruction": "在吗，订单ORD20249117现在是什么状态？", "input": "", "output": "查询订单状态"}
+{"instruction": "帮我取消订单ORD20246905", "input": "", "output": "取消订单"}
+{"instruction": "请问，我要投诉商品质量问题，订单ORD20257472", "input": "", "output": "投诉商品质量"}
+{"instruction": "鞋子小 了，换个42码的", "input": "", "output": "申请换货"}
+{"instruction": "Hi，麻烦把刚才那一单作废", "input": "", "output": "取消订单"}
+{"instruction": "亲，尺码不合适，我想换个大 一号的", "input": "", "output": "申请换货"}
+{"instruction": "我想把黑色的换成白色的，订单ORD20254362", "input": "", "output": "修改订单信息"}
+{"instruction": "你好，这款运动鞋的具体尺寸是多少", "input": "", "output": "咨询产品规格"}
+{"instruction": "客服，地址填错了，能不能改？订单ORD20 242265", "input": "", "output": "修改收货地址"}
+{"instruction": "请问，下单 后多久能送到？", "input": "", "output": "咨询配送时间"}
+{"instruction": "在吗，支持花呗吗", "input": "", "output": "咨询支付方式"}
+{"instruction": "我想把黑色的换成白色的，订单ORD20246577", "input": "", "output": "修改订单信息"}
+{"instruction": "亲，下 单后多久能送到？", "input": "", "output": "咨询配送时间"}
+{"instruction": "电话留错了，帮我改 一下联系方式", "input": "", "output": "修改收货地址"}
+{"instruction": "客服，我要申请退款，ORD20253151", "input": "", "output": "退款申请"}
+{"instruction": "订单ORD20248296现在是什么状态？", "input": "", "output": "查询订单状态"}
+{"instruction": "尺码不合适，我想换个 大一号的", "input": "", "output": "申请换货"}
+{"instruction": "亲，我想把黑色的换成白色的，订单ORD20253901", "input": "", "output": "修改订单信息"}
+{"instruction": "你好，东西不要了，把钱退给我", "input": "", "output": "退款申请"}
+{"instruction": "你好，可以用花 呗吗？", "input": "", "output": "咨询支付方式"}
+{"instruction": "在吗，物流一直不更新是怎么回事？", "input": "", "output": "查询物流信息"}
+{"instruction": "刚才拍错了， 直接退款吧", "input": "", "output": "退款申请"}
+{"instruction": "客服，周末送货吗？", "input": "", "output": "咨询配送时间"}
+{"instruction": "我要投诉商品质量问题，订单ORD20249158", "input": "", "output": "投诉商品质量"}
+{"instruction": "大概什么时候能收到？乐高积木", "input": "", "output": "咨询配送时间"}
+{"instruction": "你好，帮我操作一下全额退款", "input": "", "output": "退款申请"}
+{"instruction": "请问，我要申请退款，ORD20243516", "input": "", "output": "退款申请"}
+{"instruction": "在吗，我想用信用卡支付，哪里选？", "input": "", "output": "咨询支付方式"}
+{"instruction": "帮我备注一下：昨天不 要送货", "input": "", "output": "修改订单信息"}
+{"instruction": "你好，支持花呗吗？", "input": "", "output": "咨询支付方式"}
+{"instruction": "帮我备 注一下：前天不要送货", "input": "", "output": "修改订单信息"}
+{"instruction": "请问，新用户有没有优惠券？", "input": "", "output": "查询优惠券使用"}
+{"instruction": "在吗，发货后几天能 到北京？", "input": "", "output": "咨询配送时间"}
+{"instruction": "那个，查一下订单状态，单号ORD20256374", "input": "", "output": "查询订单状态"}
+{"instruction": "为什么这个折扣码 用不了？", "input": "", "output": "查询优惠券使用"}
+{"instruction": "这款电 动牙刷的具体重量是多少？", "input": "", "output": "咨询产品规格"}
+{"instruction": "下单后多 久能送到", "input": "", "output": "咨询配送时间"}
+{"instruction": "帮我取消订单ORD20253062", "input": "", "output": "取消订单"}
+{"instruction": "你好，这款扫地机的具体保质期是多少", "input": "", "output": "咨询产品规格"}
+{"instruction": "你好，这个东西保修期是多久？", "input": "", "output": "申请售后保修"}
+{"instruction": "尺码不 合适，我想换个大一号的", "input": "", "output": "申请换货"}
+{"instruction": "你好，这款运动鞋的具体材质是多少？", "input": "", "output": "咨询产品规格"}
+{"instruction": "查一下订单状态，单号 ORD20246624", "input": "", "output": "查询订单状态"}
+{"instruction": "Hi，帮我改一下订 单备注", "input": "", "output": "修改订单信息"}
+{"instruction": "Hi，查一下订单状态，单号ORD20248631", "input": "", "output": "查询订单状态"}
+{"instruction": "麻烦问下，能不能分期付款？", "input": "", "output": "咨询支付方式"}
+{"instruction": "亲，帮我查一下发票开好了没", "input": "", "output": "查询发票信息"}
+{"instruction": "查一下订单状态，单号ORD20257652", "input": "", "output": "查询订单状态"}
+{"instruction": "在吗，帮我取消订单ORD20242167", "input": "", "output": "取消订单"}
+{"instruction": "亲，帮我把收货地址 改成公司", "input": "", "output": "修改收货地址"}
+{"instruction": "我的防晒霜不工作了，还在保修期内", "input": "", "output": "申请售后保修"}
+{"instruction": "我要申请退款，ORD20253675", "input": "", "output": "退款申请"}
+{"instruction": "查一下订单状态，单号ORD20257564", "input": "", "output": "查询订单状态"}
+{"instruction": "在吗，衣服的面 料是纯棉的吗？", "input": "", "output": "咨询产品规格"}
+{"instruction": "查一下订单状态，单号ORD20257793", "input": "", "output": "查询订单状态"}
+{"instruction": "在吗，怎么修改登录密码？", "input": "", "output": "账号登录问题"}
+{"instruction": "周末 送货吗？", "input": "", "output": "咨询配送时间"}
+{"instruction": "帮我取消订单ORD20245461", "input": "", "output": "取消订单"}
+{"instruction": "在哪里 申请售后维修？", "input": "", "output": "申请售后保修"}
+{"instruction": "麻烦问下，它是220V电压还是110V？", "input": "", "output": "咨询产品规格"}
+{"instruction": "地址填错了，能不能改？订单ORD20251141", "input": "", "output": "修改收货地址"}
+{"instruction": "麻烦问下，查一下订单状态，单号ORD20258543", "input": "", "output": "查询订单状态"}
+{"instruction": "请问，换货流程是怎么样的？", "input": "", "output": "申请换货"}
+{"instruction": "这款乐高积木的具体保质期是多少", "input": "", "output": "咨询产品规格"}
+{"instruction": "请问，为什么这个优惠券用不了？", "input": "", "output": "查询优惠券使用"}
+{"instruction": "在吗，忘记用户名了，怎么找回？", "input": "", "output": "账号登录问题"}
+{"instruction": "请问，拍错码数了，帮我改成L码", "input": "", "output": "修改订单信息"}
+{"instruction": "查物流，ORD20245525", "input": "", "output": "查询物流信息"}
+{"instruction": "查一下订单状态，单号ORD20245632", "input": "", "output": "查询订单状态"}
+{"instruction": "退 款怎么还没到账", "input": "", "output": "退款申请"}
+{"instruction": "那个，订单ORD20257811的发票哪里下载？", "input": "", "output": "查询发票信息"}
+{"instruction": "Hi，收到的投影仪是坏的！", "input": "", "output": "投诉商品质量"}
+{"instruction": "在吗，帮我取消订单ORD20256271", "input": "", "output": "取消订单"}
+{"instruction": "退款怎 么还没到账", "input": "", "output": "退款申请"}
+{"instruction": "客服，查一下订单状态，单号ORD20241503", "input": "", "output": "查询订单状态"}
+{"instruction": "客服，退款怎么还没到账", "input": "", "output": "退款申请"}
+{"instruction": "那个，支持货到付款吗", "input": "", "output": "咨询支付方式"}
+{"instruction": "请问，我的快递到哪了？ORD20254729", "input": "", "output": "查询物流信息"}
+{"instruction": "这款运动鞋的具体成分是多少", "input": "", "output": "咨询产品规格"}
+{"instruction": "请问，下单后多 久能送到？", "input": "", "output": "咨询配送时间"}
+{"instruction": "衣服的面料 是纯棉的吗？", "input": "", "output": "咨询产品规格"}
+{"instruction": "Hi，优惠券在哪里输入？", "input": "", "output": "查询优惠券使用"}
+{"instruction": "能开抬头吗", "input": "", "output": "查询发票信息"}
+{"instruction": "麻烦问下，这个尺寸放得进登机箱吗？", "input": "", "output": "咨询产品规格"}
+{"instruction": "请问，电话 留错了，帮我改一下联系方式", "input": "", "output": "修改收货地址"}
+{"instruction": "帮我取消订单OR D20242446", "input": "", "output": "取消订单"}
+{"instruction": "你好，这个券过期了吗？", "input": "", "output": "查询优惠券使用"}
+{"instruction": "我想把黑色的换成白色的，订单ORD20241520", "input": "", "output": "修改订单信息"}
+{"instruction": "Hi，能不能把两个订单合 并一起发？", "input": "", "output": "修改订单信息"}
+{"instruction": "最快什么时 候到？急用", "input": "", "output": "咨询配送时间"}
+{"instruction": "Hi，坏了能修吗？用了半年了", "input": "", "output": "申请售后保修"}
+{"instruction": "Hi，支持分期吗？", "input": "", "output": "咨询支付方式"}
+{"instruction": "亲，收到的羽绒服是坏的", "input": "", "output": "投诉商品质量"}
+{"instruction": "在吗，满300减30怎么没扣减？", "input": "", "output": "查询优惠券使用"}
+{"instruction": "客服，账号显示异常， 登不上", "input": "", "output": "账号登录问题"}
+{"instruction": "客服，收到的扫地机是坏的！", "input": "", "output": "投诉商品质量"}
+{"instruction": "请问，质量太 差了，线头特别多", "input": "", "output": "投诉商品质量"}
+{"instruction": "春节期间 正常发货配送吗？", "input": "", "output": "咨询配送时间"}
+{"instruction": "你好，可以用花呗吗", "input": "", "output": "咨询支付方式"}
+{"instruction": "我要申请退款，ORD20243035", "input": "", "output": "退款申请"}
+{"instruction": "客服，换货流程是怎么样的？", "input": "", "output": "申请换货"}
+{"instruction": "客服，能不能把两个订单合并一起发？", "input": "", "output": "修改订单信息"}
+{"instruction": "在吗，这个尺寸放得进登机箱吗？", "input": "", "output": "咨询产品规格"}
+{"instruction": "客服，衣服的面料是纯棉的吗？", "input": "", "output": "咨询产品规格"}
+{"instruction": "麻烦问下，订单ORD20246970的发票哪里下载？", "input": "", "output": "查询发票信息"}
+{"instruction": "Hi，订单ORD20251 778的发票哪里下载？", "input": "", "output": "查询发票信息"}
+{"instruction": "亲，订单ORD20254044的发票哪里下载", "input": "", "output": "查询发票信息"}
+{"instruction": "订单ORD20254750现在是什么状态", "input": "", "output": "查询订单状态"}
+{"instruction": "支持开公司抬 头吗", "input": "", "output": "查询发票信息"}
+{"instruction": "麻烦问下，下单后多久能送到？", "input": "", "output": "咨询配送时间"}
+{"instruction": "那个，衣服的面料是纯棉的吗？", "input": "", "output": "咨询产品规格"}
+{"instruction": "Hi，支持货到付款吗", "input": "", "output": "咨询支付方式"}
+{"instruction": "亲，查物流，ORD20257250", "input": "", "output": "查询物流信息"}
+{"instruction": "客服，新用户有没有优惠券？", "input": "", "output": "查询优惠券使用"}
+{"instruction": "帮我取消订单ORD20250973", "input": "", "output": "取消订单"}
+{"instruction": "请问，申请质保，机器故障", "input": "", "output": "申请售后保修"}
+{"instruction": "我想把黑色的换成白色的，订单ORD20244842", "input": "", "output": "修改订单信息"}
+{"instruction": "拍错码数了，帮我 改成L码", "input": "", "output": "修改订单信息"}
+{"instruction": "发错颜色了，我要换成 我要的那个", "input": "", "output": "申请换货"}
+{"instruction": "在吗，收到的投影仪是坏的", "input": "", "output": "投诉商品质量"}
+{"instruction": "我要申请退款，ORD20252957", "input": "", "output": "退款申请"}
+{"instruction": "你好，我要投诉商品质量问题，订单ORD20251972", "input": "", "output": "投诉商品质量"}
+{"instruction": "你好，这个东西保修期是多久", "input": "", "output": "申请售后保修"}
+{"instruction": "亲，我的订单怎么一直卡在正在出库", "input": "", "output": "查询订单状态"}
+{"instruction": "那个，这是假 货吧？味道好难闻", "input": "", "output": "投诉商品质量"}
+{"instruction": "补开发票怎么操作", "input": "", "output": "查询发票信息"}
+{"instruction": "能不能把两个订单合 并一起发？", "input": "", "output": "修改订单信息"}
+{"instruction": "请问，可以用花呗吗？", "input": "", "output": "咨询支付方式"}
+{"instruction": "支持开公司抬头 吗？", "input": "", "output": "查询发票信息"}
+{"instruction": "投影仪发货了吗？还是待发货？", "input": "", "output": "查询订单状态"}
+{"instruction": "Hi，可以用 花呗吗？", "input": "", "output": "咨询支付方式"}
+{"instruction": "Hi，我要搬家了，换 个地址寄", "input": "", "output": "修改收货地址"}
+{"instruction": "Hi，我想把黑色的换成白色的，订单ORD20256390", "input": "", "output": "修改订单信息"}
+{"instruction": "Hi，可以用花 呗吗？", "input": "", "output": "咨询支付方式"}
+{"instruction": "我要投诉商品质量问题，订单ORD20253665", "input": "", "output": "投诉商品质量"}
+{"instruction": "大概什么时候能收到？ 猫粮", "input": "", "output": "咨询配送时间"}
+{"instruction": "请问，帮我查查包裹走到哪个城市了", "input": "", "output": "查询物流信息"}
+{"instruction": "怎么修改登录 密码？", "input": "", "output": "账号登录问题"}
+{"instruction": "客服，能不 能分期付款", "input": "", "output": "咨询支付方式"}
+{"instruction": "请问，帮我改一下订单备注", "input": "", "output": "修改订单信息"}
+{"instruction": "大概什么 时候能收到？那个衣服", "input": "", "output": "咨询配送时间"}
+{"instruction": "Hi，这个券 过期了吗？", "input": "", "output": "查询优惠券使用"}
+{"instruction": "我要投诉商品质量问题，订单ORD20248768", "input": "", "output": "投诉商品质量"}
+{"instruction": "帮我看看我的 单子确认了吗", "input": "", "output": "查询订单状态"}
+{"instruction": "客服，提供上门维修服 务吗", "input": "", "output": "申请售后保修"}
+{"instruction": "麻烦问下，手机号换了，收不到验证码", "input": "", "output": "账号登录问题"}
+{"instruction": "你好，退款怎么还没到账？", "input": "", "output": "退款申请"}
+{"instruction": "你好，提供上门维修服务吗？", "input": "", "output": "申请售后保修"}
+{"instruction": "收到的羽绒服是坏的！", "input": "", "output": "投诉商品质量"}
+{"instruction": "麻烦问下，东西有磨损，是不是二手的？", "input": "", "output": "投诉商品质量"}
+{"instruction": "东西有磨损， 是不是二手的？", "input": "", "output": "投诉商品质量"}
+{"instruction": "查一下订单状态，单号ORD20248 128", "input": "", "output": "查询订单状态"}
+{"instruction": "查一下订单状态，单号ORD20258509", "input": "", "output": "查询订单状态"}
+{"instruction": "能开电子发票吗？", "input": "", "output": "查询发票信息"}
+{"instruction": "麻烦问下，我要搬家了，换个地址寄", "input": "", "output": "修改收货地址"}
+{"instruction": "麻烦问下，优惠券在 哪里输入？", "input": "", "output": "查询优惠券使用"}
+{"instruction": "客服，这款那个衣服的具 体重量是多少？", "input": "", "output": "咨询产品规格"}
+{"instruction": "地址填错了，能不能改？订单ORD20258903", "input": "", "output": "修改收货地址"}
+{"instruction": "Hi，收到的那个衣服是坏的！", "input": "", "output": "投诉商品质量"}
+{"instruction": "请问，收到的那个衣服 是坏的！", "input": "", "output": "投诉商品质量"}
+{"instruction": "快递 是不是丢了？三天没动了", "input": "", "output": "查询物流信息"}
+{"instruction": "请问，发票什么时候寄出来？", "input": "", "output": "查询发票信息"}
+{"instruction": "Hi，为什么订单显示已完成但我没收到？", "input": "", "output": "查询订单状态"}
+{"instruction": "这是假货吧？味道 好难闻", "input": "", "output": "投诉商品质量"}
+{"instruction": "麻烦问下，尺码不合适，我想换个大一号的", "input": "", "output": "申请换货"}
+{"instruction": "请问，发货后几天能到北京", "input": "", "output": "咨询配送时间"}
+{"instruction": "在吗，帮我查查包裹走到哪个城市了", "input": "", "output": "查询物流信息"}
+{"instruction": "亲，换货流程是怎么样的", "input": "", "output": "申请换货"}
+{"instruction": "客服，满300减30怎么没扣减", "input": "", "output": "查询优惠券使用"}
+{"instruction": "客服，忘记用户名了，怎么 找回？", "input": "", "output": "账号登录问题"}
+{"instruction": "我要搬家了 ，换个地址寄", "input": "", "output": "修改收货地址"}
+{"instruction": "大概什么时候能收到？那个衣服", "input": "", "output": "咨询配送时间"}
+{"instruction": "扫地机发货了吗？还是待发货", "input": "", "output": "查询订单状态"}
+{"instruction": "帮我改一下订 单备注", "input": "", "output": "修改订单信息"}
+{"instruction": "在吗，查物流，ORD20248380", "input": "", "output": "查询物流信息"}
+{"instruction": "你好，支 持开公司抬头吗？", "input": "", "output": "查询发票信息"}
+{"instruction": "那个，我想把黑色的换成白色的，订单ORD2024 2414", "input": "", "output": "修改订单信息"}
+{"instruction": "订单ORD20253263的发票 哪里下载？", "input": "", "output": "查询发票信息"}
+{"instruction": "请问，大概什么时候能收到？猫粮", "input": "", "output": "咨询配送时间"}
+{"instruction": "订单ORD20250463的发票哪里下载", "input": "", "output": "查询发票信息"}
+{"instruction": "那个，可以用花呗吗？", "input": "", "output": "咨询支付方式"}
+{"instruction": "你好，地址填错了，能不能改？订单ORD20240406", "input": "", "output": "修改收货地址"}
+{"instruction": "订 单ORD20249670的发票哪里下载？", "input": "", "output": "查询发票信息"}
+{"instruction": "查物流，ORD20254395", "input": "", "output": "查询物流信息"}
+{"instruction": "麻烦问下，帮我看看我的单子确认了吗", "input": "", "output": "查询订单状态"}
+{"instruction": "请问，下错单了，不用发了，取 消吧", "input": "", "output": "取消订单"}
+{"instruction": "大概什么时候能收到？蓝牙耳机", "input": "", "output": "咨询配送时间"}
+{"instruction": "我的快递到哪了？ORD20242867", "input": "", "output": "查询物流信息"}
+{"instruction": "查一下订单状态，单号ORD20245777", "input": "", "output": "查询订单状态"}
+{"instruction": "客服，发错颜色了，我要换成我要的那个", "input": "", "output": "申请换货"}
+{"instruction": "在吗，支持货到付款吗？", "input": "", "output": "咨询支付方式"}
+{"instruction": "在吗，春节期间正常 发货配送吗？", "input": "", "output": "咨询配送时间"}
+{"instruction": "麻烦问下，怎么支付失败了？我用的微信", "input": "", "output": "咨询支付方式"}
+{"instruction": "我要申请退款，ORD20258713", "input": "", "output": "退款申请"}
+{"instruction": "亲，在哪里申请售后维修", "input": "", "output": "申请售后保修"}
+{"instruction": "你好，两个红包能叠加使用吗", "input": "", "output": "查询优惠券使用"}
+{"instruction": "换货 流程是怎么样的？", "input": "", "output": "申请换货"}
+{"instruction": "你好，查物流，ORD202542 49", "input": "", "output": "查询物流信息"}
+{"instruction": "客服，地址填错了，能不 能改？订单ORD20257167", "input": "", "output": "修改收货地址"}
+{"instruction": "用了一次就坏了，什么垃 圾质量", "input": "", "output": "投诉商品质量"}
+{"instruction": "那个，我的蓝牙耳机不工作了，还在保修期内", "input": "", "output": "申请售后保修"}
+{"instruction": "最快什么 时候到？急用", "input": "", "output": "咨询配送时间"}
+{"instruction": "那个，还没发货吧？帮我拦截取消", "input": "", "output": "取消订单"}
+{"instruction": "Hi，在哪里申请 售后维修？", "input": "", "output": "申请售后保修"}
+{"instruction": "怎 么注销账号", "input": "", "output": "账号登录问题"}
+{"instruction": "订单ORD20241441的发票哪里下载？", "input": "", "output": "查询发票信息"}
+{"instruction": "客服，大概什么时候能收到 ？空气炸锅", "input": "", "output": "咨询配送时间"}
+{"instruction": "请问，物流一直 不更新是怎么回事？", "input": "", "output": "查询物流信息"}
+{"instruction": "Hi，春 节期间正常发货配送吗？", "input": "", "output": "咨询配送时间"}
+{"instruction": "乐高积木发货了吗？还是待发货", "input": "", "output": "查询订单状态"}
+{"instruction": "那个，麻烦 把刚才那一单作废", "input": "", "output": "取消订单"}
+{"instruction": "我要投诉商品质量问题，订单ORD20243104", "input": "", "output": "投诉商品质量"}
+{"instruction": "提供上 门维修服务吗", "input": "", "output": "申请售后保修"}
+{"instruction": "在吗，账号显示异常 ，登不上", "input": "", "output": "账号登录问题"}
+{"instruction": "Hi，账号显示异常，登不上", "input": "", "output": "账号登录问题"}
+{"instruction": "请问，麻烦把刚才那一单作废", "input": "", "output": "取消订单"}
+{"instruction": "亲，周末送 货吗？", "input": "", "output": "咨询配送时间"}
+{"instruction": "Hi，还没发货 吧？帮我拦截取消", "input": "", "output": "取消订单"}
+{"instruction": "那个，猫粮发货了吗？还是待发货", "input": "", "output": "查询订单状态"}
+{"instruction": "亲，能不能把两个订单合并一起发", "input": "", "output": "修改订单信息"}
+{"instruction": "麻烦问下，电话留错了，帮我改一下联系方式", "input": "", "output": "修改收货地址"}
+{"instruction": "亲，防晒霜发货了吗？还是待发货？", "input": "", "output": "查询订单状态"}
+{"instruction": "发票 什么时候寄出来", "input": "", "output": "查询发票信息"}
+{"instruction": "麻烦问下，地址填错了，能不能改？订单ORD20253101", "input": "", "output": "修改收货地址"}
+{"instruction": "那个，忘记用户 名了，怎么找回？", "input": "", "output": "账号登录问题"}
+{"instruction": "洗面奶发货了吗？还是待发货？", "input": "", "output": "查询订单状态"}
+{"instruction": "亲，大概什么时候能收到？空气炸锅", "input": "", "output": "咨询配送时间"}
+{"instruction": "在吗，能开税号 吗？", "input": "", "output": "查询发票信息"}
+{"instruction": "我的快递到哪了？ORD202590 76", "input": "", "output": "查询物流信息"}
+{"instruction": "在哪里申请售后 维修？", "input": "", "output": "申请售后保修"}
+{"instruction": "你好，衣服的面料是纯棉的吗", "input": "", "output": "咨询产品规格"}
+{"instruction": "亲，最快什 么时候到？急用", "input": "", "output": "咨询配送时间"}
+{"instruction": "麻烦问下，两个红包能叠加使用吗？", "input": "", "output": "查询优惠券使用"}
+{"instruction": "你好，质量太差了，线头特 别多", "input": "", "output": "投诉商品质量"}
+{"instruction": "Hi，为什么这个折扣码用不了？", "input": "", "output": "查询优惠券使用"}
+{"instruction": "订单ORD 20242183现在是什么状态？", "input": "", "output": "查询订单状态"}
+{"instruction": "帮我取消订单ORD20252859", "input": "", "output": "取消订单"}
+{"instruction": "我要申请退款，ORD20 255971", "input": "", "output": "退款申请"}
+{"instruction": "在吗，寄到老家去，不是默认地址，帮我改", "input": "", "output": "修改收货地址"}
+{"instruction": "为什么这个满减券用不了？", "input": "", "output": "查询优惠券使用"}
+{"instruction": "我想把黑色的换成白色的，订单ORD20243285", "input": "", "output": "修改订单信息"}
+{"instruction": "麻烦问下，这款电动牙刷的具体衣长是多少", "input": "", "output": "咨询产品规格"}
+{"instruction": "还没发货吧 ？帮我拦截取消", "input": "", "output": "取消订单"}
+{"instruction": "查一下订单状态， 单号ORD20249541", "input": "", "output": "查询订单状态"}
+{"instruction": "快递是不是丢了 ？三天没动了", "input": "", "output": "查询物流信息"}
+{"instruction": "那个，能不能把两个订单合并一起发", "input": "", "output": "修改订单信息"}
+{"instruction": "客服，查物流，ORD20243336", "input": "", "output": "查询物流信息"}
+{"instruction": "那个，查物流，ORD20252762", "input": "", "output": "查询物流信息"}
+{"instruction": "请问，这个多重啊？我 想算运费", "input": "", "output": "咨询产品规格"}
+{"instruction": "这 个东西保修期是多久？", "input": "", "output": "申请售后保修"}
+{"instruction": "客服，取消交易， 快点", "input": "", "output": "取消订单"}
+{"instruction": "麻烦问下，忘记用户名了，怎么找回？", "input": "", "output": "账号登录问题"}
+{"instruction": "客服，大概什么时候能 收到？switch", "input": "", "output": "咨询配送时间"}
+{"instruction": "查一下订单状态，单号 ORD20258087", "input": "", "output": "查询订单状态"}
+{"instruction": "查物流，ORD20247369", "input": "", "output": "查询物流信息"}
+{"instruction": "麻烦问下，支持货到付款吗？", "input": "", "output": "咨询支付方式"}
+{"instruction": "那个，帮我备注一下：前天不要送货", "input": "", "output": "修改订单信息"}
+{"instruction": "亲，我的订单怎么 一直卡在正在出库？", "input": "", "output": "查询订单状态"}
+{"instruction": "订单ORD20244927现在是什么状态？", "input": "", "output": "查询订单状态"}
+{"instruction": "那个，发货后几天能到 北京？", "input": "", "output": "咨询配送时间"}
+{"instruction": "麻烦问下，我的快递到哪了？ORD20249714", "input": "", "output": "查询物流信息"}
+{"instruction": "那个，支持开 公司抬头吗？", "input": "", "output": "查询发票信息"}
+{"instruction": "订 单ORD20256704现在是什么状态？", "input": "", "output": "查询订单状态"}
+{"instruction": "投影仪发货了吗？还是待 发货", "input": "", "output": "查询订单状态"}
+{"instruction": "我要搬家了，换 个地址寄", "input": "", "output": "修改收货地址"}
+{"instruction": "亲，尺码不合适，我想换个大一 号的", "input": "", "output": "申请换货"}
+{"instruction": "Hi，这个尺寸放 得进登机箱吗？", "input": "", "output": "咨询产品规格"}
+{"instruction": "客服，我要投诉商品质量问题，订单ORD20253284", "input": "", "output": "投诉商品质量"}
+{"instruction": "Hi，能不能分期付款？", "input": "", "output": "咨询支付方式"}
+{"instruction": "在吗，物流一直不更新是怎么回事", "input": "", "output": "查询物流信息"}
+{"instruction": "麻烦问下，两个红包能叠加使 用吗", "input": "", "output": "查询优惠券使用"}
+{"instruction": "Hi，支持开公司抬头吗", "input": "", "output": "查询发票信息"}
+{"instruction": "客服，补开发票怎么操作？", "input": "", "output": "查询发票信息"}
+{"instruction": "请问，帮我看看我的单子确认了吗？", "input": "", "output": "查询订单状态"}
+{"instruction": "能不能把两个订单合并 一起发？", "input": "", "output": "修改订单信息"}
+{"instruction": "Hi，我的电动牙刷不工作了，还在保 修期内", "input": "", "output": "申请售后保修"}
+{"instruction": "大概什么时候能收 到？猫粮", "input": "", "output": "咨询配送时间"}
+{"instruction": "请问，支持货到付款吗？", "input": "", "output": "咨询支付方式"}
+{"instruction": "查物流，ORD20253064", "input": "", "output": "查询物流信息"}
+{"instruction": "这款投影仪的具体电压是多少？", "input": "", "output": "咨询产品规格"}
+{"instruction": "请问，退款怎么还没到账", "input": "", "output": "退款申请"}
+{"instruction": "那个，能不能分期付款？", "input": "", "output": "咨询支付方式"}
+{"instruction": "查物流，ORD20257232", "input": "", "output": "查询物流信息"}
+{"instruction": "补 开发票怎么操作", "input": "", "output": "查询发票信息"}
+{"instruction": "那个，电话留错了，帮我改 一下联系方式", "input": "", "output": "修改收货地址"}
+{"instruction": "收到的空气炸锅是坏的", "input": "", "output": "投诉商品质量"}
+{"instruction": "Hi，帮我备注一下：刚才不 要送货", "input": "", "output": "修改订单信息"}
+{"instruction": "收到 的投影仪是坏的！", "input": "", "output": "投诉商品质量"}
+{"instruction": "那个，这个东西保修期是多久", "input": "", "output": "申请售后保修"}
+{"instruction": "客服，查物流，ORD20244062", "input": "", "output": "查询物流信息"}
+{"instruction": "请问，我要投诉商品质量问题，订单ORD20250244", "input": "", "output": "投诉商品质量"}
+{"instruction": "客服，周末送货吗", "input": "", "output": "咨询配送时间"}
+{"instruction": "在吗，能发个 物流轨迹给我看吗？", "input": "", "output": "查询物流信息"}
+{"instruction": "亲，帮我取消订单ORD20254360", "input": "", "output": "取消订单"}
+{"instruction": "你好，用了一次就坏了，什么垃圾质量", "input": "", "output": "投诉商品质量"}
+{"instruction": "麻烦问下，这 个东西保修期是多久", "input": "", "output": "申请售后保修"}
+{"instruction": "请问，订单ORD20241071现在是什么状态？", "input": "", "output": "查询订单状态"}
+{"instruction": "客服，这款洗面奶的具体功率是多少", "input": "", "output": "咨询产品规格"}
+{"instruction": "查一下订单状态，单号ORD20251435", "input": "", "output": "查询订单状态"}
+{"instruction": "这 个多重啊？我想算运费", "input": "", "output": "咨询产品规格"}
+{"instruction": "Hi，怎么注销账号？", "input": "", "output": "账号登录问题"}
+{"instruction": "在吗，满3 00减30怎么没扣减", "input": "", "output": "查询优惠券使用"}
+{"instruction": "在吗，最快什么时候到？急用", "input": "", "output": "咨询配送时间"}
+{"instruction": "客服，怎么修改登录密码？", "input": "", "output": "账号登录问题"}
+{"instruction": "我要投诉商品质量问题，订单ORD20253308", "input": "", "output": "投诉商品质量"}
+{"instruction": "亲，帮我取消订单ORD20249709", "input": "", "output": "取消订单"}
+{"instruction": "我要申请退款，ORD20258971", "input": "", "output": "退款申请"}
+{"instruction": "在吗，补开发票怎 么操作", "input": "", "output": "查询发票信息"}
+{"instruction": "我要申请退款 ，ORD20242403", "input": "", "output": "退款申请"}
+{"instruction": "Hi，还没发货吧 ？帮我拦截取消", "input": "", "output": "取消订单"}
+{"instruction": "订单ORD20241615现在是什么状态？", "input": "", "output": "查询订单状态"}
+{"instruction": "你好，我要搬家了，换个地址寄", "input": "", "output": "修改收货地址"}
+{"instruction": "在吗，在哪里申请售后维修？", "input": "", "output": "申请售后保修"}
+{"instruction": "它是 220V电压还是110V？", "input": "", "output": "咨询产品规格"}
+{"instruction": "客服，我账 号被锁了，怎么办", "input": "", "output": "账号登录问题"}
+{"instruction": "地址填错了，能不能改？订单ORD20240145", "input": "", "output": "修改收货地址"}
+{"instruction": "Hi，衣服有点紧，能换货吗？", "input": "", "output": "申请换货"}
+{"instruction": "Hi，下错单了， 不用发了，取消吧", "input": "", "output": "取消订单"}
+{"instruction": "请问，周末送货吗？", "input": "", "output": "咨询配送时间"}
+{"instruction": "为什么这个抵扣券用不了", "input": "", "output": "查询优惠券使用"}
+{"instruction": "请问，我的订单怎么一直卡在正在 出库？", "input": "", "output": "查询订单状态"}
+{"instruction": "这款洗面奶的具体成分是多少？", "input": "", "output": "咨询产品规格"}
+{"instruction": "麻烦问下，为什么这个折扣码用不了？", "input": "", "output": "查询优惠券使用"}
+{"instruction": "麻烦问下，帮我改一下订单备注", "input": "", "output": "修改订单信息"}
+{"instruction": "客服，物流一直不更新是怎么回事？", "input": "", "output": "查询物流信息"}
+{"instruction": "东西有 磨损，是不是二手的？", "input": "", "output": "投诉商品质量"}
+{"instruction": "麻烦问下，大概什么时候能收到？投影仪", "input": "", "output": "咨询配送时间"}
+{"instruction": "你好，我的那个衣服不工作了，还在保修期内", "input": "", "output": "申请售后保修"}
+{"instruction": "那个，我想用信用 卡支付，哪里选？", "input": "", "output": "咨询支付方式"}
+{"instruction": "亲，最快什么时候到？急用", "input": "", "output": "咨询配送时间"}
+{"instruction": "我的那个衣服不工作了，还在保修期内", "input": "", "output": "申请售后保修"}
+{"instruction": "我的快递到哪了？ORD20252855", "input": "", "output": "查询物流信息"}
+{"instruction": "客服，刚才拍错了，直接退款吧", "input": "", "output": "退款申请"}
+{"instruction": "那个，能 开电子发票吗？", "input": "", "output": "查询发票信息"}
+{"instruction": "查一下订单状态，单号ORD20253400", "input": "", "output": "查询订单状态"}
+{"instruction": "麻烦问下，东西有 磨损，是不是二手的？", "input": "", "output": "投诉商品质量"}
+{"instruction": "我 的快递到哪了？ORD20255198", "input": "", "output": "查询物流信息"}
+{"instruction": "收到的防晒霜是坏的！", "input": "", "output": "投诉商品质量"}
+{"instruction": "客服，为什么订单显示已完成但我没收到", "input": "", "output": "查询订单状态"}
+{"instruction": "帮我取消订单ORD20240168", "input": "", "output": "取消订单"}
+{"instruction": "帮我取消订单ORD 20259304", "input": "", "output": "取消订单"}
+{"instruction": "我要申请 退款，ORD20254640", "input": "", "output": "退款申请"}
+{"instruction": "你好，优惠券在哪里输入？", "input": "", "output": "查询优惠券使用"}
+{"instruction": "换货流程是怎么样 的？", "input": "", "output": "申请换货"}
+{"instruction": "帮我备注一下：刚才不要送货", "input": "", "output": "修改订单信息"}
+{"instruction": "那个，下单后多久能送到？", "input": "", "output": "咨询配送时间"}
+{"instruction": "我的空气炸锅不工作了，还在保修期内", "input": "", "output": "申请售后保修"}
+{"instruction": "客服，收到的羽绒服是坏的", "input": "", "output": "投诉商品质量"}
+{"instruction": "这款羽绒服的具体电压是多少", "input": "", "output": "咨询产品规格"}
+{"instruction": "那个，订单ORD20246132的发票哪里下载", "input": "", "output": "查询发票信息"}
+{"instruction": "那个，大概什么时候能收到？防晒霜", "input": "", "output": "咨询配送时间"}
+{"instruction": "Hi，质量太差了，线头 特别多", "input": "", "output": "投诉商品质量"}
+{"instruction": "那个，满300减3 0怎么没扣减？", "input": "", "output": "查询优惠券使用"}
+{"instruction": "我要申请换货 ，不退款", "input": "", "output": "申请换货"}
+{"instruction": "亲，我的空气炸锅不工作了，还在保修期内", "input": "", "output": "申请售后保修"}
+{"instruction": "手机号换了，收不 到验证码", "input": "", "output": "账号登录问题"}
+{"instruction": "我要投诉商 品质量问题，订单ORD20251588", "input": "", "output": "投诉商品质量"}
+{"instruction": "查物流，ORD20247713", "input": "", "output": "查询物流信息"}
+{"instruction": "查一下订单 状态，单号ORD20240471", "input": "", "output": "查询订单状态"}
+{"instruction": "我要申请退款，ORD20241396", "input": "", "output": "退款申请"}
+{"instruction": "申 请质保，机器故障", "input": "", "output": "申请售后保修"}
+{"instruction": "退款怎么 还没到账？", "input": "", "output": "退款申请"}
+{"instruction": "麻烦问下，这个尺寸放 得进登机箱吗？", "input": "", "output": "咨询产品规格"}
+{"instruction": "那个，我想用信用卡支付，哪里选？", "input": "", "output": "咨询支付方式"}
+{"instruction": "麻烦把刚才 那一单作废", "input": "", "output": "取消订单"}
+{"instruction": "麻烦问下，帮我取消订单ORD20255055", "input": "", "output": "取消订单"}
+{"instruction": "Hi，查物流，ORD20240683", "input": "", "output": "查询物流信息"}
+{"instruction": "亲，账号显示异 常，登不上", "input": "", "output": "账号登录问题"}
+{"instruction": "那个，收到的扫地机是坏的！", "input": "", "output": "投诉商品质量"}
+{"instruction": "你好，帮我操 作一下全额退款", "input": "", "output": "退款申请"}
+{"instruction": "支持信用卡吗？", "input": "", "output": "咨询支付方式"}
+{"instruction": "帮我取消订单ORD20247572", "input": "", "output": "取消订单"}
+{"instruction": "麻烦问下，能不能把两个订单合并一起发？", "input": "", "output": "修改订单信息"}
+{"instruction": "你好，帮我取消订单ORD20249973", "input": "", "output": "取消订单"}
+{"instruction": "你好，帮我查查包裹走到哪个城市了", "input": "", "output": "查询物流信息"}
+{"instruction": "亲，能开抬头吗？", "input": "", "output": "查询发票信息"}
+{"instruction": "Hi，怎么注销账号", "input": "", "output": "账号登录问题"}
+{"instruction": "麻烦问下，帮我查一下发票开 好了没", "input": "", "output": "查询发票信息"}
+{"instruction": "麻烦问下，我要投诉商品质量问题，订单ORD20241019", "input": "", "output": "投诉商品质量"}
+{"instruction": "那个，怎么注销账号", "input": "", "output": "账号登录问题"}
+{"instruction": "客服，这个东西保修期是多久", "input": "", "output": "申请售后保修"}
+{"instruction": "地址填错了，能不能改？订单OR D20251539", "input": "", "output": "修改收货地址"}
+{"instruction": "你好，查一下订单状态，单号ORD20 249574", "input": "", "output": "查询订单状态"}
+{"instruction": "Hi，我忘记密码了，怎么办？", "input": "", "output": "账号登录问题"}
+{"instruction": "在哪 里点退款？我找不到按钮", "input": "", "output": "退款申请"}
+{"instruction": "帮我操作一下全额 退款", "input": "", "output": "退款申请"}
+{"instruction": "Hi，怎么修改登录密码？", "input": "", "output": "账号登录问题"}
+{"instruction": "客服，东西有磨损，是不是二手的", "input": "", "output": "投诉商品质量"}
+{"instruction": "在吗，我的订单怎么一直卡在正在出库？", "input": "", "output": "查询订单状态"}
+{"instruction": "春节期间正 常发货配送吗？", "input": "", "output": "咨询配送时间"}
+{"instruction": "你好，我登不上去了，怎么办？", "input": "", "output": "账号登录问题"}
+{"instruction": "请问，物流一直不更新是怎么 回事？", "input": "", "output": "查询物流信息"}
+{"instruction": "请问，支持开公司抬头吗？", "input": "", "output": "查询发票信息"}
+{"instruction": "请问，为什么订单显示已完成但我没收到？", "input": "", "output": "查询订单状态"}
+{"instruction": "请问，换货流程是怎么样的", "input": "", "output": "申请换货"}
+{"instruction": "订 单ORD20258441的发票哪里下载？", "input": "", "output": "查询发票信息"}
+{"instruction": "亲，春节期间正常发货配送吗", "input": "", "output": "咨询配送时间"}
+{"instruction": "能开纸质发 票吗？", "input": "", "output": "查询发票信息"}
+{"instruction": "客服，地址填错了，能不能改？订单ORD20258008", "input": "", "output": "修改收货地址"}
+{"instruction": "我的iPhone 15不工作了，还在保修期内", "input": "", "output": "申请售后保修"}
+{"instruction": "在吗，优惠券在哪里输入", "input": "", "output": "查询优惠券使用"}
+{"instruction": "在吗，质量太差了，线头特别多", "input": "", "output": "投诉商品质量"}
+{"instruction": "在哪里申请售后维 修？", "input": "", "output": "申请售后保修"}
+{"instruction": "你好，地址填错了，能不能改？订单ORD202 51565", "input": "", "output": "修改收货地址"}
+{"instruction": "Hi，能开纸质发票吗", "input": "", "output": "查询发票信息"}
+{"instruction": "衣 服的面料是纯棉的吗？", "input": "", "output": "咨询产品规格"}
+{"instruction": "在吗，大概什么时候能收到？扫地机", "input": "", "output": "咨询配送时间"}
+{"instruction": "那个，寄到老家 去，不是默认地址，帮我改", "input": "", "output": "修改收货地址"}
+{"instruction": "忘 了备注礼盒包装，帮我加一下", "input": "", "output": "修改订单信息"}
+{"instruction": "那个，我要申请退款，ORD20256249", "input": "", "output": "退款申请"}
+{"instruction": "Hi，电动牙刷发货了吗？还是待发货？", "input": "", "output": "查询订单状态"}
+{"instruction": "帮我备注一 下：上周不要送货", "input": "", "output": "修改订单信息"}
+{"instruction": "还没发 货吧？帮我拦截取消", "input": "", "output": "取消订单"}
+{"instruction": "帮我看 看我的单子确认了吗", "input": "", "output": "查询订单状态"}
+{"instruction": "Hi，在哪里申请售后维修？", "input": "", "output": "申请售后保修"}
+{"instruction": "在吗，查一下订单状态，单号ORD20251382", "input": "", "output": "查询订单状态"}
+{"instruction": "你好，我想把黑色的换成白色的，订单ORD20255581", "input": "", "output": "修改订单信息"}
+{"instruction": "请问，查一下订单状态，单号ORD20248124", "input": "", "output": "查询订单状态"}
+{"instruction": "订单ORD20255184现在是什么状态", "input": "", "output": "查询订单状态"}
+{"instruction": "请问，支持货 到付款吗", "input": "", "output": "咨询支付方式"}
+{"instruction": "你好，收到的洗面奶是坏的", "input": "", "output": "投诉商品质量"}
+{"instruction": "那个，帮我看看我的单子确认了吗？", "input": "", "output": "查询订单状态"}
+{"instruction": "麻烦问下，可以用花呗吗？", "input": "", "output": "咨询支付方式"}
+{"instruction": "在吗，查一下订单状态，单号ORD20255075", "input": "", "output": "查询订单状态"}
+{"instruction": "帮我把收货 地址改成公司", "input": "", "output": "修改收货地址"}
+{"instruction": "你好，拍错码数了，帮我改成L码", "input": "", "output": "修改订单信息"}
+{"instruction": "亲，我要投诉商品质量问题 ，订单ORD20254229", "input": "", "output": "投诉商品质量"}
+{"instruction": "忘记用户 名了，怎么找回？", "input": "", "output": "账号登录问题"}
+{"instruction": "发错颜色了， 我要换成我要的那个", "input": "", "output": "申请换货"}
+{"instruction": "那个，发票什 么时候寄出来", "input": "", "output": "查询发票信息"}
+{"instruction": "大概什 么时候能收到？投影仪", "input": "", "output": "咨询配送时间"}
+{"instruction": "亲，帮我备注一下：昨天 不要送货", "input": "", "output": "修改订单信息"}
+{"instruction": "那个，查物流，ORD20251139", "input": "", "output": "查询物流信息"}
+{"instruction": "那个，iPhone 15发货了吗？还是待发货？", "input": "", "output": "查询订单状态"}
+{"instruction": "这款防晒霜的具体衣长是多少？", "input": "", "output": "咨询产品规格"}
+{"instruction": "那个，我要投诉商品质量问题，订单ORD20255369", "input": "", "output": "投诉商品质量"}
+{"instruction": "Hi，我的快递到哪了？ORD20245183", "input": "", "output": "查询物流信息"}
+{"instruction": "Hi，能不能把两个订单合并一起发？", "input": "", "output": "修改订单信息"}
+{"instruction": "我想把黑色的换成白色的，订单ORD20249230", "input": "", "output": "修改订单信息"}
+{"instruction": "为什么这个优惠券用不了？", "input": "", "output": "查询优惠券使用"}
+{"instruction": "客服，地址填错了，能不能改？ 订单ORD20251884", "input": "", "output": "修改收货地址"}
+{"instruction": "请问，发错颜色了，我要换成我要的那个", "input": "", "output": "申请换货"}
+{"instruction": "它是220V电压 还是110V？", "input": "", "output": "咨询产品规格"}
+{"instruction": "亲，我不买了，请把订单取消掉", "input": "", "output": "取消订单"}
+{"instruction": "亲，能开税号吗？", "input": "", "output": "查询发票信息"}
+{"instruction": "Hi，质量太差了，线头特别多", "input": "", "output": "投诉商品质量"}
+{"instruction": "请问，怎么注销 账号", "input": "", "output": "账号登录问题"}
+{"instruction": "这款猫粮的具体重量是多少？", "input": "", "output": "咨询产品规格"}
+{"instruction": "帮我把 收货地址改成公司", "input": "", "output": "修改收货地址"}
+{"instruction": "麻烦问下，申请质保，机 器故障", "input": "", "output": "申请售后保修"}
+{"instruction": "Hi，支持支付宝吗？", "input": "", "output": "咨询支付方式"}
+{"instruction": "Hi，最快什么时候到？急用", "input": "", "output": "咨询配送时间"}
+{"instruction": "我要申请退款，ORD20256710", "input": "", "output": "退款申请"}
+{"instruction": "你好，我的运动鞋不工作了，还在保修期内", "input": "", "output": "申请售后保修"}
+{"instruction": "支持货到付 款吗？", "input": "", "output": "咨询支付方式"}
+{"instruction": "你好，优惠券在哪里 输入", "input": "", "output": "查询优惠券使用"}
+{"instruction": "这 个券过期了吗？", "input": "", "output": "查询优惠券使用"}
+{"instruction": "衣服的面料是 纯棉的吗？", "input": "", "output": "咨询产品规格"}
+{"instruction": "我想把黑色的换成白色的，订单ORD20248672", "input": "", "output": "修改订单信息"}
+{"instruction": "查物流，ORD20246685", "input": "", "output": "查询物流信息"}
+{"instruction": "在吗，为什 么订单显示已完成但我没收到", "input": "", "output": "查询订单状态"}
+{"instruction": "在吗，帮我取消订单ORD20249862", "input": "", "output": "取消订单"}
+{"instruction": "我要投诉商品质量问题，订单ORD20241735", "input": "", "output": "投诉商品质量"}
+{"instruction": "收到的电动牙刷是坏的！", "input": "", "output": "投诉商品质量"}
+{"instruction": "帮我取消订单ORD20254161", "input": "", "output": "取消订单"}
+{"instruction": "那个，可以用花呗吗", "input": "", "output": "咨询支付方式"}
+{"instruction": "订单ORD20252438的发票哪里下载", "input": "", "output": "查询发票信息"}
+{"instruction": "客服，忘记用户名了，怎么找回？", "input": "", "output": "账号登录问题"}
+{"instruction": "帮 我查一下发票开好了没", "input": "", "output": "查询发票信息"}
+{"instruction": "你好，地址填错了，能不能改？订单ORD20245231", "input": "", "output": "修改收货地址"}
+{"instruction": "请问，支持信用卡吗", "input": "", "output": "咨询支付方式"}
+{"instruction": "帮我查一下发 票开好了没", "input": "", "output": "查询发票信息"}
+{"instruction": "在吗，坏了能修吗 ？用了半年了", "input": "", "output": "申请售后保修"}
+{"instruction": "在吗，退款怎么还 没到账", "input": "", "output": "退款申请"}
+{"instruction": "Hi，它是220V电压还是110V？", "input": "", "output": "咨询产品规格"}
+{"instruction": "帮我查查包裹走到 哪个城市了", "input": "", "output": "查询物流信息"}
+{"instruction": "帮我取消订单ORD20247892", "input": "", "output": "取消订单"}
+{"instruction": "在吗，寄到老家去， 不是默认地址，帮我改", "input": "", "output": "修改收货地址"}
+{"instruction": "你好，大概什么时候能收到？乐高积木", "input": "", "output": "咨询配送时间"}
+{"instruction": "那个，怎么支付失败了？我用的 微信", "input": "", "output": "咨询支付方式"}
+{"instruction": "地址填错了，能不能 改？订单ORD20259789", "input": "", "output": "修改收货地址"}
+{"instruction": "查一下订单状态，单号ORD20255316", "input": "", "output": "查询订单状态"}
+{"instruction": "客服，衣服有点紧，能换货吗？", "input": "", "output": "申请换货"}
+{"instruction": "Hi，收到的空气炸锅是坏的！", "input": "", "output": "投诉商品质量"}
+{"instruction": "那个，我要申请退款，ORD20246474", "input": "", "output": "退款申请"}
+{"instruction": "帮我取消订单ORD20255296", "input": "", "output": "取消订单"}
+{"instruction": "客服，能不能分期付款", "input": "", "output": "咨询支付方式"}
+{"instruction": "麻烦问下，帮我取消订单ORD20244186", "input": "", "output": "取消订单"}
+{"instruction": "请问，这款 iPhone 15的具体电压是多少？", "input": "", "output": "咨询产品规格"}
+{"instruction": "请问，下单后多久 能送到？", "input": "", "output": "咨询配送时间"}
+{"instruction": "查物 流，ORD20258838", "input": "", "output": "查询物流信息"}
+{"instruction": "亲，拍错码数了，帮我改成L码", "input": "", "output": "修改订单信息"}
+{"instruction": "发 货后几天能到北京？", "input": "", "output": "咨询配送时间"}
+{"instruction": "亲，补开发 票怎么操作？", "input": "", "output": "查询发票信息"}
+{"instruction": "寄到老家去，不 是默认地址，帮我改", "input": "", "output": "修改收货地址"}
+{"instruction": "能不能把两个订 单合并一起发？", "input": "", "output": "修改订单信息"}
+{"instruction": "你好，电话留错了，帮我改一下联 系方式", "input": "", "output": "修改收货地址"}
+{"instruction": "那个，还没发货吧 ？帮我拦截取消", "input": "", "output": "取消订单"}
+{"instruction": "那个，订单ORD20255003现在是什 么状态", "input": "", "output": "查询订单状态"}
+{"instruction": "为什么这个新人红包用不了", "input": "", "output": "查询优惠券使用"}
+{"instruction": "Hi，帮我取消订单ORD20241988", "input": "", "output": "取消订单"}
+{"instruction": "客服，我要申请换货， 不退款", "input": "", "output": "申请换货"}
+{"instruction": "你好，下单后多久能送到？", "input": "", "output": "咨询配送时间"}
+{"instruction": "客服，能不能把两个 订单合并一起发？", "input": "", "output": "修改订单信息"}
+{"instruction": "你好，能不能分期付款？", "input": "", "output": "咨询支付方式"}
+{"instruction": "订单ORD20258463现在是什么状态", "input": "", "output": "查询订单状态"}
+{"instruction": "亲，在哪里点退款？我找不到按钮", "input": "", "output": "退款申请"}
+{"instruction": "亲，优惠券在哪里输入？", "input": "", "output": "查询优惠券使用"}
+{"instruction": "你好，取消交易，快点", "input": "", "output": "取消订单"}
+{"instruction": "客服，能开电子发票吗？", "input": "", "output": "查询发票信息"}
+{"instruction": "请问，帮我操作一下全额退款", "input": "", "output": "退款申请"}
+{"instruction": "那个，下单后多久 能送到？", "input": "", "output": "咨询配送时间"}
+{"instruction": "你好，寄到 老家去，不是默认地址，帮我改", "input": "", "output": "修改收货地址"}
+{"instruction": "亲，我想把黑色的换成白色的，订单ORD20242391", "input": "", "output": "修改订单信息"}
+{"instruction": "忘了备注 礼盒包装，帮我加一下", "input": "", "output": "修改订单信息"}
+{"instruction": "客服，能不能把两个订单合并一起发", "input": "", "output": "修改订单信息"}
+{"instruction": "衣服有点紧，能换 货吗？", "input": "", "output": "申请换货"}
+{"instruction": "物流一直不更新是 怎么回事？", "input": "", "output": "查询物流信息"}
+{"instruction": "地址填错了，能不能改？ 订单ORD20255934", "input": "", "output": "修改收货地址"}
+{"instruction": "东西有磨 损，是不是二手的？", "input": "", "output": "投诉商品质量"}
+{"instruction": "Hi，手机号换了，收不到验证码", "input": "", "output": "账号登录问题"}
+{"instruction": "我想把黑色的 换成白色的，订单ORD20248263", "input": "", "output": "修改订单信息"}
+{"instruction": "亲，我要投诉商品质量问题，订单ORD202 51902", "input": "", "output": "投诉商品质量"}
+{"instruction": "两个红包能 叠加使用吗？", "input": "", "output": "查询优惠券使用"}
+{"instruction": "在吗，两个红包能叠加使用吗", "input": "", "output": "查询优惠券使用"}
+{"instruction": "请问，拍 错码数了，帮我改成L码", "input": "", "output": "修改订单信息"}
+{"instruction": "两个红 包能叠加使用吗？", "input": "", "output": "查询优惠券使用"}
+{"instruction": "你好，可以用花呗吗？", "input": "", "output": "咨询支付方式"}
+{"instruction": "麻烦问下，为什么这个运费券用不了？", "input": "", "output": "查询优惠券使用"}
+{"instruction": "麻烦问下，我想把黑色的换成白色的，订单ORD20253249", "input": "", "output": "修改订单信息"}
+{"instruction": "Hi，查物流，ORD20244095", "input": "", "output": "查询物流信息"}
+{"instruction": "你好，洗面奶发货 了吗？还是待发货", "input": "", "output": "查询订单状态"}
+{"instruction": "羽绒服发货 了吗？还是待发货？", "input": "", "output": "查询订单状态"}
+{"instruction": "请问，我要申请退款 ，ORD20243943", "input": "", "output": "退款申请"}
+{"instruction": "你好，快递是不是丢了？三天没动了", "input": "", "output": "查询物流信息"}
+{"instruction": "为什么订单显示已 完成但我没收到？", "input": "", "output": "查询订单状态"}
+{"instruction": "这个多重啊？ 我想算运费", "input": "", "output": "咨询产品规格"}
+{"instruction": "帮我取消订单ORD20252401", "input": "", "output": "取消订单"}
+{"instruction": "大概 什么时候能收到？switch", "input": "", "output": "咨询配送时间"}
+{"instruction": "查一下订单状态，单号ORD20249499", "input": "", "output": "查询订单状态"}
+{"instruction": "你好，忘 记用户名了，怎么找回？", "input": "", "output": "账号登录问题"}
+{"instruction": "这款switch的具体成分是多少？", "input": "", "output": "咨询产品规格"}
+{"instruction": "在吗，我要投诉商品质量问题，订单ORD20242232", "input": "", "output": "投诉商品质量"}
+{"instruction": "Hi，这个东西保修期是多久？", "input": "", "output": "申请售后保修"}
+{"instruction": "订单ORD20246887现在是什 么状态", "input": "", "output": "查询订单状态"}
+{"instruction": "亲，鞋子小了，换个42码的", "input": "", "output": "申请换货"}
+{"instruction": "麻烦问下，鞋子小了，换个 42码的", "input": "", "output": "申请换货"}
+{"instruction": "麻烦问下，衣服有点紧，能换货 吗？", "input": "", "output": "申请换货"}
+{"instruction": "大概什么时候能收到？洗面奶", "input": "", "output": "咨询配送时间"}
+{"instruction": "你好，地址填错了，能不 能改？订单ORD20252925", "input": "", "output": "修改收货地址"}
+{"instruction": "查物流，O RD20243176", "input": "", "output": "查询物流信息"}
+{"instruction": "客服，这款空气炸锅的具体衣长是多少？", "input": "", "output": "咨询产品规格"}
+{"instruction": "那个，订单ORD20249062的发票哪里下载", "input": "", "output": "查询发票信息"}
+{"instruction": "麻烦问下，刚才拍错了，直 接退款吧", "input": "", "output": "退款申请"}
+{"instruction": "Hi，为什么订单显示已完成但我没收到", "input": "", "output": "查询订单状态"}
+{"instruction": "客服，可以用花呗吗", "input": "", "output": "咨询支付方式"}
+{"instruction": "亲，我要搬 家了，换个地址寄", "input": "", "output": "修改收货地址"}
+{"instruction": "麻烦把刚才那一单 作废", "input": "", "output": "取消订单"}
+{"instruction": "你好，地址填错了，能不能改？订单ORD20244855", "input": "", "output": "修改收货地址"}
+{"instruction": "麻烦问下，账 号显示异常，登不上", "input": "", "output": "账号登录问题"}
+{"instruction": "我的猫粮不工 作了，还在保修期内", "input": "", "output": "申请售后保修"}
+{"instruction": "请问，订单ORD20246303的发票哪里下载？", "input": "", "output": "查询发票信息"}
+{"instruction": "查物流，ORD20240 313", "input": "", "output": "查询物流信息"}
+{"instruction": "麻烦问下，我的switch不工作了，还在保修期内", "input": "", "output": "申请售后保修"}
+{"instruction": "你好，怎么支付失败了？我用的微信", "input": "", "output": "咨询支付方式"}
+{"instruction": "在哪里点退款？我找 不到按钮", "input": "", "output": "退款申请"}
+{"instruction": "亲，我要投诉商品质量问题，订单ORD20257303", "input": "", "output": "投诉商品质量"}
+{"instruction": "忘记用户名了，怎 么找回？", "input": "", "output": "账号登录问题"}
+{"instruction": "在吗，能发个物流轨迹给我 看吗", "input": "", "output": "查询物流信息"}
+{"instruction": "为 什么这个抵扣券用不了？", "input": "", "output": "查询优惠券使用"}
+{"instruction": "大概什么时候能收到？空气 炸锅", "input": "", "output": "咨询配送时间"}
+{"instruction": "Hi，满300减30怎么没扣减", "input": "", "output": "查询优惠券使用"}
+{"instruction": "Hi，发货后几天能到北京", "input": "", "output": "咨询配送时间"}
+{"instruction": "在吗，这个券过期了吗？", "input": "", "output": "查询优惠券使用"}
+{"instruction": "收到的扫地机是坏的", "input": "", "output": "投诉商品质量"}
+{"instruction": "收到的猫粮是坏的！", "input": "", "output": "投诉商品质量"}
+{"instruction": "请问，快递是不是 丢了？三天没动了", "input": "", "output": "查询物流信息"}
+{"instruction": "麻烦问下，能开税号吗？", "input": "", "output": "查询发票信息"}
+{"instruction": "麻烦问下，这个尺寸放得进登机 箱吗？", "input": "", "output": "咨询产品规格"}
+{"instruction": "能 发个物流轨迹给我看吗", "input": "", "output": "查询物流信息"}
+{"instruction": "那个，我不买了，请把订单取消掉", "input": "", "output": "取消订单"}
+{"instruction": "订单ORD20243874现在是什么状态？", "input": "", "output": "查询订单状态"}
+{"instruction": "客服，收到的洗面奶是坏的", "input": "", "output": "投诉商品质量"}
+{"instruction": "帮我看 看我的单子确认了吗？", "input": "", "output": "查询订单状态"}
+{"instruction": "在吗，帮我备注 一下：刚才不要送货", "input": "", "output": "修改订单信息"}
+{"instruction": "我忘记密码了，怎 么办", "input": "", "output": "账号登录问题"}
+{"instruction": "客服，这个 东西保修期是多久？", "input": "", "output": "申请售后保修"}
+{"instruction": "春节期间 正常发货配送吗", "input": "", "output": "咨询配送时间"}
+{"instruction": "发 票什么时候寄出来？", "input": "", "output": "查询发票信息"}
+{"instruction": "请问，下单后多久能 送到？", "input": "", "output": "咨询配送时间"}
+{"instruction": "在吗，帮我把收货地址改成公司", "input": "", "output": "修改收货地址"}
+{"instruction": "洗面奶 发货了吗？还是待发货？", "input": "", "output": "查询订单状态"}
+{"instruction": "请问，这个东西 保修期是多久？", "input": "", "output": "申请售后保修"}
+{"instruction": "收到的乐高积木是坏的！", "input": "", "output": "投诉商品质量"}
+{"instruction": "扫地机发货了吗？还是待发货？", "input": "", "output": "查询订单状态"}
+{"instruction": "我要投诉商品质量问题，订单ORD20248431", "input": "", "output": "投诉商品质量"}
+{"instruction": "帮我取消订单ORD20255412", "input": "", "output": "取消订单"}
+{"instruction": "查物流，ORD20257911", "input": "", "output": "查询物流信息"}
+{"instruction": "东西有磨损，是不是二 手的？", "input": "", "output": "投诉商品质量"}
+{"instruction": "客服，提供上门维修 服务吗", "input": "", "output": "申请售后保修"}
+{"instruction": "麻烦问下，我想用信用卡支付，哪里选？", "input": "", "output": "咨询支付方式"}
+{"instruction": "这款乐高积木的具体功率是多少？", "input": "", "output": "咨询产品规格"}
+{"instruction": "在吗，查物流，ORD20251 636", "input": "", "output": "查询物流信息"}
+{"instruction": "客服，还没发 货吧？帮我拦截取消", "input": "", "output": "取消订单"}
+{"instruction": "地 址填错了，能不能改？订单ORD20243818", "input": "", "output": "修改收货地址"}
+{"instruction": "我想把黑色的换成白色的，订单OR D20243216", "input": "", "output": "修改订单信息"}
+{"instruction": "亲，可以用 花呗吗？", "input": "", "output": "咨询支付方式"}
+{"instruction": "那个，能发个物流轨迹给我看吗？", "input": "", "output": "查询物流信息"}
+{"instruction": "Hi，帮我备注一下：今天不要送货", "input": "", "output": "修改订单信息"}
+{"instruction": "发票什么时候 寄出来？", "input": "", "output": "查询发票信息"}
+{"instruction": "我想把黑色的换成白色的，订单ORD20248879", "input": "", "output": "修改订单信息"}
+{"instruction": "在吗，衣服有点紧，能换 货吗？", "input": "", "output": "申请换货"}
+{"instruction": "那个，发货后几天能到北京？", "input": "", "output": "咨询配送时间"}
+{"instruction": "查一下订单状态，单号ORD20242838", "input": "", "output": "查询订单状态"}
+{"instruction": "在吗，为什么订单显示已完成但我 没收到？", "input": "", "output": "查询订单状态"}
+{"instruction": "提供上门维修 服务吗？", "input": "", "output": "申请售后保修"}
+{"instruction": "查一下 订单状态，单号ORD20242774", "input": "", "output": "查询订单状态"}
+{"instruction": "我要申请退款，ORD20248788", "input": "", "output": "退款申请"}
+{"instruction": "你好，订单ORD20257086的发票哪里下载？", "input": "", "output": "查询发票信息"}
+{"instruction": "我忘记密码了 ，怎么办？", "input": "", "output": "账号登录问题"}
+{"instruction": "我要申请退款，ORD20249128", "input": "", "output": "退款申请"}
+{"instruction": "在吗，申请质保，机器故障", "input": "", "output": "申请售后保修"}
+{"instruction": "Hi，能开普票吗", "input": "", "output": "查询发票信息"}
+{"instruction": "能开普票吗", "input": "", "output": "查询发票信息"}
+{"instruction": "客服，电话留错了 ，帮我改一下联系方式", "input": "", "output": "修改收货地址"}
+{"instruction": "运动鞋发货了吗？还是待发货？", "input": "", "output": "查询订单状态"}
+{"instruction": "麻烦问下，退款怎么还没到账", "input": "", "output": "退款申请"}
+{"instruction": "请问，详细参数 发我看一下", "input": "", "output": "咨询产品规格"}
+{"instruction": "麻烦问下，为什么订单显示已完成但我没收到？", "input": "", "output": "查询订单状态"}
+{"instruction": "Hi，申请质保，机器故障", "input": "", "output": "申请售后保修"}
+{"instruction": "亲，能开税号吗", "input": "", "output": "查询发票信息"}
+{"instruction": "客服，支持开公司抬头吗", "input": "", "output": "查询发票信息"}
+{"instruction": "我想把黑色的换成白色的，订单ORD20258524", "input": "", "output": "修改订单信息"}
+{"instruction": "质量 太差了，线头特别多", "input": "", "output": "投诉商品质量"}
+{"instruction": "在哪里申 请售后维修", "input": "", "output": "申请售后保修"}
+{"instruction": "我的快递到哪了？ORD20247790", "input": "", "output": "查询物流信息"}
+{"instruction": "在吗，忘了备注礼盒包装，帮我加一下", "input": "", "output": "修改订单信息"}
+{"instruction": "客服，衣服的面料是纯棉的吗", "input": "", "output": "咨询产品规格"}
+{"instruction": "客服，收到的投影仪是坏的！", "input": "", "output": "投诉商品质量"}
+{"instruction": "Hi，能不能把两个订单合并一起发", "input": "", "output": "修改订单信息"}
+{"instruction": "我要申请退款，O RD20250700", "input": "", "output": "退款申请"}
+{"instruction": "Hi，我的订单怎么一直卡 在正在出库", "input": "", "output": "查询订单状态"}
+{"instruction": "麻烦问下，我想把黑色的换成白色的，订单ORD20250662", "input": "", "output": "修改订单信息"}
+{"instruction": "我想把黑色的换成白色的，订单ORD20250820", "input": "", "output": "修改订单信息"}
+{"instruction": "在吗，寄到老家去，不是默 认地址，帮我改", "input": "", "output": "修改收货地址"}
+{"instruction": "在吗，我的乐高积木不工作了，还在保修期内", "input": "", "output": "申请售后保修"}
+{"instruction": "新用户有没有 优惠券", "input": "", "output": "查询优惠券使用"}
+{"instruction": "Hi，周末送货吗？", "input": "", "output": "咨询配送时间"}
+{"instruction": "在吗，我要搬家了，换个地址寄", "input": "", "output": "修改收货地址"}
+{"instruction": "帮我看看 我的单子确认了吗？", "input": "", "output": "查询订单状态"}
+{"instruction": "地址填错了，能不能改？订单ORD20250512", "input": "", "output": "修改收货地址"}
+{"instruction": "优惠券在哪里输 入？", "input": "", "output": "查询优惠券使用"}
+{"instruction": "电 话留错了，帮我改一下联系方式", "input": "", "output": "修改收货地址"}
+{"instruction": "我要 申请换货，不退款", "input": "", "output": "申请换货"}
+{"instruction": "帮我查一 下发票开好了没", "input": "", "output": "查询发票信息"}
+{"instruction": "那个，我的快递到哪了？ORD20254985", "input": "", "output": "查询物流信息"}
+{"instruction": "麻烦问下，订单ORD20240359现在是什么状态", "input": "", "output": "查询订单状态"}
+{"instruction": "那个，寄到老家去，不是默认地 址，帮我改", "input": "", "output": "修改收货地址"}
+{"instruction": "帮我取消订单ORD202 41111", "input": "", "output": "取消订单"}
+{"instruction": "订单ORD20251459的发票哪里下载？", "input": "", "output": "查询发票信息"}
+{"instruction": "帮我操作一 下全额退款", "input": "", "output": "退款申请"}
+{"instruction": "帮我取消订单ORD20243473", "input": "", "output": "取消订单"}
+{"instruction": "我的快递到哪了？ORD20251699", "input": "", "output": "查询物流信息"}
+{"instruction": "麻烦问下，发票什么时候 寄出来？", "input": "", "output": "查询发票信息"}
+{"instruction": "亲，能开电子发票吗？", "input": "", "output": "查询发票信息"}
+{"instruction": "麻烦问下，优惠券在哪 里输入？", "input": "", "output": "查询优惠券使用"}
+{"instruction": "我要申请退款，ORD20243697", "input": "", "output": "退款申请"}
+{"instruction": "订单ORD20240331现在是什么状态？", "input": "", "output": "查询订单状态"}
+{"instruction": "账号显 示异常，登不上", "input": "", "output": "账号登录问题"}
+{"instruction": "亲，支持货到付款吗", "input": "", "output": "咨询支付方式"}
+{"instruction": "地址填错了，能不能改？订单O RD20253220", "input": "", "output": "修改收货地址"}
+{"instruction": "请问，订单ORD20254455现在是什么状态", "input": "", "output": "查询订单状态"}
+{"instruction": "那个，能开抬头吗？", "input": "", "output": "查询发票信息"}
+{"instruction": "在吗，坏了能修吗？用了 半年了", "input": "", "output": "申请售后保修"}
+{"instruction": "我的猫粮不工作了，还在保修期内", "input": "", "output": "申请售后保修"}
+{"instruction": "在吗，我的快递到哪了？ORD20258669", "input": "", "output": "查询物流信息"}
+{"instruction": "麻烦问下，我想用信用卡支付，哪里选", "input": "", "output": "咨询支付方式"}
+{"instruction": "请问，拍错码 数了，帮我改成L码", "input": "", "output": "修改订单信息"}
+{"instruction": "你好，满300减30怎么没扣减", "input": "", "output": "查询优惠券使用"}
+{"instruction": "最快什么时候到 ？急用", "input": "", "output": "咨询配送时间"}
+{"instruction": "这 款猫粮的具体电压是多少", "input": "", "output": "咨询产品规格"}
+{"instruction": "刚才拍 错了，直接退款吧", "input": "", "output": "退款申请"}
+{"instruction": "麻烦问下，发货后几 天能到北京？", "input": "", "output": "咨询配送时间"}
+{"instruction": "那个，为什么这个新人红包用不了？", "input": "", "output": "查询优惠券使用"}
+{"instruction": "鞋子小了，换 个42码的", "input": "", "output": "申请换货"}
+{"instruction": "在吗，订单ORD20255463现在是什么状态？", "input": "", "output": "查询订单状态"}
+{"instruction": "你好，物流一直不更新是怎么回事", "input": "", "output": "查询物流信息"}
+{"instruction": "请问，能开税号吗", "input": "", "output": "查询发票信息"}
+{"instruction": "支 持货到付款吗？", "input": "", "output": "咨询支付方式"}
+{"instruction": "在吗，满300减30怎么没 扣减？", "input": "", "output": "查询优惠券使用"}
+{"instruction": "请问，衣服的面料是纯棉的吗？", "input": "", "output": "咨询产品规格"}
+{"instruction": "客服，我要投诉商品质量问题，订单ORD20259513", "input": "", "output": "投诉商品质量"}
+{"instruction": "客服，地址填错了，能不能改？订单ORD20256993", "input": "", "output": "修改收货地址"}
+{"instruction": "这款电动牙刷的具体衣长是多少", "input": "", "output": "咨询产品规格"}
+{"instruction": "这个东西保修期 是多久？", "input": "", "output": "申请售后保修"}
+{"instruction": "那个，为什么这个抵扣券用不了？", "input": "", "output": "查询优惠券使用"}
+{"instruction": "客服，我要投诉商品质量问题，订单ORD20251362", "input": "", "output": "投诉商品质量"}
+{"instruction": "在吗，支持花呗吗？", "input": "", "output": "咨询支付方式"}
+{"instruction": "你好，最快什么时候到？急用", "input": "", "output": "咨询配送时间"}
+{"instruction": "请问，发票什么时候寄出来", "input": "", "output": "查询发票信息"}
+{"instruction": "Hi，我要投诉商品质量问题，订单ORD20243226", "input": "", "output": "投诉商品质量"}
+{"instruction": "申请质保 ，机器故障", "input": "", "output": "申请售后保修"}
+{"instruction": "亲，还没发 货吧？帮我拦截取消", "input": "", "output": "取消订单"}
+{"instruction": "那个，周末送货吗？", "input": "", "output": "咨询配送时间"}
+{"instruction": "收到的运动鞋是坏的！", "input": "", "output": "投诉商品质量"}
+{"instruction": "Hi，我要投诉商品质量问题，订 单ORD20255146", "input": "", "output": "投诉商品质量"}
+{"instruction": "那个，这个券过期了吗？", "input": "", "output": "查询优惠券使用"}
+{"instruction": "在哪里点退款 ？我找不到按钮", "input": "", "output": "退款申请"}
+{"instruction": "亲，满300减30怎么 没扣减？", "input": "", "output": "查询优惠券使用"}
+{"instruction": "Hi，大概什么时候能收到？那个衣服", "input": "", "output": "咨询配送时间"}
+{"instruction": "大概什么时候 能收到？扫地机", "input": "", "output": "咨询配送时间"}
+{"instruction": "请问，支持信用卡吗？", "input": "", "output": "咨询支付方式"}
+{"instruction": "在吗，东西 不要了，把钱退给我", "input": "", "output": "退款申请"}
+{"instruction": "亲，我要投诉商品质量问题，订单ORD20240874", "input": "", "output": "投诉商品质量"}
+{"instruction": "这 款扫地机的具体材质是多少？", "input": "", "output": "咨询产品规格"}
+{"instruction": "我要投诉商品质量问题，订单ORD20246257", "input": "", "output": "投诉商品质量"}
+{"instruction": "那个 衣服发货了吗？还是待发货？", "input": "", "output": "查询订单状态"}
+{"instruction": "在吗，我要申请退款， ORD20256089", "input": "", "output": "退款申请"}
+{"instruction": "请问，我要投诉商品质量问题，订单ORD20240897", "input": "", "output": "投诉商品质量"}
+{"instruction": "在吗，帮我备注一下：上周不要送货", "input": "", "output": "修改订单信息"}
+{"instruction": "麻烦问下，查物流，ORD20244507", "input": "", "output": "查询物流信息"}
+{"instruction": "那个，拍错码数 了，帮我改成L码", "input": "", "output": "修改订单信息"}
+{"instruction": "大概什么时 候能收到？洗面奶", "input": "", "output": "咨询配送时间"}
+{"instruction": "在吗，我要投诉商品质量问题，订单ORD20240281", "input": "", "output": "投诉商品质量"}
+{"instruction": "客服，账号显示异常，登不上", "input": "", "output": "账号登录问题"}
+{"instruction": "那个，我收不到验证码，怎 么办？", "input": "", "output": "账号登录问题"}
+{"instruction": "那个，优惠券在哪里 输入？", "input": "", "output": "查询优惠券使用"}
+{"instruction": "Hi，优惠券在 哪里输入", "input": "", "output": "查询优惠券使用"}
+{"instruction": "收到 的运动鞋是坏的！", "input": "", "output": "投诉商品质量"}
+{"instruction": "我想把黑色的换成白色的，订单ORD20248649", "input": "", "output": "修改订单信息"}
+{"instruction": "请问，发货后几天能到北 京？", "input": "", "output": "咨询配送时间"}
+{"instruction": "我的 switch不工作了，还在保修期内", "input": "", "output": "申请售后保修"}
+{"instruction": "订单ORD20250983现在是什么状态？", "input": "", "output": "查询订单状态"}
+{"instruction": "你好，查一下订单状态，单号ORD20244950", "input": "", "output": "查询订单状态"}
+{"instruction": "在吗，我想把黑色的换成白色 的，订单ORD20253708", "input": "", "output": "修改订单信息"}
+{"instruction": "查一下订单状态，单号ORD20258471", "input": "", "output": "查询订单状态"}
+{"instruction": "请问，我的洗面奶不工作了，还在保修期内", "input": "", "output": "申请售后保修"}
+{"instruction": "你好，查物流，O RD20241814", "input": "", "output": "查询物流信息"}
+{"instruction": "客服，拍错码数了，帮我 改成L码", "input": "", "output": "修改订单信息"}
+{"instruction": "那个，怎么修改登录密码", "input": "", "output": "账号登录问题"}
+{"instruction": "客服，订单ORD20250866的发票哪里下载", "input": "", "output": "查询发票信息"}
+{"instruction": "客服，帮 我操作一下全额退款", "input": "", "output": "退款申请"}
+{"instruction": "能不能分期 付款？", "input": "", "output": "咨询支付方式"}
+{"instruction": "查物流，ORD20259918", "input": "", "output": "查询物流信息"}
+{"instruction": "这个东西 保修期是多久", "input": "", "output": "申请售后保修"}
+{"instruction": "客服，为什么这个抵扣券 用不了？", "input": "", "output": "查询优惠券使用"}
+{"instruction": "你好，东西 不要了，把钱退给我", "input": "", "output": "退款申请"}
+{"instruction": "你好，这个多重啊？ 我想算运费", "input": "", "output": "咨询产品规格"}
+{"instruction": "我的快递到哪了？ORD20246369", "input": "", "output": "查询物流信息"}
+{"instruction": "你好，我的iPhone 15不工作了，还在保修期内", "input": "", "output": "申请售后保修"}
+{"instruction": "请问，帮我取消订单ORD20247693", "input": "", "output": "取消订单"}
+{"instruction": "我的快递到哪了？ORD20240190", "input": "", "output": "查询物流信息"}
+{"instruction": "那个，退款怎么还没到账", "input": "", "output": "退款申请"}
+{"instruction": "Hi，退款怎么还没到 账？", "input": "", "output": "退款申请"}
+{"instruction": "为什么这个运费券用不了", "input": "", "output": "查询优惠券使用"}
+{"instruction": "你好，春节期间正常发货配送吗", "input": "", "output": "咨询配送时间"}
+{"instruction": "那个，用了一次就坏了，什么垃圾质量", "input": "", "output": "投诉商品质量"}
+{"instruction": "你好，能不能把 两个订单合并一起发？", "input": "", "output": "修改订单信息"}
+{"instruction": "鞋子小了，换个42 码的", "input": "", "output": "申请换货"}
+{"instruction": "你好，发货后几天能 到北京", "input": "", "output": "咨询配送时间"}
+{"instruction": "这个东西保修期是 多久？", "input": "", "output": "申请售后保修"}
+{"instruction": "帮我备注一下：刚才不 要送货", "input": "", "output": "修改订单信息"}
+{"instruction": "请问，我想把黑色的换成白色的，订单ORD20255255", "input": "", "output": "修改订单信息"}
+{"instruction": "亲，春节期间正 常发货配送吗？", "input": "", "output": "咨询配送时间"}
+{"instruction": "Hi，发错颜色了，我要换成我要的那个", "input": "", "output": "申请换货"}
+{"instruction": "请问，猫粮发货了吗？还是待发货", "input": "", "output": "查询订单状态"}
+{"instruction": "Hi，衣服的面 料是纯棉的吗？", "input": "", "output": "咨询产品规格"}
+{"instruction": "Hi，提供上门维修服务吗", "input": "", "output": "申请售后保修"}
+{"instruction": "查物流，ORD20247610", "input": "", "output": "查询物流信息"}
+{"instruction": "亲，这个尺寸放得进登机箱吗", "input": "", "output": "咨询产品规格"}
+{"instruction": "订单ORD20256832 现在是什么状态？", "input": "", "output": "查询订单状态"}
+{"instruction": "在吗，地 址填错了，能不能改？订单ORD20251208", "input": "", "output": "修改收货地址"}
+{"instruction": "订单ORD20244224现在是什么状态？", "input": "", "output": "查询订单状态"}
+{"instruction": "在吗，换货流程是怎 么样的？", "input": "", "output": "申请换货"}
+{"instruction": "这 款羽绒服的具体尺寸是多少？", "input": "", "output": "咨询产品规格"}
+{"instruction": "能 开普票吗？", "input": "", "output": "查询发票信息"}
+{"instruction": "订单ORD20250970现在是什么状态", "input": "", "output": "查询订单状态"}
+{"instruction": "这款switch的具体成分是多少", "input": "", "output": "咨询产品规格"}
+{"instruction": "那个，刚才拍 错了，直接退款吧", "input": "", "output": "退款申请"}
+{"instruction": "订单ORD20247 371的发票哪里下载？", "input": "", "output": "查询发票信息"}
+{"instruction": "我想把黑色的换成白色的，订单ORD20252825", "input": "", "output": "修改订单信息"}
+{"instruction": "客服，麻 烦把刚才那一单作废", "input": "", "output": "取消订单"}
+{"instruction": "请问，我不买了，请把订单取 消掉", "input": "", "output": "取消订单"}

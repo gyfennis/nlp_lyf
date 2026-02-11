@@ -1,0 +1,42 @@
+ssify> uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+INFO:     Will watch for changes in these directories: ['E:\\Code_Projects\\github\\hub-QdXP\\Project_train\\01-intent-classify\\01-intent-classify']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [1484] using WatchFiles
+D:\DevelopTool\MiniConda\envs\py312\Lib\site-packages\jieba\_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+INFO:     Started server process [5592]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:3218 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:3218 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:14670 - "GET /openapi.json HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'main.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [5592]
+D:\DevelopTool\MiniConda\envs\py312\Lib\site-packages\jieba\_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+INFO:     Started server process [23092]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+> e:\code_projects\github\hub-qdxp\project_train\01-intent-classify\01-intent-classify\model\bert.py(47)model_for_bert()
+-> test_encoding = tokenizer(list(request_text), truncation=True, padding=True, max_length=30)
+(Pdb) 2026-02-05 15:17:26,709 - logger - INFO - 9527 我想回家
+INFO:     127.0.0.1:4688 - "POST /v1/text-cls/regex HTTP/1.1" 200 OK
+2026-02-05 15:17:42,653 - logger - INFO - 9527 导航回家
+INFO:     127.0.0.1:4024 - "POST /v1/text-cls/regex HTTP/1.1" 200 OK
+2026-02-05 15:18:01,291 - logger - INFO - 9527 播放周杰伦的歌曲
+INFO:     127.0.0.1:11443 - "POST /v1/text-cls/regex HTTP/1.1" 200 OK
+2026-02-05 15:18:31,031 - logger - INFO - Get requst: {"request_id":"9527","request_text":"播放周杰伦的歌曲"}
+Building prefix dict from the default dictionary ...
+2026-02-05 15:18:31,031 - jieba - DEBUG - Building prefix dict from the default dictionary ...
+Loading model from cache C:\Users\韩笑笑\AppData\Local\Temp\jieba.cache
+2026-02-05 15:18:31,032 - jieba - DEBUG - Loading model from cache C:\Users\韩笑笑\AppData\Local\Temp\jieba.cache
+Loading model cost 0.653 seconds.
+2026-02-05 15:18:31,685 - jieba - DEBUG - Loading model cost 0.653 seconds.
+Prefix dict has been built successfully.
+2026-02-05 15:18:31,685 - jieba - DEBUG - Prefix dict has been built successfully.
+INFO:     127.0.0.1:7543 - "POST /v1/text-cls/tfidf HTTP/1.1" 200 OK
+2026-02-05 15:19:05,543 - httpx - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:1374 - "POST /v1/text-cls/gpt HTTP/1.1" 200 OK

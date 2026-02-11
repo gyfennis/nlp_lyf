@@ -1,0 +1,8 @@
+# 基础安装（首次用）
+pip install datasets pandas
+# 若已安装，升级到最新版（解决部分兼容问题）
+pip install --upgrade datasets
+
+from datasets import load_dataset
+
+ds = load_dataset("BatteRaquette58/airbnb-stock-price")
