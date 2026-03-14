@@ -1,0 +1,38 @@
+问题一：bert 文本分类和实体识别有什么关系，分别使用什么loss？
+
+关系：共享躯干，分立头部
+在02-joint-bert-training-only 这个项目中，文本分类（sequence classification）和实体识别（token classification / NER）的关系是
+一种非常经典的硬参数共享（Hard Parameter Sharing）的多任务学习架构。
+1.共享的躯干 (Shared Trunk)：在 model.py 的 JointBert 类中，self.bert = BertModel.from_pretrained(bert_dir) 就是这个共享的、
+  强大的躯干。无论是文本分类任务还是实体识别任务，输入的文本首先都会经过这个同一个 BERT 型进行编码，从而得到包含丰富上下文信息的特征表示。
+  这一步是完全共享的，两个任务都从中受益。
+2.分立的头部 (Separate Heads)：BERT 输出特征之后，数据流会“分叉”，进入为各自任务专门设计的“头部”网络。文本分类头部: 
+  self.seq_classifier = nn.Linear(...)。它接收 BERT 的 pooler_output（这通常是 [CLS] 标记经过加工后的输出，代表了整个句子的语义），
+  然后做出对整个句子的分类判断。实体识别头部: self.token_classifier = nn.Linear(...)。它接收 BERT 的 last_hidden_state（这是每一个
+  token 的输出向量），然后对序列中的每一个词做出分类判断（比如，这个词是“人名”的开始 B-PER，还是“非实体” O）。
+总结：它们共享同一个强大的 BERT 特征提取器来理解文本，但使用各自独立的线性层（分类头）来完成自己独特的任务。这样做的好处是，通过在一个
+统一的模型中同时学习两个相关的任务，模型可以学到更泛化、更鲁棒的语言表示，往往能让两个任务的效果都得到提升。
+
+使用的 Loss：都是交叉熵损失 (Cross-Entropy Loss)从 model.py 中可以清晰地看到，两个任务都使用了深度学习分类任务中最标准的损失函数——
+交叉熵损失。
+1.文本分类 Loss:代码: self.seq_loss_fn = nn.CrossEntropyLoss()它计算的是整个句子的预测 logits 和真实标签之间的损失。
+2.实体识别 Loss:代码: self.token_loss_fn = nn.CrossEntropyLoss(ignore_index=-1)它计算的是序列中每一个 token 的预测 logits 和真实标
+  签之间的损失。这里有一个非常关键的细节：ignore_index=-1。它的作用是，在计算总损失时，忽略那些真实标签为 -1 的 token。这通常用于处理 [PAD]
+  [CLS] 等特殊标记，因为我们不希望模型在这些无意义的 token 上产生损失，从而干扰学习过程。
+
+问题二：多任务训练 loss = seq_loss + token_loss 有什么坏处，如何处理？
+
+坏处：损失失衡，梯度“打架”如果简单地将两个 loss 直接相加 loss = seq_loss + token_loss，会带来两个主要的坏处：
+1.损失尺度不平衡 (Scale Imbalance)：seq_loss 是对一个句子级别的任务计算的损失，它是一个单一的值。token_loss 是对序列中每一个 token 
+  计算损失的总和或平均。一个长度为 50 的句子，token_loss 就可能包含了 50 个 token 的损失信息。这通常会导致 token_loss 的数值在量级上
+  远大于 seq_loss。在反向传播时，来自 token_loss 的梯度就会完全主导整个模型的权重更新，使得模型拼命地去优化实体识别任务，而几乎忽略了
+  文本分类任务的学习。
+2.任务重要性/难度不平衡 (Importance/Difficulty Imbalance)：有时，两个任务的学习难度不同。一个任务可能很容易学，loss 下降很快；另一个
+  则很难。简单的相加可能会让模型“偏科”，只在简单的任务上表现好。或者，从业务角度出发，我们可能认为其中一个任务比另一个更重要。简单的相加
+  无法体现这种优先级的差异。
+如何处理：加权求和 (Weighted Sum) - 在 main.py 的 train 函数中，最终的损失是这样计算的： loss = args.seq_loss_weight * seq_loss +
+args.token_loss_weight * token_loss这就是最常用、最有效的处理方法——静态加权求和 (Static Loss Weighting)。
+原理：我们为每个任务的 loss 分配一个权重（seq_loss_weight 和 token_loss_weight）。这两个权重是超参数，可以在训练前设置。
+作用：通过调整这两个权重，我们可以手动平衡不同 loss 的尺度。例如，如果 token_loss 天然比 seq_loss 大 10 倍，我们可以设置 
+token_loss_weight=0.1，seq_loss_weight=1.0，来让它们对最终梯度的贡献大致相当。我们也可以根据任务的优先级来调整权重，赋予我们认为更重
+要的任务一个更大的权重。
