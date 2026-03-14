@@ -1,0 +1,25 @@
+1、BERT文本分类和实体识别的关系:
+	BERT文本分类和实体识别是两种不同的自然语言处理任务，但它们可以共享同一个BERT模型基础：
+
+	文本分类（Sequence Classification）：
+
+	任务：对整个输入序列进行分类
+	使用 [CLS] 位置的输出向量
+	输出层：通常是线性层 + softmax
+	实体识别（Token-level NER）：
+
+	任务：对序列中每个token进行标注
+	使用所有token位置的输出向量
+	输出层：通常是线性层 + CRF或直接softmax
+	
+文本分类使用的Loss函数：seq_loss = CrossEntropyLoss(class_pred, true_labels)
+实体识别使用的Loss函数：
+token_loss = CrossEntropyLoss(token_pred, token_labels)
+# 或者使用CRF Loss
+token_loss = CRFLoss(token_pred, token_labels, mask)
+
+2、问题： loss = seq_loss + token_loss  的坏处：
+ 1. 梯度冲突：两个任务的优化方向可能不一致 
+ 2. 训练不平衡：某个任务可能主导训练过程 
+ 3. 收敛速度不同：不同任务收敛速度差异大 
+ 4. 权重不平衡：可能导致性能下降
