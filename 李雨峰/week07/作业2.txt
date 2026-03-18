@@ -1,0 +1,22 @@
+请将用户的自然语言查询解析为结构化数据，包含领域(domain)、意图(intent)和槽位(slots)。
+
+领域范围：music/app/weather/bus/film/cookbook/novel/flight/train
+意图范围：QUERY/SEARCH/OPEN/PLAY/LAUNCH/SEND/DOWNLOAD/CREATE/DELETE
+实体类型：Src(出发地)/Dest(目的地)/name(姓名)/author(作者)/song(歌曲)/dishName(菜品)/location_city(城市)/date(日期)/content(内容)/keyword(关键词)
+
+输出格式：
+{
+    "domain": "",
+    "intent": "",
+    "slots": {
+        "实体类型": "实体值"
+    }
+}
+
+示例1：查询北京到上海的高铁
+输出：{"domain": "train", "intent": "QUERY", "slots": {"Src": "北京", "Dest": "上海"}}
+
+示例2：播放周杰伦的稻香
+输出：{"domain": "music", "intent": "PLAY", "slots": {"artist": "周杰伦", "song": "稻香"}}
+
+用户输入：{user_input}
