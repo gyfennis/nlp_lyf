@@ -1,0 +1,585 @@
+app:
+  description: '意图识别+双内置知识库RAG'
+  icon: 
+  icon_background: '#FFEAD5'
+  icon_type: emoji
+  mode: advanced-chat
+  name: 作业2_意图识别（双内置知识库RAG）
+  use_icon_as_answer_icon: false
+dependencies:
+- current_identifier: null
+  type: marketplace
+  value:
+    marketplace_plugin_unique_identifier: langgenius/tongyi:0.1.33@608ec1e7d07dd52e582cff58561a8c75c989951186ffc59452dfffe3d8051230
+    version: null
+kind: app
+version: 0.6.0
+workflow:
+  conversation_variables: []
+  environment_variables: []
+  features:
+    file_upload:
+      allowed_file_extensions:
+      - .JPG
+      - .JPEG
+      - .PNG
+      - .GIF
+      - .WEBP
+      - .SVG
+      allowed_file_types:
+      - image
+      allowed_file_upload_methods:
+      - local_file
+      - remote_url
+      enabled: false
+      fileUploadConfig:
+        attachment_image_file_size_limit: 2
+        audio_file_size_limit: 50
+        batch_count_limit: 5
+        file_size_limit: 15
+        file_upload_limit: 50
+        image_file_batch_limit: 10
+        image_file_size_limit: 10
+        single_chunk_attachment_limit: 10
+        video_file_size_limit: 100
+        workflow_file_upload_limit: 10
+      image:
+        enabled: false
+        number_limits: 3
+        transfer_methods:
+        - local_file
+        - remote_url
+      number_limits: 3
+    opening_statement: ''
+    retriever_resource:
+      enabled: true
+    sensitive_word_avoidance:
+      enabled: false
+    speech_to_text:
+      enabled: false
+    suggested_questions: []
+    suggested_questions_after_answer:
+      enabled: false
+    text_to_speech:
+      enabled: false
+      language: ''
+      voice: ''
+  graph:
+    edges:
+    - data:
+        sourceType: start
+        targetType: llm
+      id: 1774325912190-llm
+      source: '1774325912190'
+      sourceHandle: source
+      target: llm
+      targetHandle: target
+      type: custom
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: llm
+        targetType: if-else
+      id: llm-source-1774326061167-target
+      source: llm
+      sourceHandle: source
+      target: '1774326061167'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: if-else
+        targetType: llm
+      id: 1774326061167-true-1774326101943-target
+      source: '1774326061167'
+      sourceHandle: 'true'
+      target: '1774326101943'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: llm
+        targetType: answer
+      id: 1774326101943-source-1774326116982-target
+      source: '1774326101943'
+      sourceHandle: source
+      target: '1774326116982'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: if-else
+        targetType: code
+      id: 1774326061167-6bf17064-5e9b-4ee2-a031-6068130b0dc0-1774326166071-target
+      source: '1774326061167'
+      sourceHandle: 6bf17064-5e9b-4ee2-a031-6068130b0dc0
+      target: '1774326166071'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: if-else
+        targetType: code
+      id: 1774326061167-556f837f-9351-40fe-b6a5-b25b67f9656d-1774326311431-target
+      source: '1774326061167'
+      sourceHandle: 556f837f-9351-40fe-b6a5-b25b67f9656d
+      target: '1774326311431'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: code
+        targetType: llm
+      id: 1774326166071-source-1774326747179-target
+      source: '1774326166071'
+      sourceHandle: source
+      target: '1774326747179'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: code
+        targetType: llm
+      id: 1774326311431-source-1774326876756-target
+      source: '1774326311431'
+      sourceHandle: source
+      target: '1774326876756'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: llm
+        targetType: answer
+      id: 1774326747179-source-1774327100277-target
+      source: '1774326747179'
+      sourceHandle: source
+      target: '1774327100277'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: llm
+        targetType: answer
+      id: 1774326876756-source-1774326904467-target
+      source: '1774326876756'
+      sourceHandle: source
+      target: '1774326904467'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    nodes:
+    - data:
+        selected: false
+        title: 用户输入
+        type: start
+        variables: []
+      height: 72
+      id: '1774325912190'
+      position:
+        x: 80.87055056329609
+        y: 282
+      positionAbsolute:
+        x: 80.87055056329609
+        y: 282
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    - data:
+        context:
+          enabled: false
+          variable_selector: []
+        memory:
+          query_prompt_template: '{{#sys.query#}}
+
+
+            {{#sys.files#}}'
+          role_prefix:
+            assistant: ''
+            user: ''
+          window:
+            enabled: false
+            size: 10
+        model:
+          completion_params:
+            temperature: 0.1
+          mode: chat
+          name: qwen3.5-flash
+          provider: langgenius/tongyi/tongyi
+        prompt_template:
+        - id: d6578e2e-cf3d-40b0-8746-c3aa4c8e41a2
+          role: system
+          text: "# 角色定义\n你是专业的用户意图分类助手。你的任务是分析用户提问，准确判断其属于以下三类意图之一。\n\n# 意图分类标准\n\n\
+            ## 意图1：通用问题（general）\n**判定标准**：问题与机器学习、大模型/LLM 均无关\n**示例**：\n- \"今天天气怎么样\"\
+            \n- \"推荐一部好看的电影\"\n- \"Python 如何读取文件\"\n- \"什么是区块链\"\n\n## 意图2：机器学习问题（machine_learning）\n\
+            **判定标准**：问题涉及传统机器学习算法、理论、应用，但不涉及大语言模型\n**覆盖范围**：\n- 监督/无监督/强化学习算法（如：决策树、SVM、KNN、聚类、随机森林、XGBoost）\n\
+            - 机器学习理论（如：偏差-方差权衡、过拟合、特征工程、交叉验证）\n- 经典 ML 框架（如：scikit-learn、XGBoost、LightGBM）\n\
+            - 深度学习基础（如：CNN、RNN、神经网络结构）—— 注意：如果是问 GPT/BERT/Transformer 架构原理，属于意图3\n\
+            \n**示例**：\n- \"随机森林和梯度提升树有什么区别\"\n- \"如何处理数据不平衡问题\"\n- \"什么是交叉验证\"\n\n\
+            ## 意图3：大模型问题（llm）\n**判定标准**：问题明确涉及大语言模型（LLM）、生成式 AI、相关技术栈\n**覆盖范围**：\n\
+            - 大模型架构（GPT、BERT、Transformer、注意力机制）\n- 大模型训练与微调（PEFT、LoRA、Prompt Tuning、RLHF、SFT）\n\
+            - 大模型应用开发（RAG、Agent、Function Calling、LangChain、LlamaIndex）\n- 大模型部署与优化（量化、推理加速、vLLM、模型合并）\n\
+            - 具体大模型产品（ChatGPT、Claude、文心一言、通义千问、Llama、Qwen）\n\n**示例**：\n- \"什么是 RAG\
+            \ 技术\"\n- \"LoRA 微调原理是什么\"\n- \"如何优化大模型推理速度\"\n- \"GPT-4 和 Claude 有什么区别\"\
+            \n\n# 边界情况处理\n\n1. **模糊/混合问题**：如果同时涉及 ML 和 LLM，以 LLM 为主 → 意图3\n   - 例：\"\
+            用机器学习做文本分类\"（传统 ML 方法）→ 意图2\n   - 例：\"用 BERT 做文本分类\" → 意图3\n\n2. **编程实现问题**：\n\
+            \   - \"用 Python 实现随机森林\" → 意图2\n   - \"用 LangChain 实现 RAG\" → 意图3\n \
+            \  - \"Python 基础语法\" → 意图1\n\n3. **基础概念问题**：\n   - \"什么是神经网络\"（基础深度学习）→\
+            \ 意图2\n   - \"什么是 Transformer\" → 意图3\n\n# 输出格式要求\n\n你必须严格按以下三个内容的其中一个进行输出，不要添加任何解释：\n\
+            general|machine_learning|llm"
+        selected: false
+        structured_output_enabled: false
+        title: 意图识别
+        type: llm
+        vision:
+          enabled: false
+      height: 87
+      id: llm
+      position:
+        x: 380.8705505632962
+        y: 282
+      positionAbsolute:
+        x: 380.8705505632962
+        y: 282
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+    - data:
+        cases:
+        - case_id: 'true'
+          conditions:
+          - comparison_operator: contains
+            id: 8c2b1e0a-1b59-474f-95e5-cd1605bf01f1
+            value: general
+            varType: string
+            variable_selector:
+            - llm
+            - text
+          id: 'true'
+          logical_operator: and
+        - case_id: 6bf17064-5e9b-4ee2-a031-6068130b0dc0
+          conditions:
+          - comparison_operator: contains
+            id: 4057aacd-8acc-48e6-82ac-655bf98fa806
+            value: machine_learning
+            varType: string
+            variable_selector:
+            - llm
+            - text
+          id: 6bf17064-5e9b-4ee2-a031-6068130b0dc0
+          logical_operator: and
+        - case_id: 556f837f-9351-40fe-b6a5-b25b67f9656d
+          conditions:
+          - comparison_operator: contains
+            id: eee0464b-6417-43de-b292-b2dc0af936e2
+            value: llm
+            varType: string
+            variable_selector:
+            - llm
+            - text
+          id: 556f837f-9351-40fe-b6a5-b25b67f9656d
+          logical_operator: and
+        selected: false
+        title: 条件分支
+        type: if-else
+      height: 243
+      id: '1774326061167'
+      position:
+        x: 749.9641563893642
+        y: 269.8122921138543
+      positionAbsolute:
+        x: 749.9641563893642
+        y: 269.8122921138543
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+    - data:
+        context:
+          enabled: false
+          variable_selector: []
+        model:
+          completion_params:
+            temperature: 0.7
+          mode: chat
+          name: qwen3.5-flash
+          provider: langgenius/tongyi/tongyi
+        prompt_template:
+        - id: 8a71868f-2a44-4fe9-a686-656072b08e2e
+          role: system
+          text: 你是一个友好的智能助手，请直接回答用户的问题，语言简洁易懂。
+        - id: user-prompt-general
+          role: user
+          text: '{{#sys.query#}}'
+        selected: false
+        title: 通用问答
+        type: llm
+        vision:
+          enabled: false
+      height: 87
+      id: '1774326101943'
+      position:
+        x: 1340.8574939669736
+        y: 251.53073028463564
+      positionAbsolute:
+        x: 1340.8574939669736
+        y: 251.53073028463564
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+    - data:
+        answer: '{{#1774326101943.text#}}'
+        selected: false
+        title: 通用问题回复
+        type: answer
+        variables: []
+      height: 102
+      id: '1774326116982'
+      position:
+        x: 1621.8348310111626
+        y: 260.2362359175969
+      positionAbsolute:
+        x: 1621.8348310111626
+        y: 260.2362359175969
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+    - data:
+        code: |
+          def main(query: str) -> dict:
+              # 内置机器学习知识库
+              ml_knowledge = {
+                  "机器学习": "机器学习是人工智能的核心分支，让计算机从数据中自动学习规律，无需显式编程即可完成预测、分类等任务，核心分为监督学习、无监督学习、强化学习三大类。",
+                  "监督学习": "监督学习是用带标注的数据集训练模型，让模型学习输入到输出的映射关系，常见算法有线性回归、逻辑回归、决策树、随机森林、SVM等，核心用于分类和回归任务。",
+                  "决策树": "决策树是一种树形结构的监督学习算法，通过对特征进行层层划分来实现分类或回归，优点是可解释性强、处理数据灵活，缺点是容易过拟合。",
+                  "随机森林": "随机森林是集成学习算法，通过构建多棵独立的决策树，最终以投票或平均的方式输出结果，有效降低单棵决策树的过拟合风险，准确率和鲁棒性更强。",
+                  "过拟合": "过拟合是指模型在训练集上表现极好，但在未见过的测试集上表现很差的现象，核心原因是模型学习了训练集中的噪声和无关细节，泛化能力下降。",
+                  "交叉验证": "交叉验证是一种模型评估方法，将数据集划分为多个子集，轮流用部分子集训练、剩余子集测试，多次迭代后取平均结果，能更稳定地评估模型的泛化能力，避免数据划分带来的偏差。"
+              }
+              
+              # 关键词匹配检索
+              result = "未匹配到机器学习相关知识库内容，可补充提问更具体的机器学习问题。"
+              for keyword, content in ml_knowledge.items():
+                  if keyword in query:
+                      result = content
+                      break
+              
+              return {"ml_knowledge": result}
+        code_language: python3
+        desc: 内置机器学习知识库检索
+        outputs:
+          ml_knowledge:
+            children: null
+            type: string
+        selected: false
+        title: 机器学习知识库检索
+        type: code
+        variables:
+        - value_selector:
+          - '1774325912190'
+          - sys.query
+          variable: query
+      height: 89
+      id: '1774326166071'
+      position:
+        x: 1340.8574939669736
+        y: 377.53073028463564
+      positionAbsolute:
+        x: 1340.8574939669736
+        y: 377.53073028463564
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+    - data:
+        code: |
+          def main(query: str) -> dict:
+              # 内置大模型知识库
+              llm_knowledge = {
+                  "大模型": "大语言模型（LLM）是基于Transformer架构、用海量文本数据预训练的超大规模深度学习模型，具备强大的自然语言理解、生成、推理能力，是当前生成式AI的核心技术底座。",
+                  "LLM": "LLM是大语言模型（Large Language Model）的缩写，核心是通过预训练学习人类语言的规律和知识，能完成对话、写作、翻译、代码生成、逻辑推理等多种任务。",
+                  "RAG": "RAG全称检索增强生成（Retrieval-Augmented Generation），是大模型应用的核心技术，通过先从知识库中检索相关信息，再让大模型基于检索内容生成回答，能有效解决大模型幻觉、知识过时的问题。",
+                  "LoRA": "LoRA全称低秩适配（Low-Rank Adaptation），是大模型轻量化微调的核心技术，通过冻结大模型主干权重，只训练少量新增的低秩矩阵，就能让大模型适配特定场景，大幅降低微调的算力和存储成本。",
+                  "大模型幻觉": "大模型幻觉是指大模型生成的内容看似通顺合理，但与事实不符、编造虚假信息的现象，是当前大模型落地应用中最核心的优化难点之一。",
+                  "Transformer": "Transformer是2017年提出的深度学习架构，核心是自注意力机制，能并行处理文本、捕捉长距离的语义依赖，是当前所有主流大模型的基础架构。"
+              }
+              
+              # 关键词匹配检索
+              result = "未匹配到大模型相关知识库内容，可补充提问更具体的大模型问题。"
+              for keyword, content in llm_knowledge.items():
+                  if keyword in query:
+                      result = content
+                      break
+              
+              return {"llm_knowledge": result}
+        code_language: python3
+        desc: 内置大模型知识库检索
+        outputs:
+          llm_knowledge:
+            children: null
+            type: string
+        selected: false
+        title: 大模型知识库检索
+        type: code
+        variables:
+        - value_selector:
+          - '1774325912190'
+          - sys.query
+          variable: query
+      height: 89
+      id: '1774326311431'
+      position:
+        x: 1363.491808612673
+        y: 511.92880901273804
+      positionAbsolute:
+        x: 1363.491808612673
+        y: 511.92880901273804
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+    - data:
+        context:
+          enabled: true
+          variable_selector:
+          - '1774326166071'
+          - ml_knowledge
+        model:
+          completion_params:
+            temperature: 0.3
+          mode: chat
+          name: qwen3.5-flash
+          provider: langgenius/tongyi/tongyi
+        prompt_template:
+        - id: sys-ml-answer
+          role: system
+          text: 你是专业的机器学习讲师，必须严格基于下方的知识库内容回答用户的问题，不要编造知识库以外的信息，语言简洁易懂、专业准确。
+        - id: user-ml-answer
+          role: user
+          text: |
+            用户问题：{{#sys.query#}}
+            知识库内容：{{#context#}}
+        selected: false
+        title: 机器学习问题回答
+        type: llm
+        vision:
+          enabled: false
+      height: 87
+      id: '1774326747179'
+      position:
+        x: 1643.1770018777465
+        y: 377.53073028463564
+      positionAbsolute:
+        x: 1643.1770018777465
+        y: 377.53073028463564
+      selected: true
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+    - data:
+        context:
+          enabled: true
+          variable_selector:
+          - '1774326311431'
+          - llm_knowledge
+        model:
+          completion_params:
+            temperature: 0.3
+          mode: chat
+          name: qwen3.5-flash
+          provider: langgenius/tongyi/tongyi
+        prompt_template:
+        - id: sys-llm-answer
+          role: system
+          text: 你是专业的大模型技术讲师，必须严格基于下方的知识库内容回答用户的问题，不要编造知识库以外的信息，语言简洁易懂、专业准确。
+        - id: user-llm-answer
+          role: user
+          text: |
+            用户问题：{{#sys.query#}}
+            知识库内容：{{#context#}}
+        selected: false
+        title: 大模型问题回答
+        type: llm
+        vision:
+          enabled: false
+      height: 87
+      id: '1774326876756'
+      position:
+        x: 1664.491808612673
+        y: 511.92880901273804
+      positionAbsolute:
+        x: 1664.491808612673
+        y: 511.92880901273804
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+    - data:
+        answer: '{{#1774326747179.text#}}'
+        selected: false
+        title: 机器学习问题回复
+        type: answer
+        variables: []
+      height: 102
+      id: '1774327100277'
+      position:
+        x: 1942.8574939669736
+        y: 377.53073028463564
+      positionAbsolute:
+        x: 1942.8574939669736
+        y: 377.53073028463564
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+    - data:
+        answer: '{{#1774326876756.text#}}'
+        selected: false
+        title: 大模型问题回复
+        type: answer
+        variables: []
+      height: 99
+      id: '1774326904467'
+      position:
+        x: 1942.8574939669736
+        y: 511.92880901273804
+      positionAbsolute:
+        x: 1942.8574939669736
+        y: 511.92880901273804
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+    viewport:
+      x: -595.73256811956
+      y: 301.2344364243894
+      zoom: 0.7578582832551989
+  rag_pipeline_variables: []
