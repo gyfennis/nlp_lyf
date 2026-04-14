@@ -100,3 +100,24 @@ def check_number(number: Annotated[int, "要判断的数字"]):
     
     # 返回包含数字性质的结果字典
     return result
+
+# 这样 AI 助手就可以调用这个函数来获取游戏信息
+@mcp.tool
+# 定义函数 get_game_information，没有参数
+def get_game_information():
+    """Retrieves a list of information for games topic using the API."""
+    # 使用 try-except 语句捕获可能发生的异常，提高程序的健壮性
+    try:
+        # 使用 requests.get() 方法发送 HTTP GET 请求到指定 API 地址
+        # f-string 格式化字符串，将 TOKEN 变量插入到 URL 中
+        # https://whyta.cn/api/tx/douyinhot 是热点话题的 API 接口
+        # key={TOKEN} 是 API 的身份验证参数
+        # .json() 方法将 HTTP 响应的 JSON 格式数据解析为 Python 字典或列表
+        # ["result"] 从解析后的字典中获取 "result" 键对应的值
+        # ["list"] 从 result 中获取 "list" 键对应的值（通常是一个列表）
+        return requests.get(f"https://whyta.cn/api/tx/douyinhot?key={TOKEN}").json()["result"]["list"]
+    except:
+        # 如果在 try 块中发生任何异常（如网络错误、API 返回错误、键不存在等）
+        # 则执行 except 块中的代码，返回一个空列表作为默认值
+        # 这样可以避免程序崩溃，同时给调用者一个有效的返回值
+        return []
