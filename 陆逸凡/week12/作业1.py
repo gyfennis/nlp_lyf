@@ -197,12 +197,12 @@ class SQLAgent:
         # 现在直接传入所有表的信息，不需要工具调用
         self.thinking_agent = Agent(
             name="SQL Planer",
-            instructions=f"""你是一个专业的SQL专家，需要分析用户的问题，判断需要用哪张表来回答问题。
+            instructions=f"你是一个专业的SQL专家，需要分析用户的问题，判断需要用哪张表来回答问题。
                         数据库信息如下：
                         {self.simple_tables_info}
                         详细字段信息：
                         {self.all_tables_info}
-                        请直接分析用户的问题，回答需要查询哪个表，不需要调用任何工具。""",
+                        请直接分析用户的问题，回答需要查询哪个表，不需要调用任何工具。",
                          model="qwen-plus",
                          tools=[],  # 不需要工具了
         )
@@ -210,20 +210,20 @@ class SQLAgent:
         # 第二个Agent：负责生成SQL语句
         self.writing_agent = Agent(
             name="SQL Writer",
-            instructions=f"""你是一个专业的SQL专家，请根据问题和表结构生成SQL查询语句。
+            instructions=f"你是一个专业的SQL专家，请根据问题和表结构生成SQL查询语句。
                         表结构信息：
                         {self.simple_tables_info}
                         注意：
                         1. 只输出SQL语句，不要有其他解释
                         2. 确保SQL语法正确
-                        3. 使用正确的表名和字段名""",
+                        3. 使用正确的表名和字段名",
                         model="qwen-plus",
         )
 
         # 第三个Agent：负责总结查询结果
         self.summary_agent = Agent(
             name="SQL Summary",
-            instructions="""你是一个专业的SQL专家，需要根据用户的问题、SQL语句和执行结果，用自然语言总结回答用户的问题。回答要简洁明了，只说重点。""",
+            instructions="你是一个专业的SQL专家，需要根据用户的问题、SQL语句和执行结果，用自然语言总结回答用户的问题。回答要简洁明了，只说重点。",
             model="qwen-plus",
         )
 
