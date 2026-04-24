@@ -294,9 +294,6 @@ def print_all_tables_info(parser):
 
 # 主程序入口
 if __name__ == "__main__":
-    print("=" * 60)
-    print("SQL Agent 测试 - 直接使用所有表信息版本")
-    print("=" * 60)
     
     # 先连接数据库
     parser = DBParser('sqlite:///./chinook.db')
