@@ -1,6 +1,6 @@
 import os
 # 设置API密钥，这是从阿里云百炼平台申请的
-os.environ["OPENAI_API_KEY"] = "sk-f86caa60a6114e13ae22ef3bc3d05fd2"
+os.environ["OPENAI_API_KEY"] = "your own API Key"
 os.environ["OPENAI_BASE_URL"] = "https://dashscope.aliyuncs.com/compatible-mode/v1"
 
 import asyncio
@@ -10,7 +10,7 @@ from agents import set_default_openai_api, set_tracing_disabled
 
 # 设置使用chat_completions API
 set_default_openai_api("chat_completions")
-# 禁用追踪，我暂时用不到这个功能
+# 禁用追踪
 set_tracing_disabled(True)
 
 '''数据库解析部分'''
@@ -203,8 +203,8 @@ class SQLAgent:
                         详细字段信息：
                         {self.all_tables_info}
                         请直接分析用户的问题，回答需要查询哪个表，不需要调用任何工具。""",
-                                    model="qwen-plus",
-                                    tools=[],  # 不需要工具了
+                         model="qwen-plus",
+                         tools=[],  # 不需要工具了
         )
 
         # 第二个Agent：负责生成SQL语句
