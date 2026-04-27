@@ -1,0 +1,14 @@
+1. 什么是前后端分离？
+前后端分离是一种软件架构模式，将用户界面（前端）与数据处理和业务逻辑（后端）分开开发、部署和运行。
+前端：负责页面展示、用户交互、发送请求（如通过 Ajax、Fetch）并渲染数据。常用框架包括 React、Vue、Angular 或 Streamlit（如 streamlit_demo.py）。
+后端：提供 API 接口（如 RESTful 或 GraphQL），处理业务逻辑、数据库操作、身份验证等。例如 main_server.py 使用 FastAPI 构建后端，提供 /v1/healthy 及各种路由（user、chat、data、stock）。
+通信方式：前后端通过 HTTP/HTTPS 交换数据，前端不依赖后端的具体技术实现，后端不关心界面渲染。
+streamlit_demo.py 作为前端界面，调用后端 API（例如通过 requests 或 httpx 访问 main_server.py 的接口）。
+main_server.py 提供独立的后端服务（端口 8000），并通过 app.mount("/stock", stock_app) 挂载子应用。
+main_mcp.py 是一个 MCP（模型上下文协议）服务器
+
+2. 历史对话如何存储，以及如何将历史对话作为大模型的下一次输入？
+常用存储方式包括：
+数据库：将每条对话记录（用户提问、模型回复、时间戳、会话 ID 等）存入关系型数据库。。
+文件或缓存：临时对话可存储在 Redis 或本地文件中，适用于短期会话。
+浏览器本地存储（纯前端场景）：使用 localStorage 或 IndexedDB，但通常仅用于轻量场景。
