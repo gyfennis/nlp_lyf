@@ -1,0 +1,14 @@
+class TranslationRequest(BaseModel):
+    """文本翻译请求，用于自动识别原始语种、目标语种和待翻译的文本"""
+    source_language: str = Field(description="原始语种，如：中文、英语、法语、日语等")
+    target_language: str = Field(description="目标语种，如：中文、英语、法语、日语等")
+    text_to_translate: str = Field(description="待翻译的文本内容")
+ 
+ 
+# 测试翻译智能体 - 将'good!'翻译为中文
+translation_result = ExtractionAgent(model_name = "qwen-plus").call('帮我将good！翻译为中文', TranslationRequest)
+print("翻译请求结果：", translation_result)
+ 
+# 测试其他翻译场景
+translation_result2 = ExtractionAgent(model_name = "qwen-plus").call('请将"Hello world"从英文翻译成法文', TranslationRequest)
+print("翻译请求结果2：", translation_result2)

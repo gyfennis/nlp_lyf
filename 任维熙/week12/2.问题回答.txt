@@ -1,0 +1,46 @@
+什么是前后端分离？
+
+前后端分离是把系统拆成两个独立部分：
+
+前端：负责界面展示与交互。本项目是 Streamlit 页面。
+
+后端：负责业务逻辑、数据处理、模型调用、接口输出。本项目是 FastAPI。
+
+两者通过 HTTP API 通信，前端不直接处理数据库和核心业务逻辑。
+
+在该项目中体现为：
+
+前端 demo/chat/chat.py 调用后端接口，例如 /v1/chat/、/v1/chat/init、/v1/chat/get。
+
+后端路由在 routers/chat.py，业务在 services/chat.py。
+
+历史对话如何存储？如何作为下一次输入？
+存储方式
+
+项目中有两层历史存储：
+
+业务库（关系型数据库）持久化
+在 services/chat.py 中，用户和助手消息通过 append_message2db() 写入 ChatMessageTable。
+
+会话信息写入 ChatSessionTable，可用于列表、删除、回看历史。
+
+Agent 会话记忆（SQLite）
+使用 AdvancedSQLiteSession(session_id=..., db_path="./assert/conversations.db")。
+
+用于保存可直接给大模型继续推理的上下文状态。
+
+作为下一次大模型输入
+
+每次聊天请求到后端时：
+
+从请求中拿到 session_id。
+
+构建 AdvancedSQLiteSession。
+
+调用 Runner.run_streamed(agent, input=content, session=session)。
+
+关键点在 session=session：
+
+Agent 框架会自动把这个 session_id 下的历史上下文拼接进当前轮，作为下一次输入的一部分，从而实现“连续对话”。
+
+同时，前端也会在进入会话时调用 /v1/chat/get 拉取历史并展示，实现用户可见的历史回放。
