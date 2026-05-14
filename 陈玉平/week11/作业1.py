@@ -24,7 +24,7 @@ class TypeOutput(BaseModel):
 # 守卫检查代理 - 》 本质也是通过大模型调用完成的
 guardrail_agent = Agent(
     name="Guardrail Check Agent",
-    model="qwen-max",
+    model="Qwen3-0.6B-max",
     instructions="判断用户的问题是否属于情感分类相关问题。如果是，'is_type'应为 True， json 返回",
     output_type=TypeOutput,  # openai 官方推荐的一个语法，推荐大模型输出的格式类型，国内模型支持的不太好；
 )
@@ -44,7 +44,7 @@ sentiment_agent = Agent(
 - 简要解释判断依据
 
 只输出情感分析结果，不要回答其他问题。""",
-    model="qwen-max",
+    model="Qwen3-0.6B-max",
 handoff_description="负责处理感情问题的专家代理。",
 )
 
@@ -67,7 +67,7 @@ ner_agent = Agent(
 
 只输出实体识别结果，不要回答其他问题。""",
     handoff_description="负责处理所有实体识别问题的专家代理。",
-    model="qwen-max",
+    model="Qwen3-0.6B-max",
 )
 
 
@@ -97,7 +97,7 @@ async def homework_guardrail(ctx, agent, input_data):
 # history_tutor_agent 调用
 triage_agent = Agent(
     name="Triage Agent",
-    model="qwen-max",
+    model="Qwen3-0.6B-max",
     instructions="您的任务是根据用户的问题内容，判断应该将请求分派给 'SentimentAnalyzer' 还是 'EntityExtractor'。如果不能分配给SentimentAnalyzer，则默认分配给EntityExtractor",
     handoffs=[sentiment_agent, ner_agent],
     input_guardrails=[

@@ -1,0 +1,2 @@
+作业1: 阅读 2412-DeepSeek-V3.pdf 论文，总结 V3 相比 V2 改进；
+作业2: 下载Qwen3 0.6B 模型， 本地运行01_Qwen3.ipynb；
