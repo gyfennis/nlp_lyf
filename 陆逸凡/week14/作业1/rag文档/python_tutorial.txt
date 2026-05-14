@@ -1,0 +1,25 @@
+Python是一种解释型、面向对象的高级编程语言，由Guido van Rossum于1991年创建。Python以其简洁易读的语法和强大的生态系统而闻名。
+
+Python中的变量不需要声明类型，可以直接赋值。例如：name = "张三"，age = 25，price = 19.99。Python支持多种数据类型，包括整数、浮点数、字符串、列表、元组、字典等。
+
+列表是Python中最常用的数据结构之一，用方括号表示。例如：fruits = ["苹果", "香蕉", "橙子"]。列表支持增删改查操作：append()添加元素，remove()删除元素，pop()弹出元素。
+
+函数是组织代码的基本单元，使用def关键字定义。示例：
+def greet(name):
+    return f"你好，{name}！"
+
+函数的参数可以有默认值，也可以接受任意数量的参数。使用*args接收任意多个位置参数，**kwargs接收任意多个关键字参数。
+
+Python的装饰器是一种强大的功能，允许在不修改原函数的情况下增加额外功能。常见用途包括日志记录、性能测试、权限验证等。
+
+列表推导式是Python特有的语法，可以简洁地创建列表。例如：[x**2 for x in range(10)] 会生成0到9的平方数列表。
+
+Python在数据科学领域非常流行，主要得益于NumPy、Pandas、Matplotlib等库。NumPy提供高性能的多维数组对象，Pandas用于数据分析和处理，Matplotlib用于数据可视化。
+
+异常处理使用try-except块，可以捕获和处理运行时错误。示例：
+try:
+    result = 10 / 0
+except ZeroDivisionError:
+    print("不能除以零！")
+
+Python的虚拟环境可以隔离不同项目的依赖，避免版本冲突。常用的虚拟环境工具有venv、virtualenv和conda。
