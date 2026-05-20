@@ -1,0 +1,186 @@
+{
+  "queries": [
+    {
+      "id": "Q001",
+      "question": "这款手机的主摄像头像素是多少？",
+      "answer_type": "text_only",
+      "expected_answer": "5000万像素",
+      "expected_source": {
+        "filename": "产品手册_手机.pdf",
+        "page": 3,
+        "type": "text"
+      }
+    },
+    {
+      "id": "Q002",
+      "question": "根据市场报告，2024年第一季度销售额最高的产品是哪个？",
+      "answer_type": "chart",
+      "expected_answer": "智能手机",
+      "expected_source": {
+        "filename": "市场报告_2024.pdf",
+        "page": 5,
+        "type": "image"
+      }
+    },
+    {
+      "id": "Q003",
+      "question": "CNN网络结构中，池化层的作用是什么？从技术文档中查找。",
+      "answer_type": "text_only",
+      "expected_answer": "降维、减少参数量、防止过拟合",
+      "expected_source": {
+        "filename": "技术文档_神经网络.pdf",
+        "page": 8,
+        "type": "text"
+      }
+    },
+    {
+      "id": "Q004",
+      "question": "比较图中三种激活函数，ReLU相比Sigmoid有什么优势？",
+      "answer_type": "image_with_text",
+      "expected_answer": "缓解梯度消失、计算更快",
+      "expected_source": {
+        "filename": "技术文档_神经网络.pdf",
+        "page": 12,
+        "type": "image"
+      }
+    },
+    {
+      "id": "Q005",
+      "question": "手机产品手册中，哪一页展示了手机的侧面轮廓图？",
+      "answer_type": "image_location",
+      "expected_answer": "第4页",
+      "expected_source": {
+        "filename": "产品手册_手机.pdf",
+        "page": 4,
+        "type": "image"
+      }
+    },
+    {
+      "id": "Q006",
+      "question": "根据YOLO论文，mAP50指标在VOC2007数据集上达到了多少？",
+      "answer_type": "text_only",
+      "expected_answer": "63.4%",
+      "expected_source": {
+        "filename": "论文_目标检测.pdf",
+        "page": 6,
+        "type": "text"
+      }
+    },
+    {
+      "id": "Q007",
+      "question": "从市场报告的柱状图中，可以看出Q2比Q1增长了多少百分点？",
+      "answer_type": "chart_calculation",
+      "expected_answer": "15%",
+      "expected_source": {
+        "filename": "市场报告_2024.pdf",
+        "page": 3,
+        "type": "image"
+      }
+    },
+    {
+      "id": "Q008",
+      "question": "软件操作指南中，导出功能的按钮在哪个位置？",
+      "answer_type": "image_with_annotation",
+      "expected_answer": "右上角菜单中",
+      "expected_source": {
+        "filename": "操作指南_软件.pdf",
+        "page": 7,
+        "type": "image"
+      }
+    },
+    {
+      "id": "Q009",
+      "question": "文档中提到的手机处理器型号是什么？",
+      "answer_type": "text_only",
+      "expected_answer": "骁龙8 Gen 2",
+      "expected_source": {
+        "filename": "产品手册_手机.pdf",
+        "page": 2,
+        "type": "text"
+      }
+    },
+    {
+      "id": "Q010",
+      "question": "CNN网络中，第一个卷积层的卷积核大小是多少×多少？",
+      "answer_type": "text_only",
+      "expected_answer": "11×11",
+      "expected_source": {
+        "filename": "技术文档_神经网络.pdf",
+        "page": 5,
+        "type": "text"
+      }
+    },
+    {
+      "id": "Q011",
+      "question": "YOLO算法和其他检测算法的对比图中，哪个算法的速度最快？",
+      "answer_type": "image_comparison",
+      "expected_answer": "YOLOv8",
+      "expected_source": {
+        "filename": "论文_目标检测.pdf",
+        "page": 10,
+        "type": "image"
+      }
+    },
+    {
+      "id": "Q012",
+      "question": "软件操作指南中，截图里红色箭头指向的按钮是什么功能？",
+      "answer_type": "image_understanding",
+      "expected_answer": "保存设置",
+      "expected_source": {
+        "filename": "操作指南_软件.pdf",
+        "page": 4,
+        "type": "image"
+      }
+    },
+    {
+      "id": "Q013",
+      "question": "手机产品的屏幕尺寸是多大？",
+      "answer_type": "text_only",
+      "expected_answer": "6.7英寸",
+      "expected_source": {
+        "filename": "产品手册_手机.pdf",
+        "page": 3,
+        "type": "text"
+      }
+    },
+    {
+      "id": "Q014",
+      "question": "市场报告中，第三季度的销售数据表格显示哪个地区增长最快？",
+      "answer_type": "table",
+      "expected_answer": "东南亚地区",
+      "expected_source": {
+        "filename": "市场报告_2024.pdf",
+        "page": 8,
+        "type": "image"
+      }
+    },
+    {
+      "id": "Q015",
+      "question": "技术文档中，反向传播的公式推导在哪一页？",
+      "answer_type": "text_location",
+      "expected_answer": "第15页",
+      "expected_source": {
+        "filename": "技术文档_神经网络.pdf",
+        "page": 15,
+        "type": "text"
+      }
+    }
+  ],
+  "distractor_queries": [
+    {
+      "id": "D001",
+      "question": "今天天气怎么样？",
+      "expected_behavior": "无法回答，提示不在知识库范围内"
+    },
+    {
+      "id": "D002",
+      "question": "什么是量子计算机？",
+      "expected_behavior": "无法回答或基于已有文档说明未找到相关信息"
+    },
+    {
+      "id": "D003",
+      "question": "产品手册中没有提到的颜色有哪些？",
+      "expected_behavior": "明确说明文档中未提及该信息"
+    }
+  ]
+}
