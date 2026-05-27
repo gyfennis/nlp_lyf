@@ -1,0 +1,30 @@
+1. 测试环境
+安装依赖：pip install fastapi uvicorn pillow pymupdf transformers torch chromadb
+运行服务：python main.py
+2. 测试用例（接口级）
+用例 1：上传文本文件
+接口：/api/v1/upload
+输入：上传test.txt（内容：多模态 RAG 是结合文本 + 图片的检索增强生成）
+预期：返回code=0，上传成功
+用例 2：上传图片文件
+接口：/api/v1/upload
+输入：上传test.jpg
+预期：返回code=0，图片向量入库成功
+用例 3：纯文本对话
+接口：/api/v1/chat
+输入：query="什么是多模态RAG"
+预期：返回检索到的文本回答 + 引用
+用例 4：图片对话（以图搜文 / 图）
+接口：/api/v1/chat
+输入：上传图片
+预期：返回图片相似内容 + 引用
+用例 5：文本 + 图片对话
+输入：query="这张图片讲了什么" + 上传图片
+预期：结合检索结果生成回答
+用例 6：清空数据
+接口：/api/v1/clear
+预期：code=0，向量库清空
+3. 异常测试
+上传不支持格式（exe/zip）→ 返回code=-1
+无查询 / 无图片对话 → 返回参数错误
+空文件上传 → 返回异常提示

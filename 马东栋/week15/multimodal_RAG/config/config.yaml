@@ -1,0 +1,59 @@
+system:
+  app_name: "Multimodal RAG System"
+  version: "1.0.0"
+  log_level: "INFO"
+  max_workers: 4
+
+database:
+  mysql:
+    host: "localhost"
+    port: 3306
+    username: "root"
+    password: "password"
+    database: "multimodal_rag"
+    pool_size: 10
+  milvus:
+    uri: "./milvus_lite.db"
+
+kafka:
+  bootstrap_servers: "localhost:9092"
+  topic: "document-processing"
+  consumer_group: "document-processor-group"
+
+document:
+  storage_path: "E:/multimodal_RAG/documents"
+
+embedding_service:
+  api_url: "http://localhost:8001"
+  model_path: "E:/multimodal_RAG/models/bge-small-zh-v1.5"
+
+mineru:
+  api_url: "http://localhost:8000"
+
+models:
+  embedding_model: "E:/multimodal_RAG/models/bge-small-zh-v1.5"
+  rerank_model: "E:/multimodal_RAG/models/bge-reranker-base"
+
+llm:
+  provider: "aliyun"
+  model: "qwen-plus"
+  api_key_env: "aliyunAPI_KEY"
+
+document_processing:
+  chunking:
+    chunk_size: 512
+    chunk_overlap: 128
+    min_chunk_size: 128
+    max_chunk_size: 1024
+
+retrieval:
+  bm25:
+    top_k: 10
+  bge:
+    top_k: 10
+  hybrid:
+    rrf_k: 60
+
+rerank:
+  top_k: 10
+  batch_size: 32

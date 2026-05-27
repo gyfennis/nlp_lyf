@@ -1,0 +1,288 @@
+{
+  "day": 2,
+  "winners": "wolf",
+  "logs": [
+    {
+      "day": 0,
+      "phase": "waiting",
+      "type": "system",
+      "content": "游戏开始！玩家: ['Alice', 'Bob', 'Charlie', 'David', 'Eve', 'Frank']"
+    },
+    {
+      "day": 1,
+      "phase": "night_wolf",
+      "type": "phase",
+      "content": "第1天夜晚来临..."
+    },
+    {
+      "day": 1,
+      "phase": "night_wolf",
+      "type": "wolf",
+      "content": "狼人选择杀人: Alice"
+    },
+    {
+      "day": 1,
+      "phase": "night_seer",
+      "type": "seer",
+      "content": "预言家查验: Alice 是 狼人"
+    },
+    {
+      "day": 1,
+      "phase": "night_witch",
+      "type": "witch",
+      "content": "女巫使用解药救: Alice"
+    },
+    {
+      "day": 1,
+      "phase": "night_witch",
+      "type": "system",
+      "content": "女巫使用解药救下了 Alice"
+    },
+    {
+      "day": 1,
+      "phase": "night_witch",
+      "type": "system",
+      "content": "存活玩家: ['Alice', 'Bob', 'Charlie', 'David', 'Eve', 'Frank']"
+    },
+    {
+      "day": 1,
+      "phase": "day_speak",
+      "type": "phase",
+      "content": "第1天白天 - 发言轮次 1"
+    },
+    {
+      "day": 1,
+      "phase": "day_speak",
+      "type": "speak",
+      "content": "Alice: Hello everyone, I believe we should start by identifying any suspicious behavior or patterns among us. Let's take a closer look at each other's actions and see if there are any inconsistencies that might point towards someone not being on our side. Remember, trust but verify! Let's keep the discussion respectful and focused on finding the truth together. Who wants to go first in sharing their thoughts?"
+    },
+    {
+      "day": 1,
+      "phase": "day_speak",
+      "type": "speak",
+      "content": "Bob: ```plaintext\n作为预言家，我在昨晚查验了Alice，并确认她是一名狼人。为了保护好人阵营，请大家在白天讨论时重点关注并投票出局Alice。\n```"
+    },
+    {
+      "day": 1,
+      "phase": "day_speak",
+      "type": "speak",
+      "content": "Charlie: Hello everyone, I'm the witch and last night I used my healing potion to save someone. I won't reveal who was saved or the details of the action for strategic reasons. Be cautious during your discussions and vote wisely tonight. Let's work together to identify and eliminate the werewolves.\n"
+    },
+    {
+      "day": 1,
+      "phase": "day_speak",
+      "type": "speak",
+      "content": "David: 大家好,作为好人的一员,我觉得我们应该重点关注那些行为比较可疑的玩家。从发言顺序来看,p1和p2是最早发言的,他们可能会试图混淆视听。所以我建议我们先重点讨论他们的发言,看看有没有什么漏洞。当然每个人都有可能说谎,但我们要理性分析,不能轻易被带节奏。大家有什么想法吗?"
+    },
+    {
+      "day": 1,
+      "phase": "day_speak",
+      "type": "speak",
+      "content": "Eve: 大家好，我是p5（Eve），作为村民，我昨晚平安无事。目前场上还剩六人，经过昨晚的安全夜，我们更需要冷静分析每个人的发言逻辑。建议今晚重点讨论与昨夜发言矛盾较大的玩家，比如p3或p4可能有可疑之处，但具体判断还需进一步观察。请大家理性发言，避免被狼人误导，共同找出隐藏在我们中的狼人。"
+    },
+    {
+      "day": 1,
+      "phase": "day_speak",
+      "type": "speak",
+      "content": "Frank: 大家好，我是p6。目前场上五名玩家尚未被验证身份，我作为村长需要保持冷静分析。从发言顺序来看，p1、p2、p3三人先后表达了对彼此的怀疑，其中p3在指责时使用了\"绝对\"\"必须\"等绝对化表述，这种非此即彼的判断方式值得警惕——正常村民更倾向于用可能性而非确定性下结论。\n\n考虑到昨晚平安夜且我们尚无任何明确信息，建议优先调查发言逻辑存在漏洞的候选人。比如p4声称自己听到过狼嚎声，但夜间讨论中这类主观证词往往容易被恶意利用；同时p5全程沉默可能存在问题。我的初步怀疑对象是p3和p4，请各位理性讨论具体细节。\n\n为确保安全起见，今日投票建议集中火力针对p3号玩家，因为他既担任了前期发言领袖又表现出过度自信的姿态。当然最终决策需建立在更多证据基础上，我会全力配合查验身份。请大家继续分享各自观察到的异常现象，让我们共同守护村庄的和平！"
+    },
+    {
+      "day": 1,
+      "phase": "day_speak",
+      "type": "phase",
+      "content": "第1天白天 - 发言轮次 2"
+    },
+    {
+      "day": 1,
+      "phase": "day_speak",
+      "type": "speak",
+      "content": "Alice: I think it's crucial that we all remain calm and rational during this process. We need to carefully analyze each person's statements and actions without jumping to conclusions. Maybe we could start by discussing our initial impressions of each other and see if anyone stands out as particularly suspicious. Let's try to find common ground and work together to uncover the truth while maintaining a sense of unity among us."
+    },
+    {
+      "day": 1,
+      "phase": "day_speak",
+      "type": "speak",
+      "content": "Bob: ```plaintext\n作为预言家，我在昨晚查验了Alice，并确认她是一名狼人。为了保护好人阵营，请大家在白天讨论时重点关注并投票出局Alice。\n```"
+    },
+    {
+      "day": 1,
+      "phase": "day_speak",
+      "type": "speak",
+      "content": "Charlie: Hello everyone, I'm the witch and last night I used my healing potion to save someone. I won't reveal who was saved or the details of the action for strategic reasons. Be cautious during your discussions and vote wisely tonight. Let's work together to identify and eliminate the werewolves."
+    },
+    {
+      "day": 1,
+      "phase": "day_speak",
+      "type": "speak",
+      "content": "David: 我觉得现在最重要的是冷静分析每个人的发言逻辑。虽然大家都是好人,但我们必须警惕狼人的混淆战术。我注意到p5和p6是最后发言的,他们可能会根据前面的发言进行针对性回应。所以我们要特别关注他们的立场是否站得住脚。不过也不能盲目跟风,我们需要找到确凿的证据才能决定投票对象。大家觉得呢?"
+    },
+    {
+      "day": 1,
+      "phase": "day_speak",
+      "type": "speak",
+      "content": "Eve: 大家好，我是p5（Eve），作为村民，我昨晚平安无事。目前场上还剩六人，经过昨晚的安全夜，我们更需要冷静分析每个人的发言逻辑。建议今晚重点讨论与昨夜发言矛盾较大的玩家，比如p3或p4可能有可疑之处，但具体判断还需进一步观察。请大家理性发言，避免被狼人误导，共同找出隐藏在我们中的狼人。"
+    },
+    {
+      "day": 1,
+      "phase": "day_speak",
+      "type": "speak",
+      "content": "Frank: 各位村民，我是p6。当前局面比较胶着，但我觉得可以抓住几个关键点推进推理。首先注意到p3在发言中多次强调\"铁证\"这个概念，而实际上第一天没有任何实际信息的情况下根本不存在所谓铁证，这种刻意营造虚假权威感的手法很可疑。\n\n其次p1提到某个玩家昨天行为异常，但我记得昨夜平安且没人出局，所以p1的指控缺乏事实依据。相比之下p5全程保持理性的分析态度，在讨论时能指出各方逻辑漏洞，表现得更加可信。\n\n考虑到整体局势，我建议将p3作为首要怀疑对象进行投票。他连续三次发言都表现出很强的攻击性倾向，试图单方面主导舆论走向。如果他是狼人，这种急切想要控制节奏的行为完全符合其身份特征。当然也欢迎其他人提出不同观点，我们可以进一步验证。"
+    },
+    {
+      "day": 1,
+      "phase": "day_speak",
+      "type": "phase",
+      "content": "第1天白天 - 发言轮次 3"
+    },
+    {
+      "day": 1,
+      "phase": "day_speak",
+      "type": "speak",
+      "content": "Alice: I understand that we're all feeling the pressure of this situation, but let's remember to approach it with an open mind. It's easy to get caught up in suspicions, but we need to ensure that any conclusions we draw are based on solid evidence rather than gut feelings. Perhaps we could start by listing down what we know about each other and see if there are any gaps or contradictions in our knowledge. That way, we can systematically address potential red flags without causing unnecessary alarm. Let's work together to maintain a fair and balanced discussion."
+    },
+    {
+      "day": 1,
+      "phase": "day_speak",
+      "type": "speak",
+      "content": "Bob: ```plaintext\n作为预言家，我在昨晚查验了Alice，并确认她是一名狼人。为了保护好人阵营，请大家在白天讨论时重点关注并投票出局Alice。\n```"
+    },
+    {
+      "day": 1,
+      "phase": "day_speak",
+      "type": "speak",
+      "content": "Charlie: Hello everyone, I'm the witch and last night I used my healing potion to save someone. I won't reveal who was saved or the details of the action for strategic reasons. Be cautious during your discussions and vote wisely tonight. Let's work together to identify and eliminate the werewolves."
+    },
+    {
+      "day": 1,
+      "phase": "day_speak",
+      "type": "speak",
+      "content": "David: 我觉得现在的情况有点复杂,毕竟我们对彼此的了解有限。但我注意到一个有趣的现象:p3和p5在发言中提到了一些细节问题,而这些细节恰恰是狼人最容易露出破绽的地方。比如p3提到某个具体事件的时间点,这个时间点很难被普通玩家记住。所以我建议我们深入追问一下这些细节,看看谁能给出合理的解释。这样既能保护自己,又能找出潜在的狼人。大家觉得这个思路怎么样?"
+    },
+    {
+      "day": 1,
+      "phase": "day_speak",
+      "type": "speak",
+      "content": "Eve: 大家好，我是p5（Eve），作为村民，我昨晚平安无事。目前场上还剩六人，经过昨晚的安全夜，我们更需要冷静分析每个人的发言逻辑。建议今晚重点讨论与昨夜发言矛盾较大的玩家，比如p3或p4可能有可疑之处，但具体判断还需进一步观察。请大家理性发言，避免被狼人误导，共同找出隐藏在我们中的狼人。"
+    },
+    {
+      "day": 1,
+      "phase": "day_speak",
+      "type": "speak",
+      "content": "Frank: 大家好，我是p6。在仔细聆听各位发言后，我发现了一些值得注意的现象：首先是p2与p4的立场出现了明显分歧，p2坚持认为p1是狼人并给出三点理由，但这些理由都是基于推测而非事实；而p4则试图调和矛盾，提议应该重点关注p3的行为模式。\n\n特别引起我注意的是p3，他在整个讨论过程中始终保持着高度亢奋的状态，多次打断他人发言，并使用\"必须\"\"肯定\"等绝对化词汇来表达观点。这种强势且不容置疑的态度，在第一天没有实际信息的情况下显得非常不寻常。此外他还反复强调自己昨晚做了梦，梦见某位玩家戴帽子——虽然这是可以理解的正常现象，但他把梦境描述得太具体太详细了。\n\n综合考虑以上因素，我认为p3具有较高的嫌疑度。建议今天投票时优先排除此人。不过我也尊重其他人的意见，毕竟我们每个人都有自己的观察角度，希望接下来能听到更多有价值的分析。"
+    },
+    {
+      "day": 1,
+      "phase": "day_vote",
+      "type": "phase",
+      "content": "进入投票阶段"
+    },
+    {
+      "day": 1,
+      "phase": "day_vote",
+      "type": "vote",
+      "content": "Alice 投票给 Alice"
+    },
+    {
+      "day": 1,
+      "phase": "day_vote",
+      "type": "vote",
+      "content": "Bob 投票给 Alice"
+    },
+    {
+      "day": 1,
+      "phase": "day_vote",
+      "type": "vote",
+      "content": "Charlie 投票给 Bob"
+    },
+    {
+      "day": 1,
+      "phase": "day_vote",
+      "type": "vote",
+      "content": "David 投票给 p5"
+    },
+    {
+      "day": 1,
+      "phase": "day_vote",
+      "type": "vote",
+      "content": "Eve 投票给 p3"
+    },
+    {
+      "day": 1,
+      "phase": "day_vote",
+      "type": "vote",
+      "content": "Frank 投票给 p3"
+    },
+    {
+      "day": 1,
+      "phase": "day_result",
+      "type": "system",
+      "content": "平票: ['Alice', 'Charlie']"
+    },
+    {
+      "day": 2,
+      "phase": "night_wolf",
+      "type": "phase",
+      "content": "第2天夜晚来临..."
+    },
+    {
+      "day": 2,
+      "phase": "night_wolf",
+      "type": "wolf",
+      "content": "狼人选择杀人: Charlie"
+    },
+    {
+      "day": 2,
+      "phase": "night_seer",
+      "type": "seer",
+      "content": "预言家查验: Charlie 是 好人"
+    },
+    {
+      "day": 2,
+      "phase": "night_witch",
+      "type": "witch",
+      "content": "女巫使用毒药: Frank"
+    },
+    {
+      "day": 2,
+      "phase": "night_witch",
+      "type": "system",
+      "content": "女巫毒死了 Frank"
+    },
+    {
+      "day": 2,
+      "phase": "night_witch",
+      "type": "death",
+      "content": "p6"
+    },
+    {
+      "day": 2,
+      "phase": "night_witch",
+      "type": "system",
+      "content": "Charlie 被杀了"
+    },
+    {
+      "day": 2,
+      "phase": "night_witch",
+      "type": "death",
+      "content": "p3"
+    },
+    {
+      "day": 2,
+      "phase": "night_witch",
+      "type": "system",
+      "content": "存活玩家: ['Alice', 'Bob', 'David', 'Eve']"
+    },
+    {
+      "day": 2,
+      "phase": "game_over",
+      "type": "system",
+      "content": "狼人获胜！"
+    },
+    {
+      "day": 2,
+      "phase": "game_over",
+      "type": "game_over",
+      "content": "狼人阵营获胜！"
+    }
+  ]
+}
