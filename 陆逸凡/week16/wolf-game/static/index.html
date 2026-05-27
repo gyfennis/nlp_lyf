@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>狼人杀 AI</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0f1923; color: #e0e0e0; min-height: 100vh; }
+.container { max-width: 1100px; margin: 0 auto; padding: 20px; }
+
+/* Header */
+.header { display: flex; align-items: center; justify-content: space-between; padding: 16px 24px; background: linear-gradient(135deg, #1a2a3a, #0d1b2a); border-radius: 12px; margin-bottom: 16px; border: 1px solid #2a3a4a; }
+.header-title { font-size: 22px; font-weight: 700; color: #ffd700; }
+.header-title span { color: #8899aa; font-size: 14px; font-weight: 400; margin-left: 12px; }
+.header-controls { display: flex; gap: 8px; }
+.btn { padding: 8px 20px; border: none; border-radius: 8px; font-size: 14px; font-weight: 600; cursor: pointer; transition: all .2s; }
+.btn-primary { background: #ffd700; color: #1a1a2e; }
+.btn-primary:hover { background: #ffed4a; transform: translateY(-1px); }
+.btn-primary:disabled { background: #665500; color: #888; cursor: not-allowed; transform: none; }
+.btn-secondary { background: #2a3a4a; color: #c0d0e0; }
+.btn-secondary:hover { background: #3a4a5a; transform: translateY(-1px); }
+.btn-secondary:disabled { background: #1a2a3a; color: #556; cursor: not-allowed; transform: none; }
+.btn-danger { background: #8b0000; color: #fff; }
+.btn-danger:hover { background: #a00; }
+.btn-auto { background: #2d6a4f; color: #fff; }
+.btn-auto:hover { background: #40916c; }
+
+/* Phase Bar */
+.phase-bar { display: flex; align-items: center; gap: 16px; padding: 12px 20px; background: #1a2a3a; border-radius: 10px; margin-bottom: 16px; border: 1px solid #2a3a4a; flex-wrap: wrap; }
+.phase-badge { display: inline-block; padding: 4px 14px; border-radius: 20px; font-size: 13px; font-weight: 600; background: #2a4a6a; color: #8cc4ff; }
+.phase-badge.night { background: #1a1a3a; color: #aa88ff; }
+.phase-badge.day { background: #3a3a1a; color: #ffdd66; }
+.phase-badge.over { background: #3a1a1a; color: #ff6666; }
+.round-info { font-size: 16px; font-weight: 700; color: #ffd700; background: #1a1a2e; padding: 4px 14px; border-radius: 20px; }
+.announcement { flex: 1; font-size: 14px; color: #8cc; padding: 6px 12px; background: #0a1a2a; border-radius: 6px; border-left: 3px solid #ffd700; min-height: 20px; }
+
+/* Player Grid */
+.player-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 16px; }
+.player-card { position: relative; padding: 16px 12px; border-radius: 12px; text-align: center; cursor: default; transition: all .3s; border: 2px solid #2a3a4a; background: #1a2a3a; }
+.player-card.alive { border-color: #2a6a4a; }
+.player-card.dead { opacity: .4; background: #111; border-color: #333; }
+.player-card.sheriff { border-color: #ffd700; box-shadow: 0 0 12px rgba(255,215,0,.15); }
+.player-card .sheriff-badge { position: absolute; top: -8px; right: -8px; background: #ffd700; color: #1a1a2e; width: 24px; height: 24px; border-radius: 50%; font-size: 13px; line-height: 24px; font-weight: 700; }
+.player-id { font-size: 14px; font-weight: 700; color: #889; margin-bottom: 4px; }
+.player-emoji { font-size: 36px; line-height: 1.2; margin: 4px 0; }
+.player-role { font-size: 12px; color: #667; margin-top: 4px; min-height: 18px; }
+.player-role.revealed { color: #ffd700; font-weight: 600; }
+.player-status { font-size: 11px; color: #556; margin-top: 2px; }
+.player-card.alive .player-status { color: #4a8; }
+.player-card.dead .player-status { color: #855; }
+.player-card.wolf-target { box-shadow: 0 0 16px rgba(255,0,0,.3); border-color: #c00; }
+.player-card.poison-target { box-shadow: 0 0 16px rgba(0,255,0,.3); border-color: #0a0; }
+
+/* Log Panel */
+.log-panel { background: #0a1520; border-radius: 10px; border: 1px solid #1a2a3a; padding: 16px; max-height: 300px; overflow-y: auto; }
+.log-panel h3 { font-size: 14px; color: #889; margin-bottom: 8px; display: flex; align-items: center; gap: 6px; }
+.log-entry { padding: 4px 0; font-size: 13px; border-bottom: 1px solid #0a1a2a; color: #aab; line-height: 1.5; }
+.log-entry:last-child { border-bottom: none; }
+.log-entry .log-time { color: #556; font-size: 11px; margin-right: 8px; }
+.log-entry .log-phase { display: inline-block; padding: 1px 6px; border-radius: 3px; font-size: 10px; margin-right: 6px; font-weight: 600; }
+.log-entry .log-phase.night { background: #1a1a3a; color: #aa88ff; }
+.log-entry .log-phase.day { background: #3a3a1a; color: #ffdd66; }
+.log-entry .log-phase.vote { background: #2a3a2a; color: #6a8; }
+.log-entry .log-phase.death { background: #3a1a1a; color: #f66; }
+.log-entry .log-phase.win { background: #1a3a1a; color: #6f6; }
+.log-separator { padding: 10px 0 4px 0; font-size: 15px; font-weight: 700; color: #ffd700; border-bottom: 1px solid #ffd70033; margin-top: 8px; text-align: center; letter-spacing: 2px; }
+
+/* Win Modal */
+.modal-overlay { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,.7); justify-content: center; align-items: center; z-index: 100; }
+.modal-overlay.active { display: flex; }
+.modal { background: #1a2a3a; padding: 40px; border-radius: 16px; text-align: center; border: 2px solid #ffd700; max-width: 400px; }
+.modal h2 { font-size: 28px; margin-bottom: 12px; }
+.modal .winner-good { color: #4a8; }
+.modal .winner-wolf { color: #f44; }
+.modal p { color: #aab; margin-bottom: 20px; font-size: 15px; }
+
+/* Status Bar */
+.status-bar { display: flex; gap: 16px; margin-bottom: 16px; flex-wrap: wrap; }
+.status-item { flex: 1; min-width: 120px; padding: 12px 16px; background: #1a2a3a; border-radius: 8px; border: 1px solid #2a3a4a; text-align: center; }
+.status-item .label { font-size: 11px; color: #667; text-transform: uppercase; }
+.status-item .value { font-size: 20px; font-weight: 700; margin-top: 4px; }
+.status-item .value.alive-count { color: #4a8; }
+.status-item .value.dead-count { color: #855; }
+.status-item .value.round { color: #8cc4ff; }
+
+/* Scrollbar */
+.log-panel::-webkit-scrollbar { width: 6px; }
+.log-panel::-webkit-scrollbar-track { background: #0a1520; }
+.log-panel::-webkit-scrollbar-thumb { background: #2a3a4a; border-radius: 3px; }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .player-grid { grid-template-columns: repeat(3, 1fr); }
+    .header { flex-direction: column; gap: 12px; }
+    .header-controls { flex-wrap: wrap; justify-content: center; }
+}
+@media (max-width: 480px) {
+    .player-grid { grid-template-columns: repeat(2, 1fr); }
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <!-- Header -->
+    <div class="header">
+        <div class="header-title">🐺 狼人杀 AI <span id="gameIdDisplay">等待创建游戏...</span></div>
+        <div class="header-controls">
+            <button class="btn btn-primary" onclick="createGame()">🎮 新建游戏</button>
+            <button class="btn btn-secondary" id="stepBtn" onclick="stepGame()" disabled>⏭ 执行一步</button>
+            <button class="btn btn-auto" id="autoBtn" onclick="autoRun()" disabled>▶ 自动运行</button>
+            <button class="btn btn-secondary" id="evalBtn" onclick="showEvaluation()" disabled>📊 评测</button>
+            <button class="btn btn-secondary" id="lbBtn" onclick="showLeaderboard()">🏆 排行榜</button>
+        </div>
+    </div>
+
+    <!-- Phase Bar -->
+    <div class="phase-bar">
+        <span class="phase-badge" id="phaseBadge">等待开始</span>
+        <span class="round-info" id="roundInfo">第 0 天</span>
+        <div class="announcement" id="announcement">点击「新建游戏」开始</div>
+    </div>
+
+    <!-- Status Bar -->
+    <div class="status-bar">
+        <div class="status-item"><div class="label">存活</div><div class="value alive-count" id="aliveCount">0</div></div>
+        <div class="status-item"><div class="label">死亡</div><div class="value dead-count" id="deadCount">0</div></div>
+        <div class="status-item"><div class="label">轮次</div><div class="value round" id="roundCount">0</div></div>
+        <div class="status-item"><div class="label">警长</div><div class="value round" id="sheriffDisplay">无</div></div>
+    </div>
+
+    <!-- Player Grid -->
+    <div class="player-grid" id="playerGrid"></div>
+
+    <!-- Log -->
+    <div class="log-panel" id="logPanel">
+        <h3>📜 游戏日志</h3>
+        <div id="logEntries"><div class="log-entry" style="color:#556;">等待游戏开始...</div></div>
+    </div>
+</div>
+
+<!-- Win Modal -->
+<div class="modal-overlay" id="winModal">
+    <div class="modal">
+        <h2 id="winnerTitle">🏆 游戏结束</h2>
+        <p id="winnerDesc">获胜方已决出</p>
+        <button class="btn btn-primary" onclick="closeWinModal()">确定</button>
+    </div>
+</div>
+
+<!-- Evaluation Modal -->
+<div class="modal-overlay" id="evalModal">
+    <div class="modal eval-modal" style="max-width:800px;width:90%;max-height:80vh;overflow-y:auto;text-align:left;">
+        <h2 style="color:#ffd700;text-align:center;margin-bottom:20px;">📊 游戏评测</h2>
+        <div id="evalContent" style="color:#c0d0e0;">
+            <div id="evalLoading" style="text-align:center;padding:40px;color:#889;">加载中...</div>
+        </div>
+        <div style="text-align:center;margin-top:20px;">
+            <button class="btn btn-primary" onclick="closeEvalModal()">关闭</button>
+        </div>
+    </div>
+</div>
+
+<!-- Leaderboard Modal -->
+<div class="modal-overlay" id="lbModal">
+    <div class="modal eval-modal" style="max-width:900px;width:90%;max-height:85vh;overflow-y:auto;text-align:left;">
+        <h2 style="color:#ffd700;text-align:center;margin-bottom:16px;">🏆 排行榜</h2>
+        <div style="text-align:center;margin-bottom:16px;display:flex;gap:8px;justify-content:center;flex-wrap:wrap;">
+            <button class="btn btn-secondary" id="lbAllBtn" onclick="loadLeaderboard()" style="background:#2a3a4a;">所有角色</button>
+            <button class="btn btn-secondary" onclick="loadLeaderboard('werewolf')" style="background:#2a3a4a;">🐺 狼人</button>
+            <button class="btn btn-secondary" onclick="loadLeaderboard('villager')" style="background:#2a3a4a;">🧑 村民</button>
+            <button class="btn btn-secondary" onclick="loadLeaderboard('seer')" style="background:#2a3a4a;">🔮 预言家</button>
+            <button class="btn btn-secondary" onclick="loadLeaderboard('witch')" style="background:#2a3a4a;">🧙 女巫</button>
+            <button class="btn btn-secondary" onclick="loadLeaderboard('hunter')" style="background:#2a3a4a;">🏹 猎人</button>
+            <button class="btn btn-secondary" onclick="loadLeaderboard('idiot')" style="background:#2a3a4a;">🃏 白痴</button>
+            <button class="btn btn-auto" onclick="runBatch()" style="background:#2d6a4f;">▶ 批量运行3局</button>
+        </div>
+        <div id="lbContent" style="color:#c0d0e0;">
+            <div style="text-align:center;padding:40px;color:#889;">点击角色筛选或批量运行生成数据</div>
+        </div>
+        <div style="text-align:center;margin-top:20px;">
+            <button class="btn btn-primary" onclick="closeLBModal()">关闭</button>
+        </div>
+    </div>
+</div>
+
+<script>
+/* ============ Config ============ */
+const API_BASE = 'http://localhost:8000';
+
+/* ============ State ============ */
+let gameId = null;
+let isRunning = false;
+let currentPhase = 'not_started';
+let currentRound = 0;
+const ROLE_EMOJI = {
+    werewolf: '🐺', villager: '🧑', seer: '🔮',
+    witch: '🧙', hunter: '🏹', idiot: '🃏'
+};
+const ROLE_COLOR = {
+    werewolf: '#ff4444', villager: '#44cc44', seer: '#aa66ff',
+    witch: '#ff66aa', hunter: '#ff8800', idiot: '#44aaff'
+};
+const ROLE_NAME = {
+    werewolf: '狼人', villager: '村民', seer: '预言家',
+    witch: '女巫', hunter: '猎人', idiot: '白痴'
+};
+const PHASE_NAME = {
+    not_started: '⏹ 未开始', night_werewolf: '🌙 狼人行动', night_seer: '🌙 预言家查验',
+    night_witch: '🌙 女巫行动', night_resolve: '🌙 夜间结算', day_dawn: '☀️ 天亮',
+    day_sheriff_election: '🗳 警长竞选', day_debate: '💬 发言阶段', day_vote: '✋ 投票阶段',
+    day_exile: '⚖️ 放逐阶段', game_over: '🏁 游戏结束'
+};
+const PHASE_TYPE = {
+    not_started: '', night_werewolf: 'night', night_seer: 'night', night_witch: 'night',
+    night_resolve: 'night', day_dawn: 'day', day_sheriff_election: 'day',
+    day_debate: 'day', day_vote: 'vote', day_exile: 'death', game_over: 'win'
+};
+const LOG_PHASE = {
+    night_werewolf: 'night', night_seer: 'night', night_witch: 'night', night_resolve: 'night',
+    day_dawn: 'day', day_sheriff_election: 'day', day_debate: 'day',
+    day_vote: 'vote', day_exile: 'death', game_over: 'win'
+};
+
+/* ============ API ============ */
+async function api(method, path, body) {
+    const opts = { method, headers: {} };
+    if (body) { opts.headers['Content-Type'] = 'application/json'; opts.body = JSON.stringify(body); }
+    const r = await fetch(API_BASE + path, opts);
+    if (!r.ok) {
+        const err = await r.json().catch(() => ({ detail: r.statusText }));
+        throw new Error(err.detail || `HTTP ${r.status}`);
+    }
+    return r.json();
+}
+
+/* ============ Game Actions ============ */
+async function createGame() {
+    try {
+        document.getElementById('stepBtn').disabled = true;
+        document.getElementById('autoBtn').disabled = true;
+        const data = await api('POST', '/api/v1/game', {});
+        gameId = data.game_id;
+        localStorage.setItem('wolf_game_id', gameId);
+        document.getElementById('gameIdDisplay').textContent = `Game: ${gameId}`;
+        document.getElementById('stepBtn').disabled = false;
+        document.getElementById('autoBtn').disabled = false;
+        document.getElementById('logEntries').innerHTML = '';
+        addLog('system', '游戏创建成功，12人局已准备就绪');
+        document.getElementById('announcement').textContent = '游戏已创建，点击「执行一步」开始';
+        await refreshState();
+    } catch (e) {
+        alert('创建失败: ' + e.message);
+    }
+}
+
+async function stepGame() {
+    if (!gameId) return;
+    try {
+        const oldPhase = currentPhase;
+        const data = await api('POST', `/api/v1/game/${gameId}/step`);
+        const logPhase = oldPhase !== 'not_started' ? oldPhase : currentPhase;
+        const pname = PHASE_NAME[logPhase] || logPhase;
+        const displayText = data.announcement || data.phase_summary || '继续';
+        const dayTag = currentRound > 0 ? `第${currentRound}天` : '';
+        addLog(LOG_PHASE[logPhase] || '', `${dayTag ? '[' + dayTag + ']' : ''}[${pname}] ${displayText}`);
+        if (data.announcement) {
+            document.getElementById('announcement').textContent = data.announcement;
+        }
+        await refreshState();
+        if (data.game_result) {
+            showWinner(data.game_result);
+            document.getElementById('stepBtn').disabled = true;
+            document.getElementById('autoBtn').disabled = true;
+            document.getElementById('evalBtn').disabled = false;
+        }
+    } catch (e) {
+        addLog('system', '❌ 执行失败: ' + e.message);
+    }
+}
+
+async function autoRun() {
+    if (!gameId || isRunning) return;
+    isRunning = true;
+    document.getElementById('stepBtn').disabled = true;
+    document.getElementById('autoBtn').disabled = true;
+    document.getElementById('autoBtn').textContent = '⏳ 运行中...';
+    try {
+        while (true) {
+            const oldPhase = currentPhase;
+            const data = await api('POST', `/api/v1/game/${gameId}/step`);
+            const logPhase = oldPhase !== 'not_started' ? oldPhase : currentPhase;
+            const pname = PHASE_NAME[logPhase] || logPhase;
+            const displayText = data.announcement || data.phase_summary || '';
+            const dayTag = currentRound > 0 ? `第${currentRound}天` : '';
+            if (displayText) addLog(LOG_PHASE[logPhase] || '', `${dayTag ? '[' + dayTag + ']' : ''}[${pname}] ${displayText}`);
+            if (data.announcement) {
+                document.getElementById('announcement').textContent = data.announcement;
+            }
+            await refreshState();
+            if (data.game_result) {
+                showWinner(data.game_result);
+                break;
+            }
+            await new Promise(r => setTimeout(r, 300));
+        }
+    } catch (e) {
+        addLog('system', '❌ 自动运行失败: ' + e.message);
+    }
+    isRunning = false;
+    document.getElementById('autoBtn').textContent = '▶ 自动运行';
+    document.getElementById('stepBtn').disabled = true;
+    document.getElementById('autoBtn').disabled = true;
+    document.getElementById('evalBtn').disabled = false;
+}
+
+/* ============ State Refresh ============ */
+async function refreshState() {
+    if (!gameId) return;
+    try {
+        const state = await api('GET', `/api/v1/game/${gameId}/state`);
+        checkDayChange(state.phase, state.round_number);
+        renderGame(state);
+    } catch (e) {
+        console.error('refreshState error:', e);
+    }
+}
+
+/* ============ Render ============ */
+function renderGame(state) {
+    // Phase
+    currentPhase = state.phase;
+    const badge = document.getElementById('phaseBadge');
+    badge.textContent = PHASE_NAME[state.phase] || state.phase;
+    badge.className = 'phase-badge ' + (PHASE_TYPE[state.phase] || '');
+    const isNight = state.phase && state.phase.startsWith('night');
+    document.getElementById('roundInfo').textContent = `${isNight ? '🌙' : '☀️'} 第 ${state.round_number} 天`;
+    document.getElementById('roundCount').textContent = state.round_number;
+
+    // Counts
+    const alive = state.alive_player_ids || [];
+    const dead = Object.values(state.players).filter(p => !p.is_alive).length;
+    document.getElementById('aliveCount').textContent = alive.length;
+    document.getElementById('deadCount').textContent = dead;
+
+    // Sheriff
+    const sid = state.sheriff_id;
+    document.getElementById('sheriffDisplay').textContent = sid ? `${sid}号玩家` : '无';
+
+    // Players
+    renderPlayers(state);
+
+    // Enable eval button if game is over
+    const evalBtn = document.getElementById('evalBtn');
+    if (state.game_result) {
+        evalBtn.disabled = false;
+    } else {
+        evalBtn.disabled = true;
+    }
+}
+
+function renderPlayers(state) {
+    const grid = document.getElementById('playerGrid');
+    grid.innerHTML = '';
+    const players = Object.values(state.players).sort((a, b) => a.player_id - b.player_id);
+    const aliveIds = new Set(state.alive_player_ids || []);
+
+    // Find night targets for highlighting
+    const lastNight = state.night_history && state.night_history.length > 0
+        ? state.night_history[state.night_history.length - 1] : null;
+
+    players.forEach(p => {
+        const card = document.createElement('div');
+        const isAlive = p.is_alive;
+        card.className = 'player-card' + (isAlive ? ' alive' : ' dead');
+        if (p.is_sheriff) card.classList.add('sheriff');
+        if (lastNight) {
+            if (lastNight.werewolf_target === p.player_id && isAlive) card.classList.add('wolf-target');
+            if (lastNight.witch_poison_target === p.player_id && isAlive) card.classList.add('poison-target');
+        }
+
+        const roleRevealed = true;
+        const emoji = ROLE_EMOJI[p.role] || '❓';
+        const roleName = ROLE_NAME[p.role] || p.role;
+
+        let html = `<div class="player-id">玩家 ${p.player_id}</div>`;
+        html += `<div class="player-emoji">${emoji}</div>`;
+        html += `<div class="player-role ${roleRevealed ? 'revealed' : ''}" style="${roleRevealed ? 'color:' + (ROLE_COLOR[p.role] || '#ffd700') : ''}">${roleName}</div>`;
+        html += `<div class="player-status">${isAlive ? '✅ 存活' : '💀 死亡'}</div>`;
+        if (p.is_sheriff) html += `<div class="sheriff-badge">⭐</div>`;
+        if (p.has_idiot_flipped) html += `<div style="font-size:10px;color:#44aaff;margin-top:2px;">🃏 已翻牌</div>`;
+
+        card.innerHTML = html;
+        grid.appendChild(card);
+    });
+}
+
+/* ============ Day Separator ============ */
+function checkDayChange(phase, round) {
+    if (phase === 'day_dawn' && round !== currentRound) {
+        currentRound = round;
+        const el = document.getElementById('logEntries');
+        const sep = document.createElement('div');
+        sep.className = 'log-separator';
+        sep.textContent = `☀️ ─── 第 ${round} 天 ───`;
+        el.appendChild(sep);
+        const panel = document.getElementById('logPanel');
+        panel.scrollTop = panel.scrollHeight;
+    }
+}
+
+/* ============ Log ============ */
+function addLog(type, msg) {
+    const el = document.getElementById('logEntries');
+    const t = new Date();
+    const time = t.toLocaleTimeString();
+    const entry = document.createElement('div');
+    entry.className = 'log-entry';
+    const typeClass = type ? `log-phase ${type}` : '';
+    entry.innerHTML = `<span class="log-time">${time}</span>${type ? `<span class="${typeClass}">${type.toUpperCase()}</span>` : ''}${msg}`;
+    el.appendChild(entry);
+    const panel = document.getElementById('logPanel');
+    panel.scrollTop = panel.scrollHeight;
+}
+
+/* ============ Win Modal ============ */
+function showWinner(result) {
+    const modal = document.getElementById('winModal');
+    const title = document.getElementById('winnerTitle');
+    const desc = document.getElementById('winnerDesc');
+    if (result === 'good_wins') {
+        title.textContent = '🏆 好人阵营获胜！';
+        title.className = 'winner-good';
+        desc.textContent = '所有狼人已被消灭，好人阵营保卫了村庄！';
+    } else {
+        title.textContent = '🐺 狼人阵营获胜！';
+        title.className = 'winner-wolf';
+        desc.textContent = '狼人成功统治了村庄！';
+    }
+    modal.classList.add('active');
+    addLog('win', `🏆 游戏结束：${result === 'good_wins' ? '好人阵营获胜' : '狼人阵营获胜'}`);
+}
+
+function closeWinModal() {
+    document.getElementById('winModal').classList.remove('active');
+}
+
+/* ============ Evaluation ============ */
+async function showEvaluation() {
+    if (!gameId) return;
+    const modal = document.getElementById('evalModal');
+    const content = document.getElementById('evalContent');
+    const loading = document.getElementById('evalLoading');
+    loading.style.display = 'block';
+    content.innerHTML = '<div id="evalLoading" style="text-align:center;padding:40px;color:#889;">加载评测中...</div>';
+    modal.classList.add('active');
+
+    try {
+        const ev = await api('GET', `/api/v1/game/${gameId}/evaluation`);
+        loading.style.display = 'none';
+
+        let html = `<div style="margin-bottom:20px;padding:16px;background:#1a2a3a;border-radius:10px;border:1px solid #2a3a4a;">
+            <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;text-align:center;">
+                <div><div style="font-size:11px;color:#667;">结果</div><div style="font-size:18px;font-weight:700;color:${ev.winner === 'good' ? '#4a8' : '#f44'};">${ev.winner === 'good' ? '好人胜' : '狼人胜'}</div></div>
+                <div><div style="font-size:11px;color:#667;">轮次</div><div style="font-size:18px;font-weight:700;color:#8cc4ff;">${ev.total_rounds} 轮</div></div>
+                <div><div style="font-size:11px;color:#667;">死亡</div><div style="font-size:18px;font-weight:700;color:#855;">${ev.total_deaths} 人</div></div>
+                <div><div style="font-size:11px;color:#667;">阵营投票率</div><div style="font-size:18px;font-weight:700;color:#aaa;">${(ev.good_team_vote_accuracy * 100).toFixed(0)}% / ${(ev.wolf_team_vote_accuracy * 100).toFixed(0)}%</div></div>
+            </div>
+        </div>`;
+
+        // Player metrics table
+        html += `<h3 style="color:#ffd700;margin:16px 0 8px;">👥 玩家表现</h3>`;
+        html += `<div style="overflow-x:auto;"><table style="width:100%;border-collapse:collapse;font-size:13px;">
+            <thead><tr style="background:#0a1520;">
+                <th style="padding:8px 6px;text-align:left;">玩家</th>
+                <th style="padding:8px 6px;text-align:center;">角色</th>
+                <th style="padding:8px 6px;text-align:center;">胜负</th>
+                <th style="padding:8px 6px;text-align:center;">存活</th>
+                <th style="padding:8px 6px;text-align:center;">死因</th>
+                <th style="padding:8px 6px;text-align:center;">投票率</th>
+                <th style="padding:8px 6px;text-align:center;">预言家</th>
+                <th style="padding:8px 6px;text-align:center;">耗时</th>
+            </tr></thead><tbody>`;
+
+        ev.player_metrics.forEach(p => {
+            const survColor = p.survived ? '#4a8' : '#855';
+            const votePct = (p.vote_accuracy * 100).toFixed(0);
+            html += `<tr style="border-bottom:1px solid #1a2a3a;">
+                <td style="padding:8px 6px;font-weight:700;">${p.player_id}号</td>
+                <td style="padding:8px 6px;text-align:center;color:${p.role === 'werewolf' ? '#f44' : '#4a8'};">${ROLE_NAME[p.role] || p.role}</td>
+                <td style="padding:8px 6px;text-align:center;color:${p.win ? '#4a8' : '#855'};">${p.win ? '✅' : '❌'}</td>
+                <td style="padding:8px 6px;text-align:center;color:${survColor};">${p.survived ? '存活' : p.death_round ? '第'+p.death_round+'轮' : '已死'}</td>
+                <td style="padding:8px 6px;text-align:center;color:#889;">${p.death_cause === 'survived' ? '-' : p.death_cause === 'exile' ? '放逐' : p.death_cause === 'night_kill' ? '刀杀' : p.death_cause === 'witch_poison' ? '毒杀' : p.death_cause || '-'}</td>
+                <td style="padding:8px 6px;text-align:center;color:${votePct >= 50 ? '#4a8' : '#855'};">${votePct}%</td>
+                <td style="padding:8px 6px;text-align:center;color:#889;">${p.seer_accuracy > 0 ? (p.seer_accuracy * 100).toFixed(0) + '%' : '-'}</td>
+                <td style="padding:8px 6px;text-align:center;color:#889;">${p.avg_decision_time_ms > 0 ? p.avg_decision_time_ms.toFixed(0) + 'ms' : '-'}</td>
+            </tr>`;
+        });
+        html += `</tbody></table></div>`;
+
+        // Blunders
+        if (ev.blunders && ev.blunders.length > 0) {
+            html += `<h3 style="color:#f44;margin:16px 0 8px;">⚠️ 失误检测</h3>`;
+            ev.blunders.forEach(b => {
+                html += `<div style="padding:8px 12px;margin:4px 0;background:#2a1a1a;border-radius:6px;border-left:3px solid #f44;font-size:13px;">
+                    <span style="color:#f66;">第${b.round}轮</span> ${b.description}
+                </div>`;
+            });
+        }
+
+        content.innerHTML = html;
+    } catch (e) {
+        loading.style.display = 'none';
+        content.innerHTML = `<div style="color:#f66;text-align:center;padding:20px;">❌ 获取评测失败: ${e.message}</div>`;
+    }
+}
+
+function closeEvalModal() {
+    document.getElementById('evalModal').classList.remove('active');
+}
+
+/* ============ Leaderboard ============ */
+async function showLeaderboard() {
+    document.getElementById('lbModal').classList.add('active');
+    await loadLeaderboard();
+}
+
+async function loadLeaderboard(role) {
+    const content = document.getElementById('lbContent');
+    content.innerHTML = '<div style="text-align:center;padding:40px;color:#889;">加载中...</div>';
+    try {
+        let url = '/api/v1/game/leaderboard?limit=20';
+        if (role) url += '&role=' + role;
+        const data = await api('GET', url);
+        const entries = data.entries || [];
+
+        if (entries.length === 0) {
+            content.innerHTML = '<div style="text-align:center;padding:40px;color:#889;">暂无数据，请先完成游戏对局或点击「批量运行3局」生成数据</div>';
+            return;
+        }
+
+        let html = '<div style="overflow-x:auto;"><table style="width:100%;border-collapse:collapse;font-size:13px;">';
+        html += `<thead><tr style="background:#0a1520;">
+            <th style="padding:8px 8px;text-align:center;">#</th>
+            <th style="padding:8px 8px;text-align:left;">角色</th>
+            <th style="padding:8px 8px;text-align:center;">局数</th>
+            <th style="padding:8px 8px;text-align:center;">胜场</th>
+            <th style="padding:8px 8px;text-align:center;">胜率</th>
+            <th style="padding:8px 8px;text-align:center;">投票率</th>
+            <th style="padding:8px 8px;text-align:center;">生存率</th>
+            <th style="padding:8px 8px;text-align:center;">平均耗时</th>
+        </tr></thead><tbody>`;
+
+        entries.forEach(e => {
+            const winPct = (e.win_rate * 100).toFixed(1);
+            const votePct = (e.avg_vote_accuracy * 100).toFixed(1);
+            const survPct = (e.avg_survival_rate * 100).toFixed(1);
+            html += `<tr style="border-bottom:1px solid #1a2a3a;">
+                <td style="padding:8px 8px;text-align:center;color:#ffd700;font-weight:700;">${e.rank}</td>
+                <td style="padding:8px 8px;font-weight:700;">${ROLE_NAME[e.role] || e.role}</td>
+                <td style="padding:8px 8px;text-align:center;">${e.games_played}</td>
+                <td style="padding:8px 8px;text-align:center;color:${e.win_rate >= 0.5 ? '#4a8' : '#855'};">${e.wins}</td>
+                <td style="padding:8px 8px;text-align:center;color:${e.win_rate >= 0.5 ? '#4a8' : '#855'};">${winPct}%</td>
+                <td style="padding:8px 8px;text-align:center;color:${e.avg_vote_accuracy >= 0.5 ? '#4a8' : '#855'};">${votePct}%</td>
+                <td style="padding:8px 8px;text-align:center;color:${e.avg_survival_rate >= 0.5 ? '#4a8' : '#855'};">${survPct}%</td>
+                <td style="padding:8px 8px;text-align:center;color:#889;">${e.avg_decision_time_ms > 0 ? e.avg_decision_time_ms.toFixed(0) + 'ms' : '-'}</td>
+            </tr>`;
+        });
+        html += '</tbody></table></div>';
+        content.innerHTML = html;
+    } catch (e) {
+        content.innerHTML = `<div style="color:#f66;text-align:center;padding:20px;">❌ 加载失败: ${e.message}</div>`;
+    }
+}
+
+async function runBatch() {
+    const content = document.getElementById('lbContent');
+    const btn = document.querySelector('.btn-auto[onclick="runBatch()"]');
+    btn.disabled = true;
+    btn.textContent = '⏳ 运行中...';
+    content.innerHTML = '<div style="text-align:center;padding:40px;color:#889;">正在运行3局游戏，请稍候...</div>';
+
+    try {
+        const result = await api('POST', '/api/v1/game/batch', { num_games: 3, max_concurrent: 2 });
+        const s = result.summary;
+        let html = `<div style="margin-bottom:16px;padding:16px;background:#1a2a3a;border-radius:10px;border:1px solid #2a3a4a;">
+            <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;text-align:center;">
+                <div><div style="font-size:11px;color:#667;">完成</div><div style="font-size:18px;font-weight:700;color:#4a8;">${s.completed}/${s.total_games}</div></div>
+                <div><div style="font-size:11px;color:#667;">好人胜</div><div style="font-size:18px;font-weight:700;color:#4a8;">${s.good_wins}</div></div>
+                <div><div style="font-size:11px;color:#667;">狼人胜</div><div style="font-size:18px;font-weight:700;color:#f44;">${s.wolf_wins}</div></div>
+                <div><div style="font-size:11px;color:#667;">平均轮次</div><div style="font-size:18px;font-weight:700;color:#8cc4ff;">${s.avg_game_length_rounds.toFixed(1)}</div></div>
+            </div>
+        </div>`;
+        html += '<div style="text-align:center;padding:8px;color:#889;">批量运行完成，排行榜已更新</div>';
+        content.innerHTML = html;
+
+        // Auto-refresh leaderboard data after a brief delay
+        setTimeout(() => loadLeaderboard(), 500);
+    } catch (e) {
+        content.innerHTML = `<div style="color:#f66;text-align:center;padding:20px;">❌ 批量运行失败: ${e.message}</div>`;
+    }
+    btn.disabled = false;
+    btn.textContent = '▶ 批量运行3局';
+}
+
+function closeLBModal() {
+    document.getElementById('lbModal').classList.remove('active');
+}
+
+/* ============ Init ============ */
+(async function init() {
+    const saved = localStorage.getItem('wolf_game_id');
+    if (saved) {
+        try {
+            const state = await api('GET', `/api/v1/game/${saved}/state`);
+            gameId = saved;
+            currentRound = state.round_number;
+            document.getElementById('gameIdDisplay').textContent = `Game: ${gameId}`;
+            document.getElementById('stepBtn').disabled = false;
+            document.getElementById('autoBtn').disabled = false;
+            addLog('system', `恢复游戏 ${gameId}`);
+            renderGame(state);
+            if (state.game_result) {
+                showWinner(state.game_result);
+                document.getElementById('stepBtn').disabled = true;
+                document.getElementById('autoBtn').disabled = true;
+                document.getElementById('evalBtn').disabled = false;
+            } else if (state.phase !== 'not_started') {
+                document.getElementById('announcement').textContent = '游戏已恢复，继续执行...';
+            }
+        } catch (e) {
+            localStorage.removeItem('wolf_game_id');
+            addLog('system', '已保存的游戏不可用，请新建游戏');
+        }
+    }
+})();
+</script>
+</body>
+</html>
