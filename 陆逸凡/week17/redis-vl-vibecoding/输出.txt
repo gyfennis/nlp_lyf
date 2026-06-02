@@ -1,0 +1,350 @@
+(py312) D:\AI\AI work\Week 17\week17>C:/Users/lrm/AppData/Local/Microsoft/WindowsApps/python3.13.exe "d:/AI/AI work/Week 17/week17/manual_test/test1.py"
+2026-06-02 09:33:00,954 [DEBUG] asyncio: Using proactor: IocpProactor
+
+============================================================
+🚀 开始测试 vecstore — Redis 向量数据库客户端库
+============================================================
+
+[1/6] 连接 Redis...
+      ✅ Redis 已连接 (版本 7.4.7)
+
+[2/6] 初始化阿里云百炼 Embedding...
+      模型: text-embedding-v2
+      向量维度: 1536
+
+============================================================
+[3/6] SemanticCache — LLM 问答语义缓存
+============================================================
+      创建 RediSearch 索引...
+2026-06-02 09:33:01,446 [INFO] vecstore.cache.semantic_cache: Created index 'semantic_cache'
+       ✅ 索引已就绪
+
+      ⚡ 查询: "法国的首都是哪里？"
+2026-06-02 09:33:02,599 [DEBUG] openai._base_client: Request options: {'method': 'post', 'url': '/embeddings', 'files': None, 'idempotency_key': 'stainless-python-retry-3caa8e0f-1668-4064-9cbd-4301ee4d0101', 'post_parser': <function AsyncEmbeddings.create.<locals>.parser at 0x000001C22C1E31A0>, 'security': {'bearer_auth': True}, 'content': None, 'json_data': {'input': ['法国的首都是哪里？'], 'model': 'text-embedding-v2', 'encoding_format': 'base64'}}
+2026-06-02 09:33:02,601 [DEBUG] openai._base_client: Sending HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings
+2026-06-02 09:33:02,608 [DEBUG] httpcore.connection: connect_tcp.started host='dashscope.aliyuncs.com' port=443 local_address=None timeout=5.0 socket_options=None
+2026-06-02 09:33:02,819 [DEBUG] httpcore.connection: connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000001C22D129550>
+2026-06-02 09:33:02,819 [DEBUG] httpcore.connection: start_tls.started ssl_context=<ssl.SSLContext object at 0x000001C22C11CAF0> server_hostname='dashscope.aliyuncs.com' timeout=5.0
+2026-06-02 09:33:02,897 [DEBUG] httpcore.connection: start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000001C22CEC3D90>
+2026-06-02 09:33:02,898 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'POST']>
+2026-06-02 09:33:02,898 [DEBUG] httpcore.http11: send_request_headers.complete
+2026-06-02 09:33:02,899 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'POST']>
+2026-06-02 09:33:02,899 [DEBUG] httpcore.http11: send_request_body.complete
+2026-06-02 09:33:02,899 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'POST']>
+2026-06-02 09:33:03,066 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'vary', b'Origin,Access-Control-Request-Method,Access-Control-Request-Headers, Accept-Encoding'), (b'x-request-id', b'54a7e9ad-c462-9876-9525-def35702f86e'), (b'content-type', b'application/json'), (b'x-dashscope-call-gateway', b'true'), (b'req-cost-time', b'109'), (b'req-arrive-time', b'1780363984348'), (b'resp-start-time', b'1780363984457'), (b'x-envoy-upstream-service-time', b'105'), (b'content-encoding', b'gzip'), (b'date', b'Tue, 02 Jun 2026 01:33:04 GMT'), (b'server', b'istio-envoy'), (b'transfer-encoding', b'chunked')])
+2026-06-02 09:33:03,067 [INFO] httpx: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-02 09:33:03,068 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'POST']>
+2026-06-02 09:33:03,069 [DEBUG] httpcore.http11: receive_response_body.complete
+2026-06-02 09:33:03,069 [DEBUG] httpcore.http11: response_closed.started
+2026-06-02 09:33:03,069 [DEBUG] httpcore.http11: response_closed.complete
+2026-06-02 09:33:03,070 [DEBUG] openai._base_client: HTTP Response: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "200 OK" Headers({'vary': 'Origin,Access-Control-Request-Method,Access-Control-Request-Headers, Accept-Encoding', 'x-request-id': '54a7e9ad-c462-9876-9525-def35702f86e', 'content-type': 'application/json', 'x-dashscope-call-gateway': 'true', 'req-cost-time': '109', 'req-arrive-time': '1780363984348', 'resp-start-time': '1780363984457', 'x-envoy-upstream-service-time': '105', 'content-encoding': 'gzip', 'date': 'Tue, 02 Jun 2026 01:33:04 GMT', 'server': 'istio-envoy', 'transfer-encoding': 'chunked'})
+2026-06-02 09:33:03,070 [DEBUG] openai._base_client: request_id: 54a7e9ad-c462-9876-9525-def35702f86e
+      ❌ 缓存未命中 → 调用 LLM 生成答案...
+2026-06-02 09:33:03,074 [DEBUG] openai._base_client: Request options: {'method': 'post', 'url': '/embeddings', 'files': None, 'idempotency_key': 'stainless-python-retry-1d9fc779-b6b6-465e-bc25-74977c562d1a', 'post_parser': <function AsyncEmbeddings.create.<locals>.parser at 0x000001C22C1E31A0>, 'security': {'bearer_auth': True}, 'content': None, 'json_data': {'input': ['法国的首都是哪里？'], 'model': 'text-embedding-v2', 'encoding_format': 'base64'}}
+2026-06-02 09:33:03,075 [DEBUG] openai._base_client: Sending HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings
+2026-06-02 09:33:03,075 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'POST']>
+2026-06-02 09:33:03,076 [DEBUG] httpcore.http11: send_request_headers.complete
+2026-06-02 09:33:03,076 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'POST']>
+2026-06-02 09:33:03,077 [DEBUG] httpcore.http11: send_request_body.complete
+2026-06-02 09:33:03,077 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'POST']>
+2026-06-02 09:33:03,228 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'vary', b'Origin,Access-Control-Request-Method,Access-Control-Request-Headers, Accept-Encoding'), (b'x-request-id', b'0bdd53e8-42c2-93f2-9f81-a4b053533f92'), (b'content-type', b'application/json'), (b'x-dashscope-call-gateway', b'true'), (b'req-cost-time', b'92'), (b'req-arrive-time', b'1780363984527'), (b'resp-start-time', b'1780363984620'), (b'x-envoy-upstream-service-time', b'92'), (b'content-encoding', b'gzip'), (b'date', b'Tue, 02 Jun 2026 01:33:04 GMT'), (b'server', b'istio-envoy'), (b'transfer-encoding', b'chunked')])
+2026-06-02 09:33:03,228 [INFO] httpx: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-02 09:33:03,228 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'POST']>
+2026-06-02 09:33:03,229 [DEBUG] httpcore.http11: receive_response_body.complete
+2026-06-02 09:33:03,229 [DEBUG] httpcore.http11: response_closed.started
+2026-06-02 09:33:03,229 [DEBUG] httpcore.http11: response_closed.complete
+2026-06-02 09:33:03,229 [DEBUG] openai._base_client: HTTP Response: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "200 OK" Headers({'vary': 'Origin,Access-Control-Request-Method,Access-Control-Request-Headers, Accept-Encoding', 'x-request-id': '0bdd53e8-42c2-93f2-9f81-a4b053533f92', 'content-type': 'application/json', 'x-dashscope-call-gateway': 'true', 'req-cost-time': '92', 'req-arrive-time': '1780363984527', 'resp-start-time': '1780363984620', 'x-envoy-upstream-service-time': '92', 'content-encoding': 'gzip', 'date': 'Tue, 02 Jun 2026 01:33:04 GMT', 'server': 'istio-envoy', 'transfer-encoding': 'chunked'})
+2026-06-02 09:33:03,229 [DEBUG] openai._base_client: request_id: 0bdd53e8-42c2-93f2-9f81-a4b053533f92
+2026-06-02 09:33:03,234 [INFO] vecstore.cache.semantic_cache: SemanticCache STORE (key=cache:semantic:user-123:2c3f16fb32097c565c81bb36ff0f855b)
+      💾 已缓存: "法国的首都是哪里？" → "巴黎。"
+
+      ⚡ 查询: "法国首都是？"（语义相近的问法）
+2026-06-02 09:33:03,235 [DEBUG] openai._base_client: Request options: {'method': 'post', 'url': '/embeddings', 'files': None, 'idempotency_key': 'stainless-python-retry-18d5cfe7-c3a3-415d-99ce-3ddb7dcfefe3', 'post_parser': <function AsyncEmbeddings.create.<locals>.parser at 0x000001C22C1E31A0>, 'security': {'bearer_auth': True}, 'content': None, 'json_data': {'input': ['法国首都是？'], 'model': 'text-embedding-v2', 'encoding_format': 'base64'}}
+2026-06-02 09:33:03,235 [DEBUG] openai._base_client: Sending HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings
+2026-06-02 09:33:03,236 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'POST']>
+2026-06-02 09:33:03,236 [DEBUG] httpcore.http11: send_request_headers.complete
+2026-06-02 09:33:03,236 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'POST']>
+2026-06-02 09:33:03,236 [DEBUG] httpcore.http11: send_request_body.complete
+2026-06-02 09:33:03,236 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'POST']>
+2026-06-02 09:33:03,386 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'vary', b'Origin,Access-Control-Request-Method,Access-Control-Request-Headers, Accept-Encoding'), (b'x-request-id', b'06dec763-18b6-943b-887b-bb0248555183'), (b'content-type', b'application/json'), (b'x-dashscope-call-gateway', b'true'), (b'req-cost-time', b'89'), (b'req-arrive-time', b'1780363984687'), (b'resp-start-time', b'1780363984776'), (b'x-envoy-upstream-service-time', b'88'), (b'content-encoding', b'gzip'), (b'date', b'Tue, 02 Jun 2026 01:33:04 GMT'), (b'server', b'istio-envoy'), (b'transfer-encoding', b'chunked')])
+2026-06-02 09:33:03,386 [INFO] httpx: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-02 09:33:03,387 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'POST']>
+2026-06-02 09:33:03,387 [DEBUG] httpcore.http11: receive_response_body.complete
+2026-06-02 09:33:03,387 [DEBUG] httpcore.http11: response_closed.started
+2026-06-02 09:33:03,387 [DEBUG] httpcore.http11: response_closed.complete
+2026-06-02 09:33:03,388 [DEBUG] openai._base_client: HTTP Response: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "200 OK" Headers({'vary': 'Origin,Access-Control-Request-Method,Access-Control-Request-Headers, Accept-Encoding', 'x-request-id': '06dec763-18b6-943b-887b-bb0248555183', 'content-type': 'application/json', 'x-dashscope-call-gateway': 'true', 'req-cost-time': '89', 'req-arrive-time': '1780363984687', 'resp-start-time': '1780363984776', 'x-envoy-upstream-service-time': '88', 'content-encoding': 'gzip', 'date': 'Tue, 02 Jun 2026 01:33:04 GMT', 'server': 'istio-envoy', 'transfer-encoding': 'chunked'})
+2026-06-02 09:33:03,388 [DEBUG] openai._base_client: request_id: 06dec763-18b6-943b-887b-bb0248555183
+      ❌ 未命中（距离超过阈值）
+
+============================================================
+[4/6] EmbeddingsCache — 嵌入向量缓存
+============================================================
+      ⚡ 获取嵌入: "什么是机器学习？"
+2026-06-02 09:33:03,391 [DEBUG] vecstore.cache.embeddings_cache: EmbeddingsCache MISS (key=cache:embedding:9b7f9a5c351063b41db869cae37e5a2c09959460b87bdfc9d4da665f894782f0)
+2026-06-02 09:33:03,391 [DEBUG] openai._base_client: Request options: {'method': 'post', 'url': '/embeddings', 'files': None, 'idempotency_key': 'stainless-python-retry-20deab33-548a-4b9f-9b59-e48ac221a7f0', 'post_parser': <function AsyncEmbeddings.create.<locals>.parser at 0x000001C22BCAA200>, 'security': {'bearer_auth': True}, 'content': None, 'json_data': {'input': ['什么是机器学习？'], 'model': 'text-embedding-v2', 'encoding_format': 'base64'}}
+2026-06-02 09:33:03,392 [DEBUG] openai._base_client: Sending HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings
+2026-06-02 09:33:03,393 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'POST']>
+2026-06-02 09:33:03,393 [DEBUG] httpcore.http11: send_request_headers.complete
+2026-06-02 09:33:03,393 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'POST']>
+2026-06-02 09:33:03,394 [DEBUG] httpcore.http11: send_request_body.complete
+2026-06-02 09:33:03,394 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'POST']>
+2026-06-02 09:33:03,560 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'vary', b'Origin,Access-Control-Request-Method,Access-Control-Request-Headers, Accept-Encoding'), (b'x-request-id', b'2f145aee-371e-98d1-8069-2a5ec7603e77'), (b'content-type', b'application/json'), (b'x-dashscope-call-gateway', b'true'), (b'req-cost-time', b'108'), (b'req-arrive-time', b'1780363984844'), (b'resp-start-time', b'1780363984952'), (b'x-envoy-upstream-service-time', b'104'), (b'content-encoding', b'gzip'), (b'date', b'Tue, 02 Jun 2026 01:33:04 GMT'), (b'server', b'istio-envoy'), (b'transfer-encoding', b'chunked')])
+2026-06-02 09:33:03,561 [INFO] httpx: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-02 09:33:03,561 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'POST']>
+2026-06-02 09:33:03,561 [DEBUG] httpcore.http11: receive_response_body.complete
+2026-06-02 09:33:03,561 [DEBUG] httpcore.http11: response_closed.started
+2026-06-02 09:33:03,561 [DEBUG] httpcore.http11: response_closed.complete
+2026-06-02 09:33:03,562 [DEBUG] openai._base_client: HTTP Response: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "200 OK" Headers({'vary': 'Origin,Access-Control-Request-Method,Access-Control-Request-Headers, Accept-Encoding', 'x-request-id': '2f145aee-371e-98d1-8069-2a5ec7603e77', 'content-type': 'application/json', 'x-dashscope-call-gateway': 'true', 'req-cost-time': '108', 'req-arrive-time': '1780363984844', 'resp-start-time': '1780363984952', 'x-envoy-upstream-service-time': '104', 'content-encoding': 'gzip', 'date': 'Tue, 02 Jun 2026 01:33:04 GMT', 'server': 'istio-envoy', 'transfer-encoding': 'chunked'})
+2026-06-02 09:33:03,562 [DEBUG] openai._base_client: request_id: 2f145aee-371e-98d1-8069-2a5ec7603e77
+      ✅ 向量维度: (1536,), dtype: float32
+         前 5 个元素: [0.029100650921463966, 0.01809891313314438, -0.006652212701737881, -0.04135940968990326, 0.039290327578783035]...
+      ⚡ 获取嵌入: "什么是机器学习？"
+2026-06-02 09:33:03,568 [DEBUG] vecstore.cache.embeddings_cache: EmbeddingsCache HIT (key=cache:embedding:9b7f9a5c351063b41db869cae37e5a2c09959460b87bdfc9d4da665f894782f0)
+      ✅ 向量维度: (1536,), dtype: float32
+         前 5 个元素: [0.029100650921463966, 0.01809891313314438, -0.006652212701737881, -0.04135940968990326, 0.039290327578783035]...
+      ⚡ 获取嵌入: "深度学习是什么？"
+2026-06-02 09:33:03,573 [DEBUG] vecstore.cache.embeddings_cache: EmbeddingsCache MISS (key=cache:embedding:e3d5c8d50f0bee3ca791e7282f0f5a0d244f1f636df5ce4a0a53c6aadb12caec)
+2026-06-02 09:33:03,574 [DEBUG] openai._base_client: Request options: {'method': 'post', 'url': '/embeddings', 'files': None, 'idempotency_key': 'stainless-python-retry-34461f8f-6f41-4819-9c93-d204ad7c689b', 'post_parser': <function AsyncEmbeddings.create.<locals>.parser at 0x000001C22BCAA340>, 'security': {'bearer_auth': True}, 'content': None, 'json_data': {'input': ['深度学习是什么？'], 'model': 'text-embedding-v2', 'encoding_format': 'base64'}}
+2026-06-02 09:33:03,575 [DEBUG] openai._base_client: Sending HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings
+2026-06-02 09:33:03,576 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'POST']>
+2026-06-02 09:33:03,577 [DEBUG] httpcore.http11: send_request_headers.complete
+2026-06-02 09:33:03,577 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'POST']>
+2026-06-02 09:33:03,577 [DEBUG] httpcore.http11: send_request_body.complete
+2026-06-02 09:33:03,578 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'POST']>
+2026-06-02 09:33:03,708 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'vary', b'Origin,Access-Control-Request-Method,Access-Control-Request-Headers, Accept-Encoding'), (b'x-request-id', b'c503589e-7536-990e-92d3-e2fd5de878e0'), (b'content-type', b'application/json'), (b'x-dashscope-call-gateway', b'true'), (b'req-cost-time', b'72'), (b'req-arrive-time', b'1780363985027'), (b'resp-start-time', b'1780363985099'), (b'x-envoy-upstream-service-time', b'68'), (b'content-encoding', b'gzip'), (b'date', b'Tue, 02 Jun 2026 01:33:04 GMT'), (b'server', b'istio-envoy'), (b'transfer-encoding', b'chunked')])
+2026-06-02 09:33:03,708 [INFO] httpx: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-02 09:33:03,708 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'POST']>
+2026-06-02 09:33:03,709 [DEBUG] httpcore.http11: receive_response_body.complete
+2026-06-02 09:33:03,709 [DEBUG] httpcore.http11: response_closed.started
+2026-06-02 09:33:03,709 [DEBUG] httpcore.http11: response_closed.complete
+2026-06-02 09:33:03,709 [DEBUG] openai._base_client: HTTP Response: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "200 OK" Headers({'vary': 'Origin,Access-Control-Request-Method,Access-Control-Request-Headers, Accept-Encoding', 'x-request-id': 'c503589e-7536-990e-92d3-e2fd5de878e0', 'content-type': 'application/json', 'x-dashscope-call-gateway': 'true', 'req-cost-time': '72', 'req-arrive-time': '1780363985027', 'resp-start-time': '1780363985099', 'x-envoy-upstream-service-time': '68', 'content-encoding': 'gzip', 'date': 'Tue, 02 Jun 2026 01:33:04 GMT', 'server': 'istio-envoy', 'transfer-encoding': 'chunked'})
+2026-06-02 09:33:03,710 [DEBUG] openai._base_client: request_id: c503589e-7536-990e-92d3-e2fd5de878e0
+      ✅ 向量维度: (1536,), dtype: float32
+         前 5 个元素: [-0.01156915444880724, 0.007181975059211254, 0.017797864973545074, -0.05026299133896828, 0.01980188675224781]...
+      ⚡ 批量嵌入: ["你好", "世界", "AI"]
+2026-06-02 09:33:03,713 [DEBUG] vecstore.cache.embeddings_cache: EmbeddingsCache MISS for 3/3 texts
+2026-06-02 09:33:03,714 [DEBUG] openai._base_client: Request options: {'method': 'post', 'url': '/embeddings', 'files': None, 'idempotency_key': 'stainless-python-retry-7f6cb741-2365-4ca4-a2dc-5581d495b3ab', 'post_parser': <function AsyncEmbeddings.create.<locals>.parser at 0x000001C22BCAA520>, 'security': {'bearer_auth': True}, 'content': None, 'json_data': {'input': ['你好', '世界', 'AI'], 'model': 'text-embedding-v2', 'encoding_format': 'base64'}}
+2026-06-02 09:33:03,714 [DEBUG] openai._base_client: Sending HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings
+2026-06-02 09:33:03,715 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'POST']>
+2026-06-02 09:33:03,716 [DEBUG] httpcore.http11: send_request_headers.complete
+2026-06-02 09:33:03,716 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'POST']>
+2026-06-02 09:33:03,716 [DEBUG] httpcore.http11: send_request_body.complete
+2026-06-02 09:33:03,716 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'POST']>
+2026-06-02 09:33:03,896 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'vary', b'Origin,Access-Control-Request-Method,Access-Control-Request-Headers, Accept-Encoding'), (b'x-request-id', b'7aca86a6-6def-9f25-8f04-de45a847e0c1'), (b'content-type', b'application/json'), (b'x-dashscope-call-gateway', b'true'), (b'req-cost-time', b'119'), (b'req-arrive-time', b'1780363985167'), (b'resp-start-time', b'1780363985287'), (b'x-envoy-upstream-service-time', b'119'), (b'content-encoding', b'gzip'), (b'date', b'Tue, 02 Jun 2026 01:33:04 GMT'), (b'server', b'istio-envoy'), (b'transfer-encoding', b'chunked')])
+2026-06-02 09:33:03,896 [INFO] httpx: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-02 09:33:03,897 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'POST']>
+2026-06-02 09:33:03,951 [DEBUG] httpcore.http11: receive_response_body.complete
+2026-06-02 09:33:03,951 [DEBUG] httpcore.http11: response_closed.started
+2026-06-02 09:33:03,951 [DEBUG] httpcore.http11: response_closed.complete
+2026-06-02 09:33:03,952 [DEBUG] openai._base_client: HTTP Response: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "200 OK" Headers({'vary': 'Origin,Access-Control-Request-Method,Access-Control-Request-Headers, Accept-Encoding', 'x-request-id': '7aca86a6-6def-9f25-8f04-de45a847e0c1', 'content-type': 'application/json', 'x-dashscope-call-gateway': 'true', 'req-cost-time': '119', 'req-arrive-time': '1780363985167', 'resp-start-time': '1780363985287', 'x-envoy-upstream-service-time': '119', 'content-encoding': 'gzip', 'date': 'Tue, 02 Jun 2026 01:33:04 GMT', 'server': 'istio-envoy', 'transfer-encoding': 'chunked'})
+2026-06-02 09:33:03,952 [DEBUG] openai._base_client: request_id: 7aca86a6-6def-9f25-8f04-de45a847e0c1
+      ✅ 返回 3 个向量
+
+============================================================
+[5/6] SemanticMessageHistory — 语义聊天记录
+============================================================
+2026-06-02 09:33:03,958 [INFO] vecstore.memory.semantic_history: Created index 'chat_history'
+       ✅ 索引已就绪
+
+      存储对话历史...
+2026-06-02 09:33:03,959 [DEBUG] openai._base_client: Request options: {'method': 'post', 'url': '/embeddings', 'files': None, 'idempotency_key': 'stainless-python-retry-1f124c00-bd2c-45eb-b102-bbd38d11369d', 'post_parser': <function AsyncEmbeddings.create.<locals>.parser at 0x000001C22BCAA520>, 'security': {'bearer_auth': True}, 'content': None, 'json_data': {'input': ['法国的首都是哪里？'], 'model': 'text-embedding-v2', 'encoding_format': 'base64'}}
+2026-06-02 09:33:03,959 [DEBUG] openai._base_client: Sending HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings
+2026-06-02 09:33:03,959 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'POST']>
+2026-06-02 09:33:03,960 [DEBUG] httpcore.http11: send_request_headers.complete
+2026-06-02 09:33:03,960 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'POST']>
+2026-06-02 09:33:03,960 [DEBUG] httpcore.http11: send_request_body.complete
+2026-06-02 09:33:03,960 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'POST']>
+2026-06-02 09:33:04,122 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'vary', b'Origin,Access-Control-Request-Method,Access-Control-Request-Headers, Accept-Encoding'), (b'x-request-id', b'e39b7400-5ce6-9587-993a-ffdf32b2845d'), (b'content-type', b'application/json'), (b'x-dashscope-call-gateway', b'true'), (b'req-cost-time', b'104'), (b'req-arrive-time', b'1780363985410'), (b'resp-start-time', b'1780363985514'), (b'x-envoy-upstream-service-time', b'104'), (b'content-encoding', b'gzip'), (b'date', b'Tue, 02 Jun 2026 01:33:05 GMT'), (b'server', b'istio-envoy'), (b'transfer-encoding', b'chunked')])
+2026-06-02 09:33:04,123 [INFO] httpx: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-02 09:33:04,123 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'POST']>
+2026-06-02 09:33:04,123 [DEBUG] httpcore.http11: receive_response_body.complete
+2026-06-02 09:33:04,124 [DEBUG] httpcore.http11: response_closed.started
+2026-06-02 09:33:04,124 [DEBUG] httpcore.http11: response_closed.complete
+2026-06-02 09:33:04,124 [DEBUG] openai._base_client: HTTP Response: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "200 OK" Headers({'vary': 'Origin,Access-Control-Request-Method,Access-Control-Request-Headers, Accept-Encoding', 'x-request-id': 'e39b7400-5ce6-9587-993a-ffdf32b2845d', 'content-type': 'application/json', 'x-dashscope-call-gateway': 'true', 'req-cost-time': '104', 'req-arrive-time': '1780363985410', 'resp-start-time': '1780363985514', 'x-envoy-upstream-service-time': '104', 'content-encoding': 'gzip', 'date': 'Tue, 02 Jun 2026 01:33:05 GMT', 'server': 'istio-envoy', 'transfer-encoding': 'chunked'})
+2026-06-02 09:33:04,124 [DEBUG] openai._base_client: request_id: e39b7400-5ce6-9587-993a-ffdf32b2845d
+2026-06-02 09:33:04,127 [DEBUG] openai._base_client: Request options: {'method': 'post', 'url': '/embeddings', 'files': None, 'idempotency_key': 'stainless-python-retry-b7109cea-32b6-475e-8cda-c8507f0ecafd', 'post_parser': <function AsyncEmbeddings.create.<locals>.parser at 0x000001C22BCAA980>, 'security': {'bearer_auth': True}, 'content': None, 'json_data': {'input': ['巴黎。'], 'model': 'text-embedding-v2', 'encoding_format': 'base64'}}
+2026-06-02 09:33:04,127 [DEBUG] openai._base_client: Sending HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings
+2026-06-02 09:33:04,128 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'POST']>
+2026-06-02 09:33:04,128 [DEBUG] httpcore.http11: send_request_headers.complete
+2026-06-02 09:33:04,128 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'POST']>
+2026-06-02 09:33:04,129 [DEBUG] httpcore.http11: send_request_body.complete
+2026-06-02 09:33:04,129 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'POST']>
+2026-06-02 09:33:04,296 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'vary', b'Origin,Access-Control-Request-Method,Access-Control-Request-Headers, Accept-Encoding'), (b'x-request-id', b'c10ed0e2-a81f-90de-880f-661ca9635ade'), (b'content-type', b'application/json'), (b'x-dashscope-call-gateway', b'true'), (b'req-cost-time', b'109'), (b'req-arrive-time', b'1780363985578'), (b'resp-start-time', b'1780363985688'), (b'x-envoy-upstream-service-time', b'104'), (b'content-encoding', b'gzip'), (b'date', b'Tue, 02 Jun 2026 01:33:05 GMT'), (b'server', b'istio-envoy'), (b'transfer-encoding', b'chunked')])
+2026-06-02 09:33:04,296 [INFO] httpx: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-02 09:33:04,296 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'POST']>
+2026-06-02 09:33:04,296 [DEBUG] httpcore.http11: receive_response_body.complete
+2026-06-02 09:33:04,296 [DEBUG] httpcore.http11: response_closed.started
+2026-06-02 09:33:04,297 [DEBUG] httpcore.http11: response_closed.complete
+2026-06-02 09:33:04,297 [DEBUG] openai._base_client: HTTP Response: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "200 OK" Headers({'vary': 'Origin,Access-Control-Request-Method,Access-Control-Request-Headers, Accept-Encoding', 'x-request-id': 'c10ed0e2-a81f-90de-880f-661ca9635ade', 'content-type': 'application/json', 'x-dashscope-call-gateway': 'true', 'req-cost-time': '109', 'req-arrive-time': '1780363985578', 'resp-start-time': '1780363985688', 'x-envoy-upstream-service-time': '104', 'content-encoding': 'gzip', 'date': 'Tue, 02 Jun 2026 01:33:05 GMT', 'server': 'istio-envoy', 'transfer-encoding': 'chunked'})
+2026-06-02 09:33:04,297 [DEBUG] openai._base_client: request_id: c10ed0e2-a81f-90de-880f-661ca9635ade
+2026-06-02 09:33:04,298 [DEBUG] openai._base_client: Request options: {'method': 'post', 'url': '/embeddings', 'files': None, 'idempotency_key': 'stainless-python-retry-43096ca0-9368-4df0-a5ea-984952fd133b', 'post_parser': <function AsyncEmbeddings.create.<locals>.parser at 0x000001C22BCAA520>, 'security': {'bearer_auth': True}, 'content': None, 'json_data': {'input': ['德国呢？'], 'model': 'text-embedding-v2', 'encoding_format': 'base64'}}
+2026-06-02 09:33:04,299 [DEBUG] openai._base_client: Sending HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings
+2026-06-02 09:33:04,299 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'POST']>
+2026-06-02 09:33:04,299 [DEBUG] httpcore.http11: send_request_headers.complete
+2026-06-02 09:33:04,299 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'POST']>
+2026-06-02 09:33:04,300 [DEBUG] httpcore.http11: send_request_body.complete
+2026-06-02 09:33:04,300 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'POST']>
+2026-06-02 09:33:04,463 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'vary', b'Origin,Access-Control-Request-Method,Access-Control-Request-Headers, Accept-Encoding'), (b'x-request-id', b'd3a85bf8-9431-9905-9e37-10ae4c0c37b2'), (b'content-type', b'application/json'), (b'x-dashscope-call-gateway', b'true'), (b'req-cost-time', b'103'), (b'req-arrive-time', b'1780363985751'), (b'resp-start-time', b'1780363985855'), (b'x-envoy-upstream-service-time', b'103'), (b'content-encoding', b'gzip'), (b'date', b'Tue, 02 Jun 2026 01:33:05 GMT'), (b'server', b'istio-envoy'), (b'transfer-encoding', b'chunked')])
+2026-06-02 09:33:04,463 [INFO] httpx: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-02 09:33:04,464 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'POST']>
+2026-06-02 09:33:04,464 [DEBUG] httpcore.http11: receive_response_body.complete
+2026-06-02 09:33:04,464 [DEBUG] httpcore.http11: response_closed.started
+2026-06-02 09:33:04,465 [DEBUG] httpcore.http11: response_closed.complete
+2026-06-02 09:33:04,465 [DEBUG] openai._base_client: HTTP Response: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "200 OK" Headers({'vary': 'Origin,Access-Control-Request-Method,Access-Control-Request-Headers, Accept-Encoding', 'x-request-id': 'd3a85bf8-9431-9905-9e37-10ae4c0c37b2', 'content-type': 'application/json', 'x-dashscope-call-gateway': 'true', 'req-cost-time': '103', 'req-arrive-time': '1780363985751', 'resp-start-time': '1780363985855', 'x-envoy-upstream-service-time': '103', 'content-encoding': 'gzip', 'date': 'Tue, 02 Jun 2026 01:33:05 GMT', 'server': 'istio-envoy', 'transfer-encoding': 'chunked'})
+2026-06-02 09:33:04,465 [DEBUG] openai._base_client: request_id: d3a85bf8-9431-9905-9e37-10ae4c0c37b2
+       ✅ 3 条消息已存储
+
+       ⚡ 语义检索: "给我讲讲法国"
+2026-06-02 09:33:04,468 [DEBUG] openai._base_client: Request options: {'method': 'post', 'url': '/embeddings', 'files': None, 'idempotency_key': 'stainless-python-retry-a19445b8-94f6-46d9-b59d-fd4d8b3244e5', 'post_parser': <function AsyncEmbeddings.create.<locals>.parser at 0x000001C22BCAA840>, 'security': {'bearer_auth': True}, 'content': None, 'json_data': {'input': ['给我讲讲法国'], 'model': 'text-embedding-v2', 'encoding_format': 'base64'}}
+2026-06-02 09:33:04,469 [DEBUG] openai._base_client: Sending HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings
+2026-06-02 09:33:04,469 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'POST']>
+2026-06-02 09:33:04,470 [DEBUG] httpcore.http11: send_request_headers.complete
+2026-06-02 09:33:04,470 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'POST']>
+2026-06-02 09:33:04,470 [DEBUG] httpcore.http11: send_request_body.complete
+2026-06-02 09:33:04,470 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'POST']>
+2026-06-02 09:33:04,627 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'vary', b'Origin,Access-Control-Request-Method,Access-Control-Request-Headers, Accept-Encoding'), (b'x-request-id', b'ef3ab99a-854d-989e-8b6c-b633525d061e'), (b'content-type', b'application/json'), (b'x-dashscope-call-gateway', b'true'), (b'req-cost-time', b'99'), (b'req-arrive-time', b'1780363985919'), (b'resp-start-time', b'1780363986019'), (b'x-envoy-upstream-service-time', b'99'), (b'content-encoding', b'gzip'), (b'date', b'Tue, 02 Jun 2026 01:33:05 GMT'), (b'server', b'istio-envoy'), (b'transfer-encoding', b'chunked')])
+2026-06-02 09:33:04,628 [INFO] httpx: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-02 09:33:04,628 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'POST']>
+2026-06-02 09:33:04,628 [DEBUG] httpcore.http11: receive_response_body.complete
+2026-06-02 09:33:04,629 [DEBUG] httpcore.http11: response_closed.started
+2026-06-02 09:33:04,629 [DEBUG] httpcore.http11: response_closed.complete
+2026-06-02 09:33:04,629 [DEBUG] openai._base_client: HTTP Response: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "200 OK" Headers({'vary': 'Origin,Access-Control-Request-Method,Access-Control-Request-Headers, Accept-Encoding', 'x-request-id': 'ef3ab99a-854d-989e-8b6c-b633525d061e', 'content-type': 'application/json', 'x-dashscope-call-gateway': 'true', 'req-cost-time': '99', 'req-arrive-time': '1780363985919', 'resp-start-time': '1780363986019', 'x-envoy-upstream-service-time': '99', 'content-encoding': 'gzip', 'date': 'Tue, 02 Jun 2026 01:33:05 GMT', 'server': 'istio-envoy', 'transfer-encoding': 'chunked'})
+2026-06-02 09:33:04,630 [DEBUG] openai._base_client: request_id: ef3ab99a-854d-989e-8b6c-b633525d061e
+      找到 0 条相关记录:
+
+       ⚡ 最近 5 条消息:
+
+============================================================
+[6/6] SemanticRouter — 语义意图识别
+============================================================
+      已定义 3 个路由:
+2026-06-02 09:33:04,636 [INFO] vecstore.routing.semantic_router: Created index 'semantic_router'
+2026-06-02 09:33:04,637 [DEBUG] openai._base_client: Request options: {'method': 'post', 'url': '/embeddings', 'files': None, 'idempotency_key': 'stainless-python-retry-ca5d4539-d0c9-446f-a48e-9bb2750ba28f', 'post_parser': <function AsyncEmbeddings.create.<locals>.parser at 0x000001C22D16D3A0>, 'security': {'bearer_auth': True}, 'content': None, 'json_data': {'input': ['你好', '嗨', '早上好'], 'model': 'text-embedding-v2', 'encoding_format': 'base64'}}
+2026-06-02 09:33:04,637 [DEBUG] openai._base_client: Sending HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings
+2026-06-02 09:33:04,638 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'POST']>
+2026-06-02 09:33:04,639 [DEBUG] httpcore.http11: send_request_headers.complete
+2026-06-02 09:33:04,639 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'POST']>
+2026-06-02 09:33:04,640 [DEBUG] httpcore.http11: send_request_body.complete
+2026-06-02 09:33:04,640 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'POST']>
+2026-06-02 09:33:04,835 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'vary', b'Origin,Access-Control-Request-Method,Access-Control-Request-Headers, Accept-Encoding'), (b'x-request-id', b'9bcf1784-3808-952e-9b4d-3b5eda7f224c'), (b'content-type', b'application/json'), (b'x-dashscope-call-gateway', b'true'), (b'req-cost-time', b'136'), (b'req-arrive-time', b'1780363986090'), (b'resp-start-time', b'1780363986226'), (b'x-envoy-upstream-service-time', b'135'), (b'content-encoding', b'gzip'), (b'date', b'Tue, 02 Jun 2026 01:33:05 GMT'), (b'server', b'istio-envoy'), (b'transfer-encoding', b'chunked')])
+2026-06-02 09:33:04,835 [INFO] httpx: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-02 09:33:04,835 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'POST']>
+2026-06-02 09:33:04,836 [DEBUG] httpcore.http11: receive_response_body.complete
+2026-06-02 09:33:04,836 [DEBUG] httpcore.http11: response_closed.started
+2026-06-02 09:33:04,837 [DEBUG] httpcore.http11: response_closed.complete
+2026-06-02 09:33:04,837 [DEBUG] openai._base_client: HTTP Response: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "200 OK" Headers({'vary': 'Origin,Access-Control-Request-Method,Access-Control-Request-Headers, Accept-Encoding', 'x-request-id': '9bcf1784-3808-952e-9b4d-3b5eda7f224c', 'content-type': 'application/json', 'x-dashscope-call-gateway': 'true', 'req-cost-time': '136', 'req-arrive-time': '1780363986090', 'resp-start-time': '1780363986226', 'x-envoy-upstream-service-time': '135', 'content-encoding': 'gzip', 'date': 'Tue, 02 Jun 2026 01:33:05 GMT', 'server': 'istio-envoy', 'transfer-encoding': 'chunked'})
+2026-06-02 09:33:04,837 [DEBUG] openai._base_client: request_id: 9bcf1784-3808-952e-9b4d-3b5eda7f224c
+2026-06-02 09:33:04,842 [DEBUG] openai._base_client: Request options: {'method': 'post', 'url': '/embeddings', 'files': None, 'idempotency_key': 'stainless-python-retry-ff07c1b0-5c07-4f9e-b2c9-6e4b92674f40', 'post_parser': <function AsyncEmbeddings.create.<locals>.parser at 0x000001C22D16D760>, 'security': {'bearer_auth': True}, 'content': None, 'json_data': {'input': ['天气怎么样', '今天下雨吗'], 'model': 'text-embedding-v2', 'encoding_format': 'base64'}}
+2026-06-02 09:33:04,842 [DEBUG] openai._base_client: Sending HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings
+2026-06-02 09:33:04,843 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'POST']>
+2026-06-02 09:33:04,843 [DEBUG] httpcore.http11: send_request_headers.complete
+2026-06-02 09:33:04,843 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'POST']>
+2026-06-02 09:33:04,844 [DEBUG] httpcore.http11: send_request_body.complete
+2026-06-02 09:33:04,844 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'POST']>
+2026-06-02 09:33:05,046 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'vary', b'Origin,Access-Control-Request-Method,Access-Control-Request-Headers, Accept-Encoding'), (b'x-request-id', b'71823141-d58a-920b-931a-521e8a71a263'), (b'content-type', b'application/json'), (b'x-dashscope-call-gateway', b'true'), (b'req-cost-time', b'146'), (b'req-arrive-time', b'1780363986290'), (b'resp-start-time', b'1780363986437'), (b'x-envoy-upstream-service-time', b'138'), (b'content-encoding', b'gzip'), (b'date', b'Tue, 02 Jun 2026 01:33:06 GMT'), (b'server', b'istio-envoy'), (b'transfer-encoding', b'chunked')])
+2026-06-02 09:33:05,046 [INFO] httpx: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-02 09:33:05,047 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'POST']>
+2026-06-02 09:33:05,047 [DEBUG] httpcore.http11: receive_response_body.complete
+2026-06-02 09:33:05,047 [DEBUG] httpcore.http11: response_closed.started
+2026-06-02 09:33:05,048 [DEBUG] httpcore.http11: response_closed.complete
+2026-06-02 09:33:05,048 [DEBUG] openai._base_client: HTTP Response: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "200 OK" Headers({'vary': 'Origin,Access-Control-Request-Method,Access-Control-Request-Headers, Accept-Encoding', 'x-request-id': '71823141-d58a-920b-931a-521e8a71a263', 'content-type': 'application/json', 'x-dashscope-call-gateway': 'true', 'req-cost-time': '146', 'req-arrive-time': '1780363986290', 'resp-start-time': '1780363986437', 'x-envoy-upstream-service-time': '138', 'content-encoding': 'gzip', 'date': 'Tue, 02 Jun 2026 01:33:06 GMT', 'server': 'istio-envoy', 'transfer-encoding': 'chunked'})
+2026-06-02 09:33:05,048 [DEBUG] openai._base_client: request_id: 71823141-d58a-920b-931a-521e8a71a263
+2026-06-02 09:33:05,052 [DEBUG] openai._base_client: Request options: {'method': 'post', 'url': '/embeddings', 'files': None, 'idempotency_key': 'stainless-python-retry-03c4e08f-b4c6-4d5f-9438-356c80732237', 'post_parser': <function AsyncEmbeddings.create.<locals>.parser at 0x000001C22D16D760>, 'security': {'bearer_auth': True}, 'content': None, 'json_data': {'input': ['再见', '拜拜', '明天见'], 'model': 'text-embedding-v2', 'encoding_format': 'base64'}}
+2026-06-02 09:33:05,052 [DEBUG] openai._base_client: Sending HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings
+2026-06-02 09:33:05,053 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'POST']>
+2026-06-02 09:33:05,053 [DEBUG] httpcore.http11: send_request_headers.complete
+2026-06-02 09:33:05,053 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'POST']>
+2026-06-02 09:33:05,054 [DEBUG] httpcore.http11: send_request_body.complete
+2026-06-02 09:33:05,054 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'POST']>
+2026-06-02 09:33:05,260 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'vary', b'Origin,Access-Control-Request-Method,Access-Control-Request-Headers, Accept-Encoding'), (b'x-request-id', b'b5218857-c0b0-921a-b633-7bba79b54582'), (b'content-type', b'application/json'), (b'x-dashscope-call-gateway', b'true'), (b'req-cost-time', b'149'), (b'req-arrive-time', b'1780363986502'), (b'resp-start-time', b'1780363986652'), (b'x-envoy-upstream-service-time', b'149'), (b'content-encoding', b'gzip'), (b'date', b'Tue, 02 Jun 2026 01:33:06 GMT'), (b'server', b'istio-envoy'), (b'transfer-encoding', b'chunked')])
+2026-06-02 09:33:05,261 [INFO] httpx: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-02 09:33:05,261 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'POST']>
+2026-06-02 09:33:05,262 [DEBUG] httpcore.http11: receive_response_body.complete
+2026-06-02 09:33:05,262 [DEBUG] httpcore.http11: response_closed.started
+2026-06-02 09:33:05,262 [DEBUG] httpcore.http11: response_closed.complete
+2026-06-02 09:33:05,262 [DEBUG] openai._base_client: HTTP Response: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "200 OK" Headers({'vary': 'Origin,Access-Control-Request-Method,Access-Control-Request-Headers, Accept-Encoding', 'x-request-id': 'b5218857-c0b0-921a-b633-7bba79b54582', 'content-type': 'application/json', 'x-dashscope-call-gateway': 'true', 'req-cost-time': '149', 'req-arrive-time': '1780363986502', 'resp-start-time': '1780363986652', 'x-envoy-upstream-service-time': '149', 'content-encoding': 'gzip', 'date': 'Tue, 02 Jun 2026 01:33:06 GMT', 'server': 'istio-envoy', 'transfer-encoding': 'chunked'})
+2026-06-02 09:33:05,262 [DEBUG] openai._base_client: request_id: b5218857-c0b0-921a-b633-7bba79b54582
+2026-06-02 09:33:05,266 [INFO] vecstore.routing.semantic_router: SemanticRouter initialized with 3 routes
+       ✅ 路由索引已就绪
+
+2026-06-02 09:33:05,267 [DEBUG] openai._base_client: Request options: {'method': 'post', 'url': '/embeddings', 'files': None, 'idempotency_key': 'stainless-python-retry-c439f1af-5ef8-4e84-8f9e-e5d45c403c51', 'post_parser': <function AsyncEmbeddings.create.<locals>.parser at 0x000001C22D16D080>, 'security': {'bearer_auth': True}, 'content': None, 'json_data': {'input': ['早上好啊！'], 'model': 'text-embedding-v2', 'encoding_format': 'base64'}}
+2026-06-02 09:33:05,267 [DEBUG] openai._base_client: Sending HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings
+2026-06-02 09:33:05,268 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'POST']>
+2026-06-02 09:33:05,268 [DEBUG] httpcore.http11: send_request_headers.complete
+2026-06-02 09:33:05,268 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'POST']>
+2026-06-02 09:33:05,269 [DEBUG] httpcore.http11: send_request_body.complete
+2026-06-02 09:33:05,269 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'POST']>
+2026-06-02 09:33:05,426 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'vary', b'Origin,Access-Control-Request-Method,Access-Control-Request-Headers, Accept-Encoding'), (b'x-request-id', b'7950b6d3-dea3-9c97-b625-72b4a0d566e6'), (b'content-type', b'application/json'), (b'x-dashscope-call-gateway', b'true'), (b'req-cost-time', b'99'), (b'req-arrive-time', b'1780363986718'), (b'resp-start-time', b'1780363986818'), (b'x-envoy-upstream-service-time', b'99'), (b'content-encoding', b'gzip'), (b'date', b'Tue, 02 Jun 2026 01:33:06 GMT'), (b'server', b'istio-envoy'), (b'transfer-encoding', b'chunked')])
+2026-06-02 09:33:05,426 [INFO] httpx: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-02 09:33:05,426 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'POST']>
+2026-06-02 09:33:05,427 [DEBUG] httpcore.http11: receive_response_body.complete
+2026-06-02 09:33:05,427 [DEBUG] httpcore.http11: response_closed.started
+2026-06-02 09:33:05,427 [DEBUG] httpcore.http11: response_closed.complete
+2026-06-02 09:33:05,428 [DEBUG] openai._base_client: HTTP Response: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "200 OK" Headers({'vary': 'Origin,Access-Control-Request-Method,Access-Control-Request-Headers, Accept-Encoding', 'x-request-id': '7950b6d3-dea3-9c97-b625-72b4a0d566e6', 'content-type': 'application/json', 'x-dashscope-call-gateway': 'true', 'req-cost-time': '99', 'req-arrive-time': '1780363986718', 'resp-start-time': '1780363986818', 'x-envoy-upstream-service-time': '99', 'content-encoding': 'gzip', 'date': 'Tue, 02 Jun 2026 01:33:06 GMT', 'server': 'istio-envoy', 'transfer-encoding': 'chunked'})
+2026-06-02 09:33:05,428 [DEBUG] openai._base_client: request_id: 7950b6d3-dea3-9c97-b625-72b4a0d566e6
+      ⚡ "早上好啊！"
+         → 意图: greeting
+         → 置信度: 92.57%
+         → 余弦距离: 0.1486
+
+2026-06-02 09:33:05,431 [DEBUG] openai._base_client: Request options: {'method': 'post', 'url': '/embeddings', 'files': None, 'idempotency_key': 'stainless-python-retry-ce138918-d526-4fc0-bba3-cc056884f712', 'post_parser': <function AsyncEmbeddings.create.<locals>.parser at 0x000001C22D16D080>, 'security': {'bearer_auth': True}, 'content': None, 'json_data': {'input': ['今天天气如何？'], 'model': 'text-embedding-v2', 'encoding_format': 'base64'}}
+2026-06-02 09:33:05,432 [DEBUG] openai._base_client: Sending HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings
+2026-06-02 09:33:05,432 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'POST']>
+2026-06-02 09:33:05,433 [DEBUG] httpcore.http11: send_request_headers.complete
+2026-06-02 09:33:05,433 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'POST']>
+2026-06-02 09:33:05,433 [DEBUG] httpcore.http11: send_request_body.complete
+2026-06-02 09:33:05,434 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'POST']>
+2026-06-02 09:33:05,601 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'vary', b'Origin,Access-Control-Request-Method,Access-Control-Request-Headers, Accept-Encoding'), (b'x-request-id', b'bdcb62b1-2ece-9441-a19d-f9e4adb2aace'), (b'content-type', b'application/json'), (b'x-dashscope-call-gateway', b'true'), (b'req-cost-time', b'108'), (b'req-arrive-time', b'1780363986882'), (b'resp-start-time', b'1780363986991'), (b'x-envoy-upstream-service-time', b'108'), (b'content-encoding', b'gzip'), (b'date', b'Tue, 02 Jun 2026 01:33:06 GMT'), (b'server', b'istio-envoy'), (b'transfer-encoding', b'chunked')])
+2026-06-02 09:33:05,602 [INFO] httpx: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-02 09:33:05,602 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'POST']>
+2026-06-02 09:33:05,603 [DEBUG] httpcore.http11: receive_response_body.complete
+2026-06-02 09:33:05,603 [DEBUG] httpcore.http11: response_closed.started
+2026-06-02 09:33:05,603 [DEBUG] httpcore.http11: response_closed.complete
+2026-06-02 09:33:05,604 [DEBUG] openai._base_client: HTTP Response: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "200 OK" Headers({'vary': 'Origin,Access-Control-Request-Method,Access-Control-Request-Headers, Accept-Encoding', 'x-request-id': 'bdcb62b1-2ece-9441-a19d-f9e4adb2aace', 'content-type': 'application/json', 'x-dashscope-call-gateway': 'true', 'req-cost-time': '108', 'req-arrive-time': '1780363986882', 'resp-start-time': '1780363986991', 'x-envoy-upstream-service-time': '108', 'content-encoding': 'gzip', 'date': 'Tue, 02 Jun 2026 01:33:06 GMT', 'server': 'istio-envoy', 'transfer-encoding': 'chunked'})
+2026-06-02 09:33:05,604 [DEBUG] openai._base_client: request_id: bdcb62b1-2ece-9441-a19d-f9e4adb2aace
+      ⚡ "今天天气如何？"
+         → 意图: weather
+         → 置信度: 85.22%
+         → 余弦距离: 0.2956
+
+2026-06-02 09:33:05,607 [DEBUG] openai._base_client: Request options: {'method': 'post', 'url': '/embeddings', 'files': None, 'idempotency_key': 'stainless-python-retry-92d0f475-f8ac-41a6-b069-6a6ddf176782', 'post_parser': <function AsyncEmbeddings.create.<locals>.parser at 0x000001C22D16D080>, 'security': {'bearer_auth': True}, 'content': None, 'json_data': {'input': ['拜拜了您嘞'], 'model': 'text-embedding-v2', 'encoding_format': 'base64'}}
+2026-06-02 09:33:05,607 [DEBUG] openai._base_client: Sending HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings
+2026-06-02 09:33:05,608 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'POST']>
+2026-06-02 09:33:05,608 [DEBUG] httpcore.http11: send_request_headers.complete
+2026-06-02 09:33:05,608 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'POST']>
+2026-06-02 09:33:05,609 [DEBUG] httpcore.http11: send_request_body.complete
+2026-06-02 09:33:05,609 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'POST']>
+2026-06-02 09:33:05,743 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'vary', b'Origin,Access-Control-Request-Method,Access-Control-Request-Headers, Accept-Encoding'), (b'x-request-id', b'3952b22b-6b6b-930b-8e48-ce8d59260db6'), (b'content-type', b'application/json'), (b'x-dashscope-call-gateway', b'true'), (b'req-cost-time', b'78'), (b'req-arrive-time', b'1780363987057'), (b'resp-start-time', b'1780363987135'), (b'x-envoy-upstream-service-time', b'78'), (b'content-encoding', b'gzip'), (b'date', b'Tue, 02 Jun 2026 01:33:06 GMT'), (b'server', b'istio-envoy'), (b'transfer-encoding', b'chunked')])
+2026-06-02 09:33:05,743 [INFO] httpx: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-02 09:33:05,744 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'POST']>
+2026-06-02 09:33:05,744 [DEBUG] httpcore.http11: receive_response_body.complete
+2026-06-02 09:33:05,744 [DEBUG] httpcore.http11: response_closed.started
+2026-06-02 09:33:05,744 [DEBUG] httpcore.http11: response_closed.complete
+2026-06-02 09:33:05,744 [DEBUG] openai._base_client: HTTP Response: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "200 OK" Headers({'vary': 'Origin,Access-Control-Request-Method,Access-Control-Request-Headers, Accept-Encoding', 'x-request-id': '3952b22b-6b6b-930b-8e48-ce8d59260db6', 'content-type': 'application/json', 'x-dashscope-call-gateway': 'true', 'req-cost-time': '78', 'req-arrive-time': '1780363987057', 'resp-start-time': '1780363987135', 'x-envoy-upstream-service-time': '78', 'content-encoding': 'gzip', 'date': 'Tue, 02 Jun 2026 01:33:06 GMT', 'server': 'istio-envoy', 'transfer-encoding': 'chunked'})
+2026-06-02 09:33:05,745 [DEBUG] openai._base_client: request_id: 3952b22b-6b6b-930b-8e48-ce8d59260db6
+      ⚡ "拜拜了您嘞"
+         → 意图: goodbye
+         → 置信度: 86.20%
+         → 余弦距离: 0.2760
+
+2026-06-02 09:33:05,747 [DEBUG] openai._base_client: Request options: {'method': 'post', 'url': '/embeddings', 'files': None, 'idempotency_key': 'stainless-python-retry-d4298824-3123-40ad-855b-390af0b45bbe', 'post_parser': <function AsyncEmbeddings.create.<locals>.parser at 0x000001C22D16D080>, 'security': {'bearer_auth': True}, 'content': None, 'json_data': {'input': ['给我讲个笑话'], 'model': 'text-embedding-v2', 'encoding_format': 'base64'}}
+2026-06-02 09:33:05,747 [DEBUG] openai._base_client: Sending HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings
+2026-06-02 09:33:05,748 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'POST']>
+2026-06-02 09:33:05,748 [DEBUG] httpcore.http11: send_request_headers.complete
+2026-06-02 09:33:05,748 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'POST']>
+2026-06-02 09:33:05,748 [DEBUG] httpcore.http11: send_request_body.complete
+2026-06-02 09:33:05,748 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'POST']>
+2026-06-02 09:33:05,869 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'vary', b'Origin,Access-Control-Request-Method,Access-Control-Request-Headers, Accept-Encoding'), (b'x-request-id', b'9822ab22-6493-93f6-9ca4-d67b9dacd6a3'), (b'content-type', b'application/json'), (b'x-dashscope-call-gateway', b'true'), (b'req-cost-time', b'64'), (b'req-arrive-time', b'1780363987197'), (b'resp-start-time', b'1780363987261'), (b'x-envoy-upstream-service-time', b'63'), (b'content-encoding', b'gzip'), (b'date', b'Tue, 02 Jun 2026 01:33:06 GMT'), (b'server', b'istio-envoy'), (b'transfer-encoding', b'chunked')])
+2026-06-02 09:33:05,869 [INFO] httpx: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-02 09:33:05,869 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'POST']>
+2026-06-02 09:33:05,870 [DEBUG] httpcore.http11: receive_response_body.complete
+2026-06-02 09:33:05,870 [DEBUG] httpcore.http11: response_closed.started
+2026-06-02 09:33:05,870 [DEBUG] httpcore.http11: response_closed.complete
+2026-06-02 09:33:05,870 [DEBUG] openai._base_client: HTTP Response: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "200 OK" Headers({'vary': 'Origin,Access-Control-Request-Method,Access-Control-Request-Headers, Accept-Encoding', 'x-request-id': '9822ab22-6493-93f6-9ca4-d67b9dacd6a3', 'content-type': 'application/json', 'x-dashscope-call-gateway': 'true', 'req-cost-time': '64', 'req-arrive-time': '1780363987197', 'resp-start-time': '1780363987261', 'x-envoy-upstream-service-time': '63', 'content-encoding': 'gzip', 'date': 'Tue, 02 Jun 2026 01:33:06 GMT', 'server': 'istio-envoy', 'transfer-encoding': 'chunked'})
+2026-06-02 09:33:05,871 [DEBUG] openai._base_client: request_id: 9822ab22-6493-93f6-9ca4-d67b9dacd6a3
+      ⚡ "给我讲个笑话"
+         → 未匹配到任何路由
+
+============================================================
+🏁 测试完成，关闭 Redis 连接
+============================================================
